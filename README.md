@@ -33,7 +33,7 @@ Abilities:
 
 ## Credits
 
-Game created by Shakiba Talebian with support from [Future Energy Systems](futureenergysystems.ca).  
+Game developed by Vikasini Senthilkumar and team, supervised by Shakiba Talebian, with support from [Future Energy Systems](futureenergysystems.ca).  
 Character art by Kaitlin Pylypa.  
 [More games and other resources here](https://www.futureenergysystems.ca/engage/learning/teacher-resources).
 
