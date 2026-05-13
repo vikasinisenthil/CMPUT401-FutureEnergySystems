@@ -1,0 +1,67 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/SaveEnergyStyleSheet.uss?fileID=7433441132597879392&amp;guid=c57e18af96c9c40afa1d999311293340&amp;type=3#SaveEnergyStyleSheet"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay se-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card se-card">
+            <ui:Label text="Save Energy!" name="minigame_title" class="minigame-title se-title"/>
+            <ui:Label text="" name="minigame_description" class="minigame-description se-description"/>
+
+            <ui:VisualElement name="intro_container" class="se-intro-container">
+                <ui:VisualElement class="se-intro-content">
+                    <ui:Label text="Tap bright rooms to switch the lights off." class="se-result-copy se-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="se-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button se-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="se-gameplay-container">
+                <ui:VisualElement name="lights_grid" class="se-lights-grid">
+                    <ui:VisualElement name="light_0" class="se-light se-light-off">
+                        <ui:Label text="Room 1" class="se-room-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="light_1" class="se-light se-light-off">
+                        <ui:Label text="Room 2" class="se-room-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="light_2" class="se-light se-light-off">
+                        <ui:Label text="Room 3" class="se-room-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="light_3" class="se-light se-light-off">
+                        <ui:Label text="Room 4" class="se-room-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="light_4" class="se-light se-light-off">
+                        <ui:Label text="Room 5" class="se-room-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="light_5" class="se-light se-light-off">
+                        <ui:Label text="Room 6" class="se-room-label"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:Label text="" name="npc_message_label" class="se-npc-message"/>
+                <ui:VisualElement name="bottom_bar" class="se-bottom-bar">
+                    <ui:Label text="Time: 30s" name="timer_label" class="se-timer"/>
+                    <ui:Label text="Waste: 0 pts" name="points_label" class="se-points"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="se-result-container">
+                <ui:Label text="" name="result_headline" class="se-result-headline"/>
+                <ui:Label text="" name="result_label" class="se-result-label"/>
+                <ui:Label text="" name="result_fact" class="se-result-copy se-fact"/>
+                <ui:Label text="" name="result_score" class="se-score"/>
+                <ui:VisualElement class="se-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button se-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="rules_popup" class="se-rules-popup">
+                <ui:Label text="Rules" class="se-result-headline"/>
+                <ui:Label text="1. Some room lights turn on." class="se-result-copy"/>
+                <ui:Label text="2. Tap bright rooms to turn lights off." class="se-result-copy"/>
+                <ui:Label text="3. Turn off lots of lights before time is up." class="se-result-copy"/>
+                <ui:Button text="Back" name="back_button" class="minigame-button se-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
+

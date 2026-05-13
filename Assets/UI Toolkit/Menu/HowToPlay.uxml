@@ -1,0 +1,90 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/HowToPlay.uss"/>
+    <ui:VisualElement name="howtoplay_overlay" class="htp-overlay">
+        <ui:VisualElement name="backdrop" class="htp-backdrop"/>
+        <ui:VisualElement name="howtoplay_card" class="htp-card">
+            <ui:Label text="How to Play" class="htp-title"/>
+            <ui:ScrollView class="htp-scroll">
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Your Mission" class="htp-section-title"/>
+                    <ui:Label text="Travel across the board, keep track of the AQHI, and reach the finish with the lowest pollution score. You are an Air Hero!" class="htp-section-body" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Roll and Move" class="htp-section-title"/>
+                    <ui:Label text="On your turn, roll the dice and it will move that many spaces forward. Land on a square and see what happens!" class="htp-section-body" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Board Squares" class="htp-section-title"/>
+                    <ui:VisualElement class="htp-squares-row">
+                        <ui:VisualElement class="htp-square-item">
+                            <ui:VisualElement class="htp-square-icon htp-square-blue"/>
+                            <ui:Label text="Blue" class="htp-square-label"/>
+                            <ui:Label text="Draw a card! Learn a cool fact or answer a quiz question." class="htp-square-desc"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="htp-square-item">
+                            <ui:VisualElement class="htp-square-icon htp-square-green"/>
+                            <ui:Label text="Green" class="htp-square-label"/>
+                            <ui:Label text="Play a minigame! Do well to clean the air and lower your pollution." class="htp-square-desc"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="htp-square-item">
+                            <ui:VisualElement class="htp-square-icon htp-square-grey"/>
+                            <ui:Label text="Grey" class="htp-square-label"/>
+                            <ui:Label text="Oh no, pollution! Your pollution score goes up by one." class="htp-square-desc"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Meet the Heroes" class="htp-section-title"/>
+                    <ui:Label text="Tap on any hero during character selection to discover their full story and powers!" class="htp-section-body" />
+                    <ui:VisualElement class="htp-heroes-row">
+                        <ui:VisualElement class="htp-hero-item">
+                            <ui:Label text="Remi the Cyclist" class="htp-hero-name htp-hero-remi"/>
+                            <ui:Label text="Zooms ahead on green squares and ignores traffic pollution!" class="htp-hero-desc"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="htp-hero-item">
+                            <ui:Label text="Reg the Scientist" class="htp-hero-name htp-hero-reg"/>
+                            <ui:Label text="Uses a sensor (twice!) to reveal the right quiz answer." class="htp-hero-desc"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="htp-hero-item">
+                            <ui:Label text="Tommy the Ranger" class="htp-hero-name htp-hero-tommy"/>
+                            <ui:Label text="Immune to wildfires and cleans double pollution with trees!" class="htp-hero-desc"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Your Score (AQHI)" class="htp-section-title"/>
+                    <ui:Label text="Your score shows your Air Quality Health Index. Lower is better! Stay in the green zone to become an Air Hero. If it climbs too high... danger zone!" class="htp-section-body" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Boss Battles" class="htp-section-title"/>
+                    <ui:Label text="Near the end, face a boss! Answer 3 tough questions in a row. Get even one wrong and you lose the fight - so study those facts!" class="htp-section-body" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="htp-divider"/>
+
+                <ui:VisualElement class="htp-section">
+                    <ui:Label text="Playing with Friends" class="htp-section-title"/>
+                    <ui:Label text="Take turns rolling the dice. Everyone races to the finish - the player with the lowest pollution score wins!" class="htp-section-body" />
+                </ui:VisualElement>
+
+            </ui:ScrollView>
+            <ui:Button text="Got it!" name="close_button" class="htp-close-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

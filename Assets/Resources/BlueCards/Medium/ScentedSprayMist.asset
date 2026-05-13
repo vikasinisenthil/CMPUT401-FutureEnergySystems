@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: ScentedSprayMist
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: The Scented Spray Mist
+  image: {fileID: 21300000, guid: 65c69c1a0e3d7ab4a98ac61e425b98a0, type: 3}
+  statement: 
+  question: Many sprays, paints, and cleaners release invisible gases called Volatile
+    Organic Compounds (VOCs). These gases can hurt us and the Earth. What should
+    we do when using one of these sprays at home?
+  answers:
+  - answer: Make sure the doors and windows are closed so none of the VOCs escape.
+    messageWhenChosen: 'Oops! Your health and safety come first! Always open windows
+      and doors when painting or spraying something with a strong smell.  '
+    correctAnswer: 0
+  - answer: "Open a window so that you don\u2019t breathe in any unhealthy chemicals. "
+    messageWhenChosen: Correct! Your health and safety come first! Always open windows
+      and doors when painting or spraying something with a strong smell.
+    correctAnswer: 1

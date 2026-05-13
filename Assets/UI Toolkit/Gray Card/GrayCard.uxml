@@ -1,0 +1,11 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Gray%20Card/GrayCard.uss?fileID=7433441132597879392&amp;guid=feb5c89af8001fdba8e6c408b0964ab7&amp;type=3#GrayCard"/>
+    <ui:VisualElement name="overlay" class="overlay" style="display: none;">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="card_box" class="popup-card">
+            <ui:Label text="Air Pollution Alert!" name="card_title" class="card-title"/>
+            <ui:Label text="You are near a pollution source" name="card_text" class="card-text"/>
+            <ui:Button text="Okay!" name="close_button" class="close-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,34 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/In%20Game/InGameUI.uss?fileID=7433441132597879392&amp;guid=fd3a911a2362119b7a35fbc113314460&amp;type=3#InGameUI"/>
+    <ui:VisualElement class="ui-container">
+        <ui:VisualElement class="score-container">
+            <ui:VisualElement class="score-box score-1" name="score-1">
+                <ui:VisualElement class="score-content">
+                    <ui:VisualElement name="progress_bar" class="progress-bar"/>
+                    <ui:Label text="AQHI: 0" name="score_label" class="score-label"/>
+                </ui:VisualElement>
+                <ui:Image name="character_avatar" class="character-avatar"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="score-box score-2" name="score-2" style="display: none;">
+                <ui:VisualElement class="score-content">
+                    <ui:VisualElement name="progress_bar" class="progress-bar"/>
+                    <ui:Label text="P2 AQHI: 0" name="score_label" class="score-label"/>
+                </ui:VisualElement>
+                <ui:Image name="character_avatar" class="character-avatar"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="score-box score-3" name="score-3" style="display: none;">
+                <ui:VisualElement class="score-content">
+                    <ui:VisualElement name="progress_bar" class="progress-bar"/>
+                    <ui:Label text="P3 AQHI: 0" name="score_label" class="score-label"/>
+                </ui:VisualElement>
+                <ui:Image name="character_avatar" class="character-avatar"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="dice_element" class="dice-element">
+            <ui:Button text="Roll Dice" name="dice_button" class="dice-button"/>
+        </ui:VisualElement>
+        <ui:Button name="settings_button" class="settings-button">
+            <ui:VisualElement class="settings-icon"/>
+        </ui:Button>
+    </ui:VisualElement>
+</ui:UXML>

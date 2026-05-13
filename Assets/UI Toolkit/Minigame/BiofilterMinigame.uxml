@@ -1,0 +1,69 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/CleanEnergyStyleSheet.uss?fileID=7433441132597879392&amp;guid=b1f3cf3549cf04a34b165bc633425672&amp;type=3#CleanEnergyStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/BiofilterMinigame.uss" />
+
+    <ui:VisualElement name="root_element" class="minigame-overlay ce-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop" />
+
+        <ui:VisualElement name="minigame_card" class="minigame-card ce-card">
+            <ui:Label text="Build the Biofilter!" name="minigame_title" class="minigame-title ce-title" />
+            <ui:Label text="" name="minigame_description" class="minigame-description ce-description" />
+
+            <ui:VisualElement name="intro_container" class="ce-intro-container">
+                <ui:VisualElement class="ce-intro-content">
+                    <ui:Label text="Pick filter parts in the right order to help clean the water." class="ce-result-copy ce-intro-copy" />
+                </ui:VisualElement>
+                <ui:VisualElement class="ce-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button ce-begin-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="bf-gameplay-container">
+                <ui:VisualElement class="bf-hud-row">
+                    <ui:Label text="Time: 20s" name="timer_label" class="bf-hud-chip" />
+                    <ui:Label text="Steps: 0 / 4" name="progress_label" class="bf-hud-chip" />
+                    <ui:Label text="Water: Dirty" name="water_quality_label" class="bf-hud-chip" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="bf-water-card">
+                    <ui:Label text="💧" class="bf-water-emoji" />
+                    <ui:Label text="Selected Layers" class="bf-selected-title" />
+                    <ui:Label text="None yet" name="selected_layers_label" class="bf-selected-layers" />
+                    <ui:Label text="Build the filter from bottom to top." name="feedback_label" class="bf-feedback-label" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="bf-layers-grid">
+                    <ui:VisualElement class="bf-layers-row">
+                        <ui:Button text="🪨 Gravel" name="gravel_button" class="bf-button bf-layer-button" />
+                        <ui:Button text="🏖 Sand" name="sand_button" class="bf-button bf-layer-button" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="bf-layers-row">
+                        <ui:Button text="⬛ Charcoal" name="charcoal_button" class="bf-button bf-layer-button" />
+                        <ui:Button text="🌿 Plants" name="plants_button" class="bf-button bf-layer-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="bf-run-row">
+                    <ui:Button text="Run Filter" name="run_filter_button" class="bf-button bf-primary-button bf-run-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="ce-result-container">
+                <ui:Label text="" name="result_headline" class="ce-result-headline" />
+                <ui:Label text="" name="result_label" class="ce-result-label" />
+                <ui:Label text="" name="result_fact" class="ce-result-copy ce-fact" />
+                <ui:Label text="" name="result_score" class="ce-score" />
+                <ui:VisualElement class="ce-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button ce-secondary-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: LostForestTrap
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: The Lost Forest Trap
+  image: {fileID: 21300000, guid: 81a8575930cc7ff4893e54076617bce1, type: 3}
+  statement: 
+  question: "Forests act as \u201Ccarbon sinks,\u201D soaking up CO2. When a forest
+    is cut down or burned for farmland, what happens to all that stored carbon?"
+  answers:
+  - answer: It disappears.
+    messageWhenChosen: Oops! Any time we burn something living, like a plant, or
+      something that was once alive, like fossil fuels, it releases CO2 into the
+      air. This CO2 will stay in the air forever, unless more trees are planted to
+      soak it up!
+    correctAnswer: 0
+  - answer: Birds eat it all.
+    messageWhenChosen: Oops! Any time we burn something living, like a plant, or
+      something that was once alive, like fossil fuels, it releases CO2 into the
+      air. This CO2 will stay in the air forever, unless more trees are planted to
+      soak it up!
+    correctAnswer: 0
+  - answer: It fills the air.
+    messageWhenChosen: 'Correct! Any time we burn something living, like a plant,
+      or something that was once alive, like fossil fuels, it releases CO2 into the
+      air. This CO2 will stay in the air forever, unless more trees are planted to
+      soak it up! '
+    correctAnswer: 1

@@ -1,0 +1,344 @@
+/* MG.02: Plant Trees minigame styles */
+
+.pt-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    -unity-font-definition: resource("Fonts/CherryBombOne");
+}
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.pt-card {
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    max-height: 600px;
+    background-color: rgb(27, 114, 32);
+    border-width: 4px;
+    border-radius: 12px;
+    border-color: white;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white;
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+}
+
+.pt-card-glow {
+    background-color: rgb(27, 114, 32);
+}
+
+.pt-title {
+    font-size: 36px;
+    align-self: center;
+    margin-top: -10px;
+    -unity-text-align: middle-center;
+}
+
+.pt-description {
+    white-space: normal;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 760px;
+    padding-left: 72px;
+    padding-right: 72px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(240, 240, 240);
+    -unity-text-align: upper-left;
+}
+
+.pt-intro-container,
+.pt-game-container,
+.pt-result-container,
+.pt-rules-popup {
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.pt-intro-container,
+.pt-result-container,
+.pt-rules-popup {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.pt-intro-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.pt-intro-copy {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 700px;
+    margin-bottom: 0;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.pt-rules-copy {
+    font-size: 17px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    margin-bottom: 6px;
+    max-width: 560px;
+}
+
+.pt-game-container {
+    width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.pt-tap-area {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-color: rgb(56, 142, 60);
+    border-radius: 18px;
+    margin-bottom: 16px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.pt-garden-ground {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.06);
+    background-image: resource("PlantTreesMinigame/background_trees");
+    -unity-background-scale-mode: stretch-to-fill;
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+.pt-tap-hint {
+    font-size: 20px;
+    color: white;
+    -unity-text-align: middle-left;
+    -unity-text-outline-width: 2px;
+    -unity-text-outline-color: black;
+    position: absolute;
+    top: 16px;
+    left: 20px;
+    right: auto;
+}
+
+.pt-plant {
+    position: absolute;
+    width: 108px;
+    height: 152px;
+    align-items: center;
+    justify-content: flex-end;
+    transition-property: scale, opacity, background-color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+    transform-origin: center bottom;
+    background-image: resource("PlantTreesMinigame/pine_tree_minigame");
+    -unity-background-scale-mode: scale-to-fit;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    background-repeat: no-repeat;
+}
+
+.pt-plant-top {
+    display: none;
+}
+
+.pt-plant-base {
+    display: none;
+}
+
+.pt-seedling {
+    width: 78px;
+    height: 112px;
+    opacity: 1;
+}
+
+.pt-tree-placeholder {
+    width: 118px;
+    height: 168px;
+    opacity: 1;
+}
+
+.pt-click-glow {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.55);
+    transition-property: opacity;
+    transition-duration: 0.28s;
+    transition-timing-function: ease-out;
+}
+
+.pt-click-glow-out {
+    opacity: 0;
+}
+
+.pt-bottom-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: auto;
+}
+
+.pt-timer,
+.pt-trees-count {
+    font-size: 28px;
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+}
+
+.pt-result-container,
+.pt-rules-popup {
+    display: none;
+}
+
+.pt-result-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.pt-result-headline {
+    align-self: center;
+    font-size: 28px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.pt-result-label,
+.pt-rules-copy {
+    align-self: center;
+    font-size: 17px;
+    white-space: normal;
+    max-width: 560px;
+    -unity-text-align: middle-center;
+    margin-bottom: 6px;
+}
+
+.pt-result-score {
+    align-self: center;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.pt-end-actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.pt-button {
+    height: 50px;
+    padding: 14px 24px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: white;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+.pt-primary-button {
+    min-width: 220px;
+    background-color: rgb(76, 175, 80);
+    color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#begin_button.pt-primary-button {
+    min-width: 280px;
+}
+
+.pt-secondary-button {
+    min-width: 180px;
+    background-color: rgb(125, 169, 119);
+    color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#exit_button.pt-secondary-button {
+    min-width: 200px;
+}
+
+.pt-exit-button {
+    min-width: 220px;
+    background-color: rgb(158, 158, 158);
+    color: white;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.pt-rules-popup {
+    width: 90%;
+    max-width: 620px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+    padding-left: 24px;
+    border-radius: 18px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(38, 93, 44, 0.96);
+}
+
+.pt-rules-popup > .pt-result-headline {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.pt-rules-popup > .pt-rules-copy {
+    width: 100%;
+    align-self: center;
+    max-width: 500px;
+    -unity-text-align: upper-left;
+    margin-bottom: 10px;
+}

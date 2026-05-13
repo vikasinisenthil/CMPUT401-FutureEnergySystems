@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: SweaterSquad
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: Sweater Squad
+  image: {fileID: 21300000, guid: fcb09013366836a44bc96c8961e87f61, type: 3}
+  statement: 
+  question: "It\u2019s a cold day. How can you keep yourself warm while helping the
+    Earth?"
+  answers:
+  - answer: Put on a sweater.
+    messageWhenChosen: 'Correct! To heat your house, we still often burn fossil fuels!
+      Putting on a sweater is a more Earth-friendly way to stay warm. '
+    correctAnswer: 1
+  - answer: Crank up the heat.
+    messageWhenChosen: Oops! To heat your house, we still often burn fossil fuels!
+      Putting on a sweater is a more Earth-friendly way to stay warm.
+    correctAnswer: 0

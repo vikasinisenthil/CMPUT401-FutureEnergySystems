@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: IndoorFortress
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: Indoor Fortress
+  image: {fileID: 21300000, guid: b9f66abc0541b684c8dfe0302e858582, type: 3}
+  statement: 
+  question: 'When wildfire smoke arrives, what is the best thing to do for asthma? '
+  answers:
+  - answer: Go for a walk outside
+    messageWhenChosen: Oops! When the air is grumpy, stay inside!
+    correctAnswer: 0
+  - answer: Stay inside
+    messageWhenChosen: Correct! When the air is grumpy, stay inside!
+    correctAnswer: 1
+  - answer: 'Drink water. '
+    messageWhenChosen: 'Oops! When the air is grumpy, stay inside! '
+    correctAnswer: 0

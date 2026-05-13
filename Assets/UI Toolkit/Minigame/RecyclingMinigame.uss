@@ -1,0 +1,149 @@
+.rc-card {
+    background-color: rgb(27, 114, 32);
+}
+
+.rc-intro-actions {
+    justify-content: center;
+    align-items: center;
+}
+
+.rc-intro-actions > .transport-begin-button {
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.rc-gameplay-container {
+    width: 100%;
+    flex-grow: 1;
+    display: none;
+}
+
+.rc-play-area {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: visible;
+    position: relative;
+}
+
+.rc-bin-column {
+    width: 30%;
+    z-index: 1;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rc-center-column {
+    width: 34%;
+    justify-content: center;
+    align-items: center;
+    overflow: visible;
+}
+
+.rc-trash-layer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.rc-center-hint {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.rc-trash-card {
+    width: 200px;
+    height: 130px;
+    position: relative;
+    border-width: 0;
+    border-color: transparent;
+    border-radius: 0;
+    background-color: transparent;
+    font-size: 1px;
+    color: rgba(255, 255, 255, 0);
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+    background-repeat: no-repeat;
+    unity-background-scale-mode: scale-to-fit;
+    background-position-x: center;
+    background-position-y: center;
+}
+
+.rc-feedback {
+    font-size: 18px;
+    color: white;
+    min-height: 26px;
+    max-width: 380px;
+    -unity-text-align: middle-center;
+    margin-left: 12px;
+    margin-right: 12px;
+}
+
+.rc-bin {
+    width: 200px;
+    height: 130px;
+    border-width: 0;
+    border-color: transparent;
+    border-radius: 0;
+    background-color: transparent;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    unity-background-scale-mode: scale-to-fit;
+    background-position-x: center;
+    background-position-y: center;
+    position: relative;
+}
+
+.rc-bin-label {
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 35px;
+    justify-content: center;
+    -unity-text-align: middle-center;
+    font-size: 12px;
+    color: rgb(235, 245, 235);
+    unity-font-style: bold;
+    unity-text-outline-width: 1px;
+    unity-text-outline-color: rgba(0, 0, 0, 0.35);
+    pointer-events: none;
+}
+
+#bin_left_top .rc-bin-label {
+    bottom: 35px;
+}
+
+#bin_left_bottom .rc-bin-label {
+    bottom: 34px;
+}
+
+#bin_right_top .rc-bin-label {
+    bottom: 34px;
+}
+
+#bin_right_bottom .rc-bin-label {
+    bottom: 34px;
+}
+
+#bin_left_top {
+    background-image: resource("RecyclingMinigame/paper_bin");
+}
+
+#bin_left_bottom {
+    background-image: resource("RecyclingMinigame/compost_bin");
+}
+
+#bin_right_top {
+    background-image: resource("RecyclingMinigame/plastic_bin");
+}
+
+#bin_right_bottom {
+    background-image: resource("RecyclingMinigame/metal_bin");
+}

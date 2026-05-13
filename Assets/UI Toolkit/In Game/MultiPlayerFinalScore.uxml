@@ -1,0 +1,33 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/In%20Game/FinalScore.uss?fileID=7433441132597879392&amp;guid=b909250cc9d2c6648be4bf2a4d825c89&amp;type=3#FinalScore"/>
+    <ui:VisualElement name="overlay" class="overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="popup" class="popup-card mp-results-card">
+
+            <ui:VisualElement name="winner_section" class="winner-section">
+                <ui:Label name="winner_label" text="🏆 WINNER" class="winner-label"/>
+                <ui:VisualElement name="winner_container" class="players-container">
+                    <!-- Winner players will be added here dynamically -->
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Second Place Section -->
+            <ui:VisualElement name="second_section" class="placement-section">
+                <ui:Label name="second_label" text="🥈 2nd Place" class="placement-label"/>
+                <ui:VisualElement name="second_container" class="players-container">
+                    <!-- Second place players will be added here dynamically -->
+                </ui:VisualElement>
+            </ui:VisualElement>
+            
+            <!-- Third Place Section -->
+            <ui:VisualElement name="third_section" class="placement-section">
+                <ui:Label name="third_label" text="🥉 3rd Place" class="placement-label"/>
+                <ui:VisualElement name="third_container" class="players-container">
+                    <!-- Third place players will be added here dynamically -->
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:Button name="close_button" text="Close" class="close-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

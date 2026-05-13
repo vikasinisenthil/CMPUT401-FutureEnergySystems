@@ -1,0 +1,27 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/CharacterInfo.uss"/>
+    <ui:VisualElement class="info-popup" name="info_popup">
+        <ui:VisualElement class="info-card">
+            <ui:VisualElement class="card-content">
+                <!-- Left side: Title, subtitle, and image -->
+                <ui:VisualElement class="left-section">
+                    <ui:Label name="info_name" class="info-name" text="Character Name"/>
+                    <ui:Label name="info-subtitle" class="info-subtitle" text="Quote or tagline"/>
+                    <ui:Image name="info_image" class="info-image"/>
+                </ui:VisualElement>
+                
+                <!-- Right side: All text content -->
+                <ui:VisualElement class="right-section">
+                    <ui:ScrollView name="info_scroll" class="info-scroll">
+                        <ui:Label name="info_description" class="info-description"/>
+                        <ui:Label name="info_abilities_title" class="info-abilities-title" text="Abilities"/>
+                        <ui:Label name="info_abilities" class="info-abilities"/>
+                        <ui:Label name="info_best_for_title" class="info-best-title" text="Best for"/>
+                        <ui:Label name="info_best_for" class="info-best"/>
+                    </ui:ScrollView>
+                    <ui:Button name="close_info" text="Close" class="menu-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

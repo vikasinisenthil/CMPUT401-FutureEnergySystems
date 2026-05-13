@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a214492914384e94bc4548410838b, type: 3}
+  m_Name: BikePower
+  m_EditorClassIdentifier: GameScripts::BlueFactCard
+  cardName: Bike Power!
+  image: {fileID: 21300000, guid: f6324712b22d9574c82bf2717cb38bb3, type: 3}
+  fact: "Bikes don\u2019t need gas. Riding a bike makes zero tailpipe smoke\u2014plus
+    it\u2019s fun!"

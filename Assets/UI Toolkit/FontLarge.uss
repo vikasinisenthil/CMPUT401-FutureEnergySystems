@@ -1,0 +1,832 @@
+.large-text Label {
+    font-size: 22px;
+}
+
+.large-text Button {
+    font-size: 22px;
+}
+
+.large-text Toggle {
+    font-size: 22px;
+}
+
+.large-text Slider {
+    font-size: 20px;
+}
+
+/* Main menu */
+.large-text .game-title {
+    font-size: 104px;
+}
+
+.large-text .menu-button,
+.large-text .menu-button > .unity-button__text {
+    font-size: 30px;
+}
+
+.large-text .menu-button {
+    width: 330px;
+    height: 68px;
+}
+
+.large-text .credits-nav-button,
+.large-text .credits-nav-button > .unity-button__text {
+    font-size: 20px;
+}
+
+.large-text .credits-nav-button {
+    width: 155px;
+    height: 48px;
+    left: 35px;
+    top: 28px;
+}
+
+/* Character select */
+.large-text .screen-title {
+    font-size: 58px;
+    margin-bottom: -12px;
+}
+
+.large-text .screen-subtitle {
+    font-size: 28px;
+    margin-bottom: 14px;
+}
+
+.large-text .characters-row {
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+
+.large-text .character-card {
+    min-width: 262px;
+    min-height: 380px;
+    padding: 14px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.large-text .character-card:hover {
+    scale: 1.0;
+}
+
+.large-text .remi-card:hover,
+.large-text .reg-card:hover,
+.large-text .tommy-card:hover {
+    border-width: 5px;
+}
+
+.large-text .character-name {
+    font-size: 42px;
+}
+
+.large-text .character-subtitle {
+    font-size: 22px;
+    margin-top: -6px;
+}
+
+.large-text .character-ability {
+    font-size: 21px;
+    margin-bottom: -8px;
+}
+
+.large-text .select-button,
+.large-text .select-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .select-button {
+    height: 50px;
+}
+
+.large-text .screen-footer {
+    font-size: 24px;
+    bottom: 4px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* keep this close to normal so it does not overshoot */
+.large-text .screen-back-button {
+    width: 84px;
+    height: 84px;
+}
+
+/* Character info */
+.large-text .info-name {
+    font-size: 40px;
+}
+
+.large-text .info-subtitle {
+    font-size: 20px;
+}
+
+.large-text .info-description,
+.large-text .info-abilities,
+.large-text .info-best {
+    font-size: 20px;
+}
+
+.large-text .info-abilities-title,
+.large-text .info-best-title {
+    font-size: 24px;
+}
+
+.large-text .info-card {
+    width: 86%;
+    height: 90%;
+}
+
+/* Difficulty popup */
+.large-text .difficulty-title {
+    font-size: 38px;
+}
+
+.large-text .difficulty-button,
+.large-text .difficulty-button > .unity-button__text {
+    font-size: 30px;
+}
+
+.large-text .difficulty-button {
+    min-height: 72px;
+}
+
+.large-text .difficulty-card {
+    width: 500px;
+}
+
+.large-text .difficulty-back-button,
+.large-text .difficulty-back-button > .unity-button__text {
+    font-size: 20px;
+}
+
+.large-text .difficulty-back-button {
+    width: 180px;
+    height: 48px;
+}
+
+/* In-game HUD */
+.large-text .score-label {
+    font-size: 28px;
+}
+
+.large-text .dice-button {
+    width: 112px;
+    height: 112px;
+}
+
+.large-text .dice-text-mode,
+.large-text .dice-text-mode > .unity-button__text {
+    font-size: 24px;
+}
+
+.large-text .dice-number-mode,
+.large-text .dice-number-mode > .unity-button__text {
+    font-size: 42px;
+}
+
+.large-text .settings-button {
+    width: 60px;
+    height: 60px;
+}
+
+/* Settings */
+.large-text .settings-title {
+    font-size: 38px;
+}
+
+.large-text .settings-section {
+    font-size: 26px;
+}
+
+.large-text .settings-toggle {
+    min-height: 52px;
+}
+
+.large-text .settings-close,
+.large-text .settings-close > .unity-button__text {
+    font-size: 26px;
+}
+
+.large-text .settings-close {
+    min-width: 200px;
+    min-height: 52px;
+}
+
+.large-text .settings-card {
+    width: 82%;
+    height: 82%;
+    max-width: 900px;
+    max-height: 680px;
+}
+
+/* Credits */
+.large-text .credits-card {
+    width: 82%;
+    height: 82%;
+    max-width: 900px;
+    max-height: 680px;
+    padding: 24px;
+}
+
+.large-text .credits-title {
+    font-size: 40px;
+    margin-bottom: 12px;
+}
+
+.large-text .credits-scroll {
+    margin-bottom: 16px;
+}
+
+.large-text .credits-content {
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 24px;
+}
+
+.large-text .credits-game-title {
+    font-size: 34px;
+    margin-top: 10px;
+    margin-bottom: 6px;
+}
+
+.large-text .credits-game-subtitle {
+    font-size: 24px;
+    margin-bottom: 22px;
+    max-width: 720px;
+}
+
+.large-text .credits-section {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-size: 30px;
+}
+
+.large-text .credits-line {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    max-width: 720px;
+}
+
+.large-text .credits-close,
+.large-text .credits-close > .unity-button__text {
+    font-size: 26px;
+}
+
+.large-text .credits-close {
+    min-width: 220px;
+    min-height: 56px;
+}
+
+/* Blue cards */
+.large-text .popup-card {
+    width: 92%;
+    height: 90%;
+    max-width: 1150px;
+    max-height: 90%;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.large-text .header {
+    min-height: 56px;
+    margin-top: -2px;
+    margin-bottom: 4px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+.large-text .card-name {
+    font-size: 34px;
+}
+
+.large-text .card-statement,
+.large-text #card_question {
+    font-size: 26px;
+}
+
+.large-text #card_image {
+    max-height: 150px;
+    flex-shrink: 0;
+}
+
+.large-text .body,
+.large-text .mcq-content-scroll {
+    padding-bottom: 0;
+}
+
+.large-text .mcq-content-scroll {
+    min-height: 220px;
+}
+
+.large-text .answer-option,
+.large-text .answer-option > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .answer-option {
+    min-height: 50px;
+    margin-bottom: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.large-text .answers-row {
+    justify-content: center;
+    align-items: stretch;
+    margin-top: 6px;
+}
+
+.large-text .answers-row.answers-two {
+    flex-direction: column;
+}
+
+.large-text .answers-row.answers-two .answer-option {
+    width: 70%;
+    align-self: center;
+}
+
+.large-text .answers-row.answers-many {
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.large-text .answers-row.answers-many .answer-option {
+    width: 47%;
+}
+
+.large-text .feedback-result {
+    font-size: 34px;
+}
+
+.large-text .feedback-reason {
+    font-size: 24px;
+}
+
+.large-text .mcq-feedback {
+    font-size: 20px;
+}
+
+.large-text .sensor-button,
+.large-text .speaker-button {
+    min-height: 46px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.large-text .sensor-text,
+.large-text .speaker-text {
+    font-size: 18px;
+}
+
+/* Minigames */
+
+/* Generic shared minigame layout */
+.large-text .minigame-card {
+    width: 86%;
+    height: 86%;
+    max-width: 950px;
+    max-height: 720px;
+}
+
+.large-text .minigame-title {
+    font-size: 42px;
+}
+
+.large-text .minigame-description {
+    font-size: 24px;
+    max-width: 700px;
+}
+
+.large-text .minigame-result-label {
+    font-size: 24px;
+}
+
+.large-text .minigame-button,
+.large-text .minigame-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .minigame-button {
+    min-width: 220px;
+    min-height: 54px;
+}
+
+/* Public Transportation */
+.large-text .transport-card {
+    width: 88%;
+    height: 88%;
+    max-width: 980px;
+    max-height: 740px;
+}
+
+.large-text .transport-card > .minigame-description,
+.large-text .transport-intro-copy {
+    font-size: 22px;
+    line-height: 32px;
+    max-width: 760px;
+}
+
+.large-text .transport-lane-row-label {
+    font-size: 26px;
+}
+
+.large-text .transport-timer {
+    font-size: 28px;
+}
+
+.large-text .transport-result-headline {
+    font-size: 30px;
+}
+
+.large-text .transport-result-copy {
+    font-size: 20px;
+    max-width: 640px;
+}
+
+.large-text .transport-score {
+    font-size: 24px;
+}
+
+.large-text .transport-end-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.large-text .transport-begin-button,
+.large-text .transport-begin-button > .unity-button__text,
+.large-text .transport-next-button,
+.large-text .transport-next-button > .unity-button__text,
+.large-text .transport-secondary-button,
+.large-text .transport-secondary-button > .unity-button__text,
+.large-text .transport-exit-button,
+.large-text .transport-exit-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .transport-begin-button {
+    min-width: 240px;
+}
+
+.large-text .transport-next-button {
+    min-width: 190px;
+}
+
+.large-text .transport-secondary-button {
+    min-width: 170px;
+}
+
+.large-text .transport-exit-button {
+    min-width: 190px;
+}
+
+/* Tree Planter */
+.large-text .pt-card {
+    width: 86%;
+    height: 86%;
+    max-width: 940px;
+    max-height: 700px;
+}
+
+.large-text .pt-title {
+    font-size: 42px;
+}
+
+.large-text .pt-description,
+.large-text .pt-intro-copy {
+    font-size: 24px;
+    line-height: 34px;
+    max-width: 760px;
+}
+
+.large-text .pt-rules-copy,
+.large-text .pt-result-label {
+    font-size: 20px;
+    max-width: 620px;
+}
+
+.large-text .pt-timer,
+.large-text .pt-result-headline {
+    font-size: 30px;
+}
+
+.large-text .pt-result-score {
+    font-size: 24px;
+}
+
+.large-text .pt-end-actions {
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.large-text .pt-button,
+.large-text .pt-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .pt-button {
+    min-height: 52px;
+}
+
+.large-text .pt-primary-button {
+    min-width: 210px;
+}
+
+.large-text .pt-secondary-button {
+    min-width: 170px;
+}
+
+.large-text .pt-exit-button {
+    min-width: 210px;
+}
+
+/* Clean Energy */
+.large-text .ce-card {
+    width: 86%;
+    height: 86%;
+    max-width: 920px;
+    max-height: 660px;
+}
+
+.large-text .ce-title {
+    font-size: 42px;
+}
+
+.large-text .ce-description {
+    font-size: 22px;
+    max-width: 640px;
+}
+
+.large-text .ce-choice {
+    max-width: 220px;
+    height: 180px;
+}
+
+.large-text .ce-choice-label {
+    font-size: 24px;
+}
+
+.large-text .ce-result-label {
+    font-size: 22px;
+    max-width: 620px;
+}
+
+.large-text .ce-exit-button,
+.large-text .ce-exit-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .ce-exit-button {
+    min-width: 180px;
+    height: 52px;
+}
+
+/* Ride a Bike */
+.large-text .rb-card {
+    width: 86%;
+    height: 86%;
+    max-width: 940px;
+    max-height: 700px;
+}
+
+.large-text .rb-title {
+    font-size: 42px;
+}
+
+.large-text .rb-flag-label {
+    font-size: 26px;
+}
+
+.large-text .rb-result-label {
+    font-size: 24px;
+    max-width: 620px;
+}
+
+.large-text .rb-timer,
+.large-text .rb-distance {
+    font-size: 32px;
+}
+
+.large-text .rb-speed {
+    font-size: 26px;
+}
+
+.large-text .rb-exit-button,
+.large-text .rb-exit-button > .unity-button__text {
+    font-size: 22px;
+}
+
+.large-text .rb-exit-button {
+    min-width: 210px;
+    height: 54px;
+}
+
+/* Save Energy */
+.large-text .se-card {
+    width: 86%;
+    height: 86%;
+    max-width: 930px;
+    max-height: 720px;
+}
+
+.large-text .se-title {
+    font-size: 38px;
+}
+
+.large-text .se-description {
+    font-size: 18px;
+    max-width: 620px;
+}
+
+.large-text .se-timer,
+.large-text .se-points {
+    font-size: 26px;
+}
+
+.large-text .se-room-label {
+    font-size: 16px;
+}
+
+.large-text .se-result-label {
+    font-size: 24px;
+    max-width: 600px;
+}
+
+/* Stay Inside / Clean Air */
+.large-text .sica-card {
+    width: 86%;
+    height: 86%;
+    max-width: 900px;
+    max-height: 760px;
+}
+
+.large-text .sica-title {
+    font-size: 38px;
+}
+
+.large-text .sica-description {
+    font-size: 20px;
+    max-width: 620px;
+}
+
+.large-text .sica-progress-label {
+    font-size: 20px;
+}
+
+.large-text .sica-result-label {
+    font-size: 18px;
+    max-width: 600px;
+}
+
+.large-text .sica-timer {
+    font-size: 30px;
+}
+
+.large-text .sica-exit-button,
+.large-text .sica-exit-button > .unity-button__text {
+    font-size: 20px;
+}
+
+.large-text .sica-exit-button {
+    min-width: 190px;
+    height: 52px;
+}
+
+/* Use a Mask */
+.large-text .um-card {
+    width: 84%;
+    height: 84%;
+    max-width: 900px;
+    max-height: 690px;
+}
+
+.large-text .um-title {
+    font-size: 42px;
+}
+
+.large-text .um-description {
+    font-size: 20px;
+    max-width: 720px;
+}
+
+.large-text .um-attempts {
+    font-size: 24px;
+}
+
+.large-text .um-result-label {
+    font-size: 20px;
+    min-height: 30px;
+}
+
+.large-text .um-mask-text {
+    font-size: 20px;
+}
+
+/* Final score / misc */
+.large-text .title {
+    font-size: 36px;
+}
+
+.large-text .final-message {
+    font-size: 24px;
+}
+
+.large-text .summary {
+    font-size: 24px;
+}
+
+.large-text .mp-results-card {
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    max-height: 600px;
+    padding: 20px;
+}
+
+.large-text .winner-label {
+    font-size: 36px;
+}
+
+.large-text .placement-label {
+    font-size: 30px;
+}
+
+.large-text .player-name {
+    font-size: 28px;
+}
+
+.large-text .player-score {
+    font-size: 26px;
+}
+
+.large-text .close-button,
+.large-text .close-button > .unity-button__text {
+    font-size: 24px;
+}
+
+.large-text .close-button {
+    min-height: 52px;
+}
+
+/* Gray card */
+.large-text .card-title {
+    font-size: 42px;
+}
+
+.large-text .card-text {
+    font-size: 28px;
+}
+
+/* Submit buttons */
+.large-text .submit-button,
+.large-text .submit-button > .unity-button__text {
+    font-size: 20px;
+}
+
+/* How to Play */
+.large-text .htp-card {
+    width: 90%;
+    height: 90%;
+    max-width: 1000px;
+    max-height: 780px;
+}
+
+.large-text .htp-title {
+    font-size: 46px;
+}
+
+.large-text .htp-section-title {
+    font-size: 30px;
+}
+
+.large-text .htp-section-body {
+    font-size: 22px;
+}
+
+.large-text .htp-square-label {
+    font-size: 24px;
+}
+
+.large-text .htp-square-desc {
+    font-size: 18px;
+}
+
+.large-text .htp-hero-name {
+    font-size: 22px;
+}
+
+.large-text .htp-hero-desc {
+    font-size: 17px;
+}
+
+.large-text .htp-close-button,
+.large-text .htp-close-button > .unity-button__text {
+    font-size: 28px;
+}
+
+.large-text .htp-close-button {
+    min-width: 240px;
+    min-height: 58px;
+}

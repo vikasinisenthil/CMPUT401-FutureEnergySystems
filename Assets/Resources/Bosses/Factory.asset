@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 47fd7bff30cbf44c6938a1de536d5b50, type: 3}
+  m_Name: Factory
+  m_EditorClassIdentifier: GameScripts::Boss
+  bossName: The Factory
+  bossImage: {fileID: 21300000, guid: 7c4021d69c8302e419fc599291716a23, type: 3}
+  questions:
+  - {fileID: 11400000, guid: c4a12d14158c8ae4f87cee0ba117e171, type: 2}
+  - {fileID: 11400000, guid: 12556dc0cf532b9d1b8225b12fe1e246, type: 2}
+  - {fileID: 11400000, guid: 826b6187174bcd1c6919bcd26d2294d7, type: 2}
+  - {fileID: 11400000, guid: ded45d1bc2e18ebae8cb38abdadd91da, type: 2}
+  - {fileID: 11400000, guid: fc3d5be44fb277443bbb03ec4b57a2b5, type: 2}
+  - {fileID: 11400000, guid: 626d5dcd4270bf201855df2784057c15, type: 2}
+  - {fileID: 11400000, guid: 34cc64ae07b3748c19151610c8913b67, type: 2}
+  - {fileID: 11400000, guid: e0e6c4480f89f42f686ec53617264f39, type: 2}
+  - {fileID: 11400000, guid: 73b5761636a26b0e1b06a3bbc9da83fa, type: 2}

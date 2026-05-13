@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: ReciperOfAir
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: The Recipe of Air
+  image: {fileID: 21300000, guid: f4bf734fc4892cc42935fa0ec1c468cb, type: 3}
+  statement: 
+  question: Which gas makes up MOST of our air?
+  answers:
+  - answer: Oxygen
+    messageWhenChosen: 'Oops! Air is mostly Nitrogen (78%). Oxygen, which we need
+      to breathe, is only about 21% of the air. The rest is tiny traces of other
+      gases. '
+    correctAnswer: 0
+  - answer: Nitrogen
+    messageWhenChosen: 'Correct! Air is mostly Nitrogen (78%). Oxygen, which we need
+      to breathe, is only about 21% of the air. The rest is tiny traces of other
+      gases. '
+    correctAnswer: 1

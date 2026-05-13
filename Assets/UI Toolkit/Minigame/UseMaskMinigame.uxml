@@ -1,0 +1,57 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/PublicTransportationMinigame.uss?fileID=7433441132597879392&amp;guid=6b1b71f0b1ae48efaf1749e95dbd0eb7&amp;type=3#PublicTransportationMinigame"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/UseMaskStyleSheet.uss?fileID=7433441132597879392&amp;guid=73b142301170c044d9a24cb8dcbab3a7&amp;type=3#UseMaskStyleSheet"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay um-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop" style="top: -1px; bottom: 3px; right: 1px; left: 0;"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card transport-card um-card">
+            <ui:Label text="Use a Mask" name="minigame_title" class="minigame-title um-title"/>
+            <ui:Label text="" name="minigame_description" class="minigame-description um-description"/>
+            <ui:VisualElement name="intro_container" class="transport-intro-container um-intro-container" style="display: none;">
+                <ui:VisualElement class="transport-intro-content um-intro-content">
+                    <ui:Label text="Pick the best mask and drag it to the face." class="transport-result-copy um-result-copy transport-intro-copy um-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="transport-intro-actions um-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button transport-begin-button um-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="gameplay_container" class="um-gameplay-container" style="display: flex;">
+                <ui:Label text="" name="round_result_label" class="um-round-result-label"/>
+                <ui:VisualElement name="play_area" class="um-play-area">
+                    <ui:VisualElement name="face_drop_zone" class="um-face-zone" style="background-image: resource(&quot;GreenCards/CardImages/REMI.Closeup&quot;); top: 5px; left: 374px;">
+                        <ui:Label text="FACE" class="um-face-label"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mask_wrong_2" class="um-mask um-mask-wrong" style="background-image: resource(&quot;GreenCards/CardImages/12&quot;); height: 127px; width: 183px; right: -9px; top: 132px;">
+                        <ui:Label text="Party Mask" class="um-mask-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mask_correct" class="um-mask um-mask-correct" style="background-image: resource(&quot;GreenCards/CardImages/10&quot;); height: 73px; top: 175px; left: 23px;">
+                        <ui:Label text="Protective Mask" class="um-mask-text"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="mask_wrong_1" class="um-mask um-mask-wrong" style="background-image: resource(&quot;GreenCards/CardImages/11&quot;); top: 184px; left: 317px; height: 56px;">
+                        <ui:Label text="Sleep Mask" class="um-mask-text"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom_bar" class="transport-bottom-bar um-bottom-bar">
+                    <ui:Label text="Time: 8s" name="timer_label" class="transport-timer um-timer"/>
+                    <ui:Label text="Attempts Left: 3" name="attempts_label" class="transport-lane-count um-attempts"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="result_container" class="transport-result-container um-result-container">
+                <ui:Label text="" name="result_headline" class="transport-result-headline um-result-headline"/>
+                <ui:Label text="" name="result_label" class="transport-result-copy um-result-label"/>
+                <ui:Label text="" name="result_fact" class="transport-result-copy transport-fact um-result-copy um-fact"/>
+                <ui:Label text="" name="result_score" class="transport-score um-score"/>
+                <ui:VisualElement class="transport-end-actions um-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button transport-secondary-button um-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="rules_popup" class="transport-rules-popup um-rules-popup">
+                <ui:Label text="Rules" class="transport-result-headline um-result-headline"/>
+                <ui:Label text="1. Drag one mask to the face." class="transport-result-copy um-result-copy"/>
+                <ui:Label text="2. Pick the safe mask." class="transport-result-copy um-result-copy"/>
+                <ui:Label text="3. Try before your turns run out." class="transport-result-copy um-result-copy"/>
+                <ui:Button text="Back" name="back_button" class="minigame-button transport-secondary-button um-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

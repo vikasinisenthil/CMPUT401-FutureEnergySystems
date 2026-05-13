@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly House
+* source:	https://sketchfab.com/3d-models/low-poly-house-a838c62fbf804d79853faf0cfeb6072e
+* author:	crunched3d (https://sketchfab.com/crunched3d)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly House" (https://sketchfab.com/3d-models/low-poly-house-a838c62fbf804d79853faf0cfeb6072e) by crunched3d (https://sketchfab.com/crunched3d) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

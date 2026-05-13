@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<test-run id="2" testcasecount="4" result="Failed(Child)" total="4" passed="0" failed="3" inconclusive="0" skipped="1" asserts="0" engine-version="3.5.0.0" clr-version="4.0.30319.42000" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:15Z" duration="1.4447271">
+  <test-suite type="TestSuite" id="1218" name="FutureEnergySystems" fullname="FutureEnergySystems" runstate="Runnable" testcasecount="174" result="Failed" site="Child" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:15Z" duration="1.444727" total="4" passed="0" failed="3" inconclusive="0" skipped="1" asserts="0">
+    <properties>
+      <property name="platform" value="PlayMode" />
+    </properties>
+    <failure>
+      <message><![CDATA[One or more child tests had errors]]></message>
+    </failure>
+    <test-suite type="Assembly" id="1203" name="PlayMode.dll" fullname="/Users/kerillian/Documents/GitHub/W26project-FutureEnergySystems/Library/ScriptAssemblies/PlayMode.dll" runstate="Runnable" testcasecount="174" result="Failed" site="Child" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:15Z" duration="1.439904" total="4" passed="0" failed="3" inconclusive="0" skipped="1" asserts="0">
+      <properties>
+        <property name="_PID" value="11234" />
+        <property name="_APPDOMAIN" value="Unity Child Domain" />
+        <property name="platform" value="PlayMode" />
+        <property name="EditorOnly" value="False" />
+      </properties>
+      <failure>
+        <message><![CDATA[One or more child tests had errors]]></message>
+      </failure>
+      <test-suite type="TestSuite" id="1213" name="AdditionalBoardEvents" fullname="AdditionalBoardEvents" runstate="Runnable" testcasecount="25" result="Skipped" label="Ignored" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:13Z" duration="0.005017" total="1" passed="0" failed="0" inconclusive="0" skipped="1" asserts="0">
+        <properties />
+        <reason>
+          <message><![CDATA[One or more child tests were ignored]]></message>
+        </reason>
+        <test-suite type="TestFixture" id="1180" name="ABE11_Play_As_The_Cyclist" fullname="AdditionalBoardEvents.ABE11_Play_As_The_Cyclist" classname="AdditionalBoardEvents.ABE11_Play_As_The_Cyclist" runstate="Runnable" testcasecount="6" result="Skipped" label="Ignored" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:13Z" duration="0.003891" total="1" passed="0" failed="0" inconclusive="0" skipped="1" asserts="0">
+          <properties>
+            <property name="Category" value="Additional Board Events" />
+          </properties>
+          <reason>
+            <message><![CDATA[One or more child tests were ignored]]></message>
+          </reason>
+          <test-case id="1186" name="CyclistTakesZeroDamageOnCarTrafficGreySpot" fullname="AdditionalBoardEvents.ABE11_Play_As_The_Cyclist.CyclistTakesZeroDamageOnCarTrafficGreySpot" methodname="CyclistTakesZeroDamageOnCarTrafficGreySpot" classname="AdditionalBoardEvents.ABE11_Play_As_The_Cyclist" runstate="Ignored" seed="1056944252" result="Skipped" label="Ignored" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:13Z" duration="0.000244" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="_SKIPREASON" value="Car/Traffic grey spots not yet implemented; Traffic Weaver will be tested when grey spot types are added." />
+            </properties>
+            <reason>
+              <message><![CDATA[Car/Traffic grey spots not yet implemented; Traffic Weaver will be tested when grey spot types are added.]]></message>
+            </reason>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1212" name="BossTests" fullname="BossTests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:14Z" duration="0.545412" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1158" name="ABE_Boss_Tests" fullname="BossTests.ABE_Boss_Tests" classname="BossTests.ABE_Boss_Tests" runstate="Runnable" testcasecount="10" result="Failed" site="Child" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:14Z" duration="0.543954" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties>
+            <property name="Category" value="Boss" />
+          </properties>
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1160" name="AT2_BossUI_AppearsAndDiceIsDisabled" fullname="BossTests.ABE_Boss_Tests.AT2_BossUI_AppearsAndDiceIsDisabled" methodname="AT2_BossUI_AppearsAndDiceIsDisabled" classname="BossTests.ABE_Boss_Tests" runstate="Runnable" seed="1504759298" result="Failed" start-time="2026-03-05 21:07:13Z" end-time="2026-03-05 21:07:14Z" duration="0.541015" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[Player movement did not finish in time.]]></message>
+              <stack-trace><![CDATA[at BossTests.ABE_Boss_Tests+<WaitForMovement>d__9.MoveNext () [0x0006f] in /Users/kerillian/Documents/GitHub/W26project-FutureEnergySystems/Assets/Testing/PlayMode/Boss/ABE_Boss_Tests.cs:100
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@0b7a23ab2e1d/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:44
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[No character selected or GameManager not found!
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+      <test-suite type="TestSuite" id="1211" name="GeneralBoardMovement" fullname="GeneralBoardMovement" runstate="Runnable" testcasecount="73" result="Failed" site="Child" start-time="2026-03-05 21:07:14Z" end-time="2026-03-05 21:07:15Z" duration="0.887627" total="2" passed="0" failed="2" inconclusive="0" skipped="0" asserts="0">
+        <properties />
+        <failure>
+          <message><![CDATA[One or more child tests had errors]]></message>
+        </failure>
+        <test-suite type="TestFixture" id="1135" name="GBM10_Final_Score_Display" fullname="GeneralBoardMovement.GBM10_Final_Score_Display" classname="GeneralBoardMovement.GBM10_Final_Score_Display" runstate="Runnable" testcasecount="9" result="Failed" site="Child" start-time="2026-03-05 21:07:14Z" end-time="2026-03-05 21:07:14Z" duration="0.427181" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1137" name="AT2_PlayerMovesForward" fullname="GeneralBoardMovement.GBM10_Final_Score_Display.AT2_PlayerMovesForward" methodname="AT2_PlayerMovesForward" classname="GeneralBoardMovement.GBM10_Final_Score_Display" runstate="Runnable" seed="570319973" result="Failed" start-time="2026-03-05 21:07:14Z" end-time="2026-03-05 21:07:14Z" duration="0.426143" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[Player movement did not finish in time.]]></message>
+              <stack-trace><![CDATA[at GeneralBoardMovement.GBM10_Final_Score_Display+<WaitForMovementToFinish>d__8.MoveNext () [0x0006f] in /Users/kerillian/Documents/GitHub/W26project-FutureEnergySystems/Assets/Testing/PlayMode/General Board Movement/GBM10_Final_Score_Display.cs:87
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@0b7a23ab2e1d/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:44
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[No character selected or GameManager not found!
+]]></output>
+          </test-case>
+        </test-suite>
+        <test-suite type="TestFixture" id="1145" name="GBM11_Wrong_Answer_Backstep" fullname="GeneralBoardMovement.GBM11_Wrong_Answer_Backstep" classname="GeneralBoardMovement.GBM11_Wrong_Answer_Backstep" runstate="Runnable" testcasecount="6" result="Failed" site="Child" start-time="2026-03-05 21:07:14Z" end-time="2026-03-05 21:07:15Z" duration="0.458636" total="1" passed="0" failed="1" inconclusive="0" skipped="0" asserts="0">
+          <properties />
+          <failure>
+            <message><![CDATA[One or more child tests had errors]]></message>
+          </failure>
+          <test-case id="1151" name="AT6_PositionUpdatedAfterBackwardMove" fullname="GeneralBoardMovement.GBM11_Wrong_Answer_Backstep.AT6_PositionUpdatedAfterBackwardMove" methodname="AT6_PositionUpdatedAfterBackwardMove" classname="GeneralBoardMovement.GBM11_Wrong_Answer_Backstep" runstate="Runnable" seed="304165118" result="Failed" start-time="2026-03-05 21:07:14Z" end-time="2026-03-05 21:07:15Z" duration="0.455877" asserts="0">
+            <properties>
+              <property name="_JOINTYPE" value="UnityCombinatorial" />
+              <property name="retryIteration" value="0" />
+              <property name="repeatIteration" value="0" />
+            </properties>
+            <failure>
+              <message><![CDATA[Player movement did not finish in time.]]></message>
+              <stack-trace><![CDATA[at GeneralBoardMovement.GBM11_Wrong_Answer_Backstep+<WaitForMovementToFinish>d__11.MoveNext () [0x0006f] in /Users/kerillian/Documents/GitHub/W26project-FutureEnergySystems/Assets/Testing/PlayMode/General Board Movement/GBM11_Wrong_Answer_Backstep.cs:129
+at UnityEngine.TestTools.TestEnumerator+<Execute>d__7.MoveNext () [0x0003a] in ./Library/PackageCache/com.unity.test-framework@0b7a23ab2e1d/UnityEngine.TestRunner/NUnitExtensions/Attributes/TestEnumerator.cs:44
+]]></stack-trace>
+            </failure>
+            <output><![CDATA[No character selected or GameManager not found!
+Blue card opened
+P1 AQHI changed by 1, New AQHI: 1
+MCQ answered incorrectly. Total incorrect: 1
+Saving results to: /Users/kerillian/Library/Application Support/DefaultCompany/FutureEnergySystems/TestResults.xml
+]]></output>
+          </test-case>
+        </test-suite>
+      </test-suite>
+    </test-suite>
+  </test-suite>
+</test-run>

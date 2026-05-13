@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 74ee029efda822a5caf0a7a423fb4eef
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - diceRollSound: {fileID: 8300000, guid: 41581169557d4e718afda9dcf1b12b83, type: 3}
+  - coughSound: {fileID: 8300000, guid: bc894ae87bc811d0fa6d514748029dc3, type: 3}
+  - confirmSound: {fileID: 8300000, guid: d6e8477524017c000a061ced555f1fef, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

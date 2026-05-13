@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: SunPower
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: Sun Power
+  image: {fileID: 21300000, guid: 733a60acffb8efa43b250ce7bcf0d6d3, type: 3}
+  statement: 
+  question: "True or false \u2013 Solar panels can generate electricity from sunlight. "
+  answers:
+  - answer: True
+    messageWhenChosen: True! Sunbeams make power without the smoke. That means zero
+      dirty air!
+    correctAnswer: 1
+  - answer: False
+    messageWhenChosen: Oops! Sunbeams make power without the smoke. That means zero
+      dirty air!
+    correctAnswer: 0

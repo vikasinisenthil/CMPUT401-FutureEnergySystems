@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/DifficultySelection.uss"/>
+    
+    <ui:VisualElement class="difficulty-popup" name="difficulty_popup" style="display: none;">
+        <ui:VisualElement class="difficulty-card">
+            <ui:Label text="Select Difficulty" class="difficulty-title"/>
+            
+            <ui:VisualElement class="difficulty-buttons">
+                <ui:Button text="Easy" name="easy_button" class="difficulty-button difficulty-easy"/>
+                <ui:Button text="Medium" name="medium_button" class="difficulty-button difficulty-medium"/>
+                <ui:Button text="Hard" name="hard_button" class="difficulty-button difficulty-hard"/>
+            </ui:VisualElement>
+            
+            <ui:Button text="Back" name="back_button" class="back-button difficulty-back-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

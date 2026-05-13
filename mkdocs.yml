@@ -1,0 +1,26 @@
+site_name: Air Heroes
+
+theme: readthedocs
+
+nav:
+  - Home: index.md
+  - Project Requirements: projectReqs.md
+  - Software Design: swDesign.md
+  - Project Management: projectMgmt.md
+  - Teamwork: teamwork.md
+  - Meeting Minutes: meetingMins.md
+  - UI Principles: UiDesignPrinciples.md
+  - Requirements Traceability Matrix: rtm.md
+
+markdown_extensions:
+  - fenced_code
+  - attr_list
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js
+  - javascripts/mermaid.js

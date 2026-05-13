@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a214492914384e94bc4548410838b, type: 3}
+  m_Name: CurveBall
+  m_EditorClassIdentifier: GameScripts::BlueFactCard
+  cardName: The Curve Ball
+  image: {fileID: 21300000, guid: 2b331bae09b880f449fb33b601fa6383, type: 3}
+  fact: "The Earth spins\u2014so the wind curves! This is called the Coriolis Effect.
+    Because the Earth is spinning, wind doesn\u2019t blow in a straight line. It
+    curves to the right in the Northern hemisphere and to the left in the Southern
+    hemisphere. "

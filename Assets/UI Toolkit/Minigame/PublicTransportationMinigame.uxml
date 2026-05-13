@@ -1,0 +1,74 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/PublicTransportationMinigame.uss?fileID=7433441132597879392&amp;guid=6b1b71f0b1ae48efaf1749e95dbd0eb7&amp;type=3#PublicTransportationMinigame"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card transport-card">
+            <ui:Label text="Public Transportation" name="minigame_title" class="minigame-title"/>
+            <ui:Label text="" name="minigame_description" class="minigame-description"/>
+            <ui:VisualElement name="intro_container" class="transport-intro-container">
+                <ui:VisualElement class="transport-intro-content">
+                    <ui:Label text="Choose the cleanest lane and survive until the timer ends." class="transport-result-copy transport-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="transport-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button transport-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="lane_arena" class="transport-lane-arena">
+                <ui:VisualElement name="lane_car" class="transport-lane transport-lane-car">
+                    <ui:VisualElement class="transport-car-curb transport-car-curb-top">
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="transport-car-curb transport-car-curb-bottom">
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-white"/>
+                        <ui:VisualElement class="transport-car-curb-segment transport-car-curb-red"/>
+                    </ui:VisualElement>
+                    <ui:Label text="Car" class="transport-lane-row-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="lane_bus" class="transport-lane transport-lane-bus">
+                    <ui:VisualElement class="transport-bus-lane-line"/>
+                    <ui:Label text="Bus" class="transport-lane-row-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="lane_metro" class="transport-lane transport-lane-bike">
+                    <ui:VisualElement class="transport-metro-label-mask"/>
+                    <ui:Label text="Metro" class="transport-lane-row-label"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="player_marker" class="transport-player-marker"/>
+            <ui:VisualElement name="hud_row" class="transport-bottom-bar">
+                <ui:Label text="Time: 10s" name="timer_label" class="transport-timer"/>
+                <ui:Label text="Current lane: Bus" name="lane_label" class="transport-lane-count"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="result_container" class="transport-result-container">
+                <ui:Label text="" name="result_headline" class="transport-result-headline"/>
+                <ui:Label text="" name="result_message" class="transport-result-copy"/>
+                <ui:Label text="" name="result_fact" class="transport-result-copy transport-fact"/>
+                <ui:Label text="" name="result_score" class="transport-score"/>
+                <ui:VisualElement class="transport-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button transport-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="rules_popup" class="transport-rules-popup">
+                <ui:Label text="Rules" class="transport-result-headline"/>
+                <ui:Label text="1. Move up or down to switch lanes." class="transport-result-copy"/>
+                <ui:Label text="2. Do not hit the blocks." class="transport-result-copy"/>
+                <ui:Label text="3. Stay in the green lane if you can. It is the best choice." class="transport-result-copy"/>
+                <ui:Button text="Back" name="back_button" class="minigame-button transport-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
+

@@ -1,0 +1,44 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/PlantTreesStyleSheet.uss?fileID=7433441132597879392&amp;guid=8b119a2bd5e624b72a88b8d38ab79072&amp;type=3#PlantTreesStyleSheet"/>
+    <ui:VisualElement name="root_element" class="pt-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="pt-card">
+            <ui:Label text="The Tree Planter" name="minigame_title" class="pt-title"/>
+            <ui:Label text="" name="minigame_description" class="pt-description"/>
+
+            <ui:VisualElement name="intro_container" class="pt-intro-container">
+                <ui:Label text="Plant as many trees as you can before the timer ends." class="pt-intro-copy"/>
+                <ui:Button text="Start" name="begin_button" class="pt-button pt-primary-button"/>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="game_container" class="pt-game-container">
+                <ui:VisualElement name="tap_area" class="pt-tap-area">
+                    <ui:VisualElement name="garden_ground" class="pt-garden-ground"/>
+                    <ui:Label text="TAP HERE!" class="pt-tap-hint"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="bottom_bar" class="pt-bottom-bar">
+                    <ui:Label text="Time: 5s" name="timer_label" class="pt-timer"/>
+                    <ui:Label text="Trees: 0" name="trees_count_label" class="pt-trees-count"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="pt-result-container">
+                <ui:Label text="" name="result_headline" class="pt-result-headline"/>
+                <ui:Label text="" name="result_label" class="pt-result-label"/>
+                <ui:Label text="" name="result_score" class="pt-result-score"/>
+                <ui:VisualElement class="pt-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="pt-button pt-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="rules_popup" class="pt-rules-popup">
+                <ui:Label text="Rules" class="pt-result-headline"/>
+                <ui:Label text="1. Tap inside the green area to plant seedlings." class="pt-rules-copy"/>
+                <ui:Label text="2. Each tap adds one seedling in a random spot." class="pt-rules-copy"/>
+                <ui:Label text="3. When time ends, the seedlings grow into trees." class="pt-rules-copy"/>
+                <ui:Button text="Back" name="back_button" class="pt-button pt-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
+

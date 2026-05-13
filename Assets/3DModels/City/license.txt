@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low-poly City Buildings
+* source:	https://sketchfab.com/3d-models/low-poly-city-buildings-e0209ac5bb684d2d85e5ade96c92d2ff
+* author:	smooth998 (https://sketchfab.com/smooth998)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low-poly City Buildings" (https://sketchfab.com/3d-models/low-poly-city-buildings-e0209ac5bb684d2d85e5ade96c92d2ff) by smooth998 (https://sketchfab.com/smooth998) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

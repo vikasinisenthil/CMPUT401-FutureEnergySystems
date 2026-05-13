@@ -1,0 +1,11 @@
+Model Information:
+* title:	Train track
+* source:	https://sketchfab.com/3d-models/train-track-442fb75e01864fc2986d575da9733878
+* author:	Odd1In (https://sketchfab.com/Odd1In)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Train track" (https://sketchfab.com/3d-models/train-track-442fb75e01864fc2986d575da9733878) by Odd1In (https://sketchfab.com/Odd1In) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

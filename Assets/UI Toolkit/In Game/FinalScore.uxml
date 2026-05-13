@@ -1,0 +1,17 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/In%20Game/FinalScore.uss?fileID=7433441132597879392&amp;guid=b909250cc9d2c6648be4bf2a4d825c89&amp;type=3#FinalScore"/>
+        <ui:VisualElement name="overlay" class="overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+
+        <ui:VisualElement name="popup" class="popup-card">
+            <ui:Label name="final_aqhi" text="Final AQHI: 0" class="title"/>
+
+            <ui:VisualElement class="center-content">
+                <ui:Label name="final_message" text="" class="final-message"/>
+                <ui:Label name="final_summary" text="Moves: 0 | Correct: 0 | Incorrect: 0" class="summary"/>
+            </ui:VisualElement>
+
+            <ui:Button name="close_button" text="Close" class="close-button"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

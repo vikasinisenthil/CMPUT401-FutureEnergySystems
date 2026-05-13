@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: DinoFuel
+  m_EditorClassIdentifier: Assembly-CSharp::BlueMCQCard
+  cardName: Dino Fuel
+  image: {fileID: 21300000, guid: 540bb09369725714fb30a0c5da47c454, type: 3}
+  statement: Burning old bones creates new smoke
+  question: 'True or False: Factory smoke comes from burning ancient things like
+    coal or oil'
+  answers:
+  - answer: True
+    messageWhenChosen: 'True! A long time ago, some plants and tiny animals died.
+      After millions of years spent deep inside the Earth, time and pressure transformed
+      these plants and animals into fossil fuels! '
+    correctAnswer: 1
+  - answer: False
+    messageWhenChosen: 'Oops! A long time ago, some plants and tiny animals died.
+      After millions of years spent deep inside the Earth, time and pressure transformed
+      these plants and animals into fossil fuels! '
+    correctAnswer: 0

@@ -1,0 +1,36 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Blue%20Card/BlueCardStyleSheet.uss?fileID=7433441132597879392&amp;guid=406a3a4ca184a1f4c8a0eb41d2dc68e0&amp;type=3#BlueCardStyleSheet"/>
+    <ui:VisualElement name="root_element" class="overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="popup" class="popup-card">
+            <ui:VisualElement name="intro_slide" class="mcq-slide" style="justify-content: center; align-items: center;">
+                <ui:Label name="boss_name" text="???" class="card-name" style="font-size: 48px; margin-bottom: 12px;"/>
+                <ui:Image name="boss_image" style="width: 35%; height: 35%; -unity-background-scale-mode: scale-to-fit; margin-bottom: 16px;"/>
+                <ui:Label name="boss_challenge" text="" class="card-statement" style="font-size: 26px;"/>
+                <ui:Label name="boss_rules" text="Answer 3 questions correctly to win.&#10;All correct: -3 Pollution | Each wrong: +1 Pollution" class="card-statement" style="font-size: 18px; margin-top: 12px;"/>
+                <ui:Button name="intro_begin" text="Continue&#10;" class="feedback-continue" style="margin-top: 24px; width: 259px;"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="question_slide" class="mcq-slide" style="display: none;">
+                <ui:VisualElement class="header">
+                    <ui:Label text="Label" name="card_title" class="card-name"/>
+                    <ui:Button name="sensor_button" class="sensor-button" style="display: none;">
+                        <ui:VisualElement class="sensor-icon"/>
+                        <ui:Label text="Sensor" class="sensor-text"/>
+                    </ui:Button>
+                </ui:VisualElement>
+                <ui:VisualElement class="body">
+                    <ui:Image name="card_image" style="align-self: center;"/>
+                    <ui:Label text="Label" name="card_statement" class="card-statement"/>
+                    <ui:Label text="Label" name="card_question" class="card-statement"/>
+                    <ui:VisualElement name="answers_element" class="answers-row"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="footer_element" class="footer"/>
+            </ui:VisualElement>
+            <ui:VisualElement name="feedback_slide" class="mcq-slide" style="display: none;">
+                <ui:Label text="Label" name="feedback_result" class="feedback-result"/>
+                <ui:Label text="Label" name="feedback_reason" class="feedback-reason"/>
+                <ui:Button text="Next Question" name="feedback_continue" class="feedback-continue"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

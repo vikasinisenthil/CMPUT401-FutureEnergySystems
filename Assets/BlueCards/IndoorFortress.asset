@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: IndoorFortress
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: Indoor Fortress
+  image: {fileID: 21300000, guid: 32211854a1e96f746b3ce4503ad03d05, type: 3}
+  statement: 
+  question: When wildfire smoke arrives, what is the best thing to do for asthma?
+  answers:
+  - answer: Stay indoors and keep windows/doors closed
+    messageWhenChosen: Correct! Staying inside with doors/windows closed helps reduce
+      smoke exposure.
+    correctAnswer: 1
+  - answer: "Go for a run outside to \u201Cbuild lung strength\u201D"
+    messageWhenChosen: "Nope \u2014 exercise outdoors increases how much smoke you
+      breathe in."
+    correctAnswer: 0
+  - answer: "Open windows to \u201Cair out\u201D the house"
+    messageWhenChosen: "Not during smoke \u2014 opening windows can bring more smoke
+      indoors."
+    correctAnswer: 0
+  - answer: "Light a candle for \u201Ccleaner air\u201D"
+    messageWhenChosen: "Not a good idea \u2014 burning things adds indoor air pollution."
+    correctAnswer: 0

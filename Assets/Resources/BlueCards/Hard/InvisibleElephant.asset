@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: InvisibleElephant
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: The Invisible Elephant
+  image: {fileID: 21300000, guid: 4a53886fad38add45aba0aa2e35cae20, type: 3}
+  statement: "Air looks light, but it is actually heavy! The air above you goes up
+    100 kilometers. All that air pushes down on you with the weight of a small car,
+    but your body pushes back, so you don\u2019t feel it. This is called atmospheric
+    pressure."
+  question: ' If you climb a high mountain, there is less air above you. What happens
+    to the air pressure? '
+  answers:
+  - answer: It gets smaller (decreases).
+    messageWhenChosen: "Correct! It gets smaller (decreases). BUT this won\u2019t
+      make climbing the mountain any easier\u2014there\u2019s also less air for you
+      to breathe, which means your lungs have to work harder!"
+    correctAnswer: 1
+  - answer: 'It stays the same. '
+    messageWhenChosen: "Oops! It gets smaller (decreases). BUT this won\u2019t make
+      climbing the mountain any easier\u2014there\u2019s also less air for you to
+      breathe, which means your lungs have to work harder!"
+    correctAnswer: 0
+  - answer: It gets bigger (increases).
+    messageWhenChosen: "Oops! It gets smaller (decreases). BUT this won\u2019t make
+      climbing the mountain any easier\u2014there\u2019s also less air for you to
+      breathe, which means your lungs have to work harder!"
+    correctAnswer: 0

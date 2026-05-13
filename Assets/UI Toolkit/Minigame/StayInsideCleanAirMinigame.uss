@@ -1,0 +1,334 @@
+/* MG.01 — Stay Inside & Clean the Air */
+
+.sica-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    -unity-font-definition: resource("Fonts/CherryBombOne");
+}
+
+.sica-backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    /* Match MinigameStyleSheet.uss backdrop */
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.sica-card {
+    background-color: rgb(27, 114, 32);
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-color: rgb(255, 255, 255);
+}
+
+.sica-title {
+    font-size: 36px;
+    -unity-text-align: middle-center;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.sica-description {
+    font-size: 20px;
+    color: rgb(240, 240, 240);
+    -unity-text-align: upper-left;
+    white-space: normal;
+    width: 100%;
+    max-width: 760px;
+    margin-bottom: 18px;
+    padding-left: 72px;
+    padding-right: 72px;
+    line-height: 30px;
+}
+
+.sica-intro-container {
+    width: 100%;
+    flex-grow: 1;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.sica-intro-content {
+    width: 100%;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.sica-intro-actions {
+    width: 100%;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.sica-intro-copy {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 700px;
+    margin-bottom: 0;
+    -unity-text-align: middle-center;
+}
+
+.sica-gameplay-container {
+    width: 100%;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    display: none;
+}
+
+/* Handwritten-style line under title (mockup: pink/red script) */
+.sica-description-handwritten {
+    color: rgb(255, 130, 165);
+    font-size: 18px;
+    -unity-font-style: italic;
+    rotate: -2deg;
+    margin-top: 2px;
+    margin-bottom: 12px;
+}
+
+.sica-room {
+    position: relative;
+    width: 100%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-height: 160px;
+    /* Mockup play field ~charcoal #1e222a */
+    background-color: rgb(30, 34, 42);
+    border-radius: 12px;
+    border-width: 2px;
+    border-color: rgb(255, 255, 255);
+    margin-bottom: 16px;
+    overflow: hidden;
+}
+
+.sica-smoke-clouds-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    picking-mode: ignore;
+    overflow: hidden;
+}
+
+.sica-wind-elements-container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border-radius: 10px;
+    picking-mode: ignore;
+    overflow: hidden;
+}
+
+.sica-air-clear-celebration {
+    position: absolute;
+    left: 8px;
+    right: 8px;
+    bottom: 8px;
+    -unity-text-align: middle-center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    white-space: normal;
+    background-color: rgba(0, 0, 0, 0.42);
+    padding: 8px 12px;
+    border-radius: 10px;
+    display: none;
+    flex-shrink: 0;
+}
+
+.sica-wind-instance {
+    picking-mode: ignore;
+    transform-origin: center center;
+}
+
+.sica-smoke-puff-instance {
+    picking-mode: ignore;
+    transform-origin: center center;
+}
+
+.sica-card-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 100%;
+    min-height: 0;
+}
+
+.sica-wind-hint-below {
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    -unity-text-align: middle-center;
+    color: rgba(240, 240, 240, 0.95);
+    opacity: 0.92;
+    flex-shrink: 0;
+}
+
+.sica-progress-label {
+    font-size: 22px;
+    -unity-text-align: middle-center;
+    margin-top: 0;
+    margin-bottom: 2px;
+    color: rgb(240, 240, 240);
+    flex-shrink: 0;
+    white-space: normal;
+}
+
+.sica-result-label {
+    font-size: 17px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+    max-width: 500px;
+    margin-bottom: 6px;
+}
+
+.sica-result-container {
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    display: none;
+}
+
+.sica-result-headline {
+    align-self: center;
+    font-size: 28px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.sica-result-copy {
+    align-self: center;
+    font-size: 17px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+    max-width: 560px;
+    margin-bottom: 6px;
+}
+
+.sica-fact {
+    color: rgb(228, 246, 255);
+}
+
+.sica-score {
+    align-self: center;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.sica-end-actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.sica-begin-button {
+    min-width: 280px;
+    background-color: rgb(76, 175, 80);
+}
+
+.sica-next-button {
+    min-width: 220px;
+    background-color: rgb(76, 175, 80);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.sica-secondary-button {
+    min-width: 180px;
+    background-color: rgb(125, 169, 119);
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+#exit_button.sica-secondary-button {
+    min-width: 200px;
+}
+
+.sica-rules-popup {
+    width: 90%;
+    max-width: 620px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+    padding-left: 24px;
+    border-radius: 18px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(38, 93, 44, 0.96);
+    display: none;
+}
+
+.sica-rules-popup > .sica-result-headline {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.sica-rules-popup > .sica-result-copy {
+    width: 100%;
+    align-self: center;
+    max-width: 500px;
+    -unity-text-align: upper-left;
+    margin-bottom: 10px;
+}
+
+.sica-bottom-bar {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-top: 0;
+    flex-shrink: 0;
+}
+
+.sica-timer {
+    font-size: 22px;
+    -unity-text-align: middle-center;
+}
+
+.sica-exit-button {
+    min-width: 220px;
+    height: 48px;
+    padding: 12px 20px;
+    border-radius: 10px;
+    border-width: 3px;
+    border-color: rgb(255, 255, 255);
+    font-size: 17px;
+    -unity-text-align: middle-center;
+    /* Match MinigameStyleSheet .minigame-exit-button */
+    background-color: rgb(158, 158, 158);
+    color: rgb(255, 255, 255);
+    white-space: normal;
+}

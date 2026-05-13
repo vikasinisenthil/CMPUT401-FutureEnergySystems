@@ -1,0 +1,26 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/SettingsStyleSheet.uss?fileID=7433441132597879392&amp;guid=6e986ba2ae231b448956bba6656ba73f&amp;type=3#SettingsStyleSheet"/>
+    <ui:VisualElement name="settings_overlay" class="overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="settings_card" class="settings-card">
+            <ui:Label text="Settings" class="settings-title"/>
+            <ui:ScrollView>
+                <ui:VisualElement style="flex-grow: 0;">
+                    <ui:Label text="Volume" name="sound_label" class="settings-section"/>
+                    <ui:Toggle label="Mute All" name="mute_toggle"/>
+                    <ui:VisualElement name="grayed_out_box" style="flex-grow: 0; opacity: 1;">
+                        <ui:Slider label="Main" value="1" high-value="1" name="main_slider"/>
+                        <ui:Slider label="Music" value="0.35" high-value="1" name="background_music"/>
+                        <ui:Slider label="Sound Effects" value="0.5" high-value="1" name="sound_effect_slider"/>
+                        <ui:Slider label="Read Aloud" value="1" high-value="1" name="tts_volume_slider"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement class="settings-content">
+                    <ui:Label text="Accessibility" class="settings-section"/>
+                    <ui:Toggle name="large_text_toggle" label="Large text" class="settings-toggle"/>
+                </ui:VisualElement>
+            </ui:ScrollView>
+            <ui:Button text="Close" name="close_button" class="settings-close"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

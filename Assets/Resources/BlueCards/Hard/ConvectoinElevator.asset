@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a214492914384e94bc4548410838b, type: 3}
+  m_Name: ConvectoinElevator
+  m_EditorClassIdentifier: GameScripts::BlueFactCard
+  cardName: Convection Elevator
+  image: {fileID: 21300000, guid: 052ea9ff9e0f47f4d9376588f031f0c6, type: 3}
+  fact: Hot air rises, cold air sinks. This is because when the air gets hot, the
+    molecules spread out, making it less dense (lighter). This movement of air going
+    up and down creates wind!

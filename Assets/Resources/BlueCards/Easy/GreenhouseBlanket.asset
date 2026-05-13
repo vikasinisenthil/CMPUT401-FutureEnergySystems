@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88074e2e0d4f0b8478a99308a4b0d6a4, type: 3}
+  m_Name: GreenhouseBlanket
+  m_EditorClassIdentifier: GameScripts::BlueMCQCard
+  cardName: The Greenhouse Blanket
+  image: {fileID: 21300000, guid: be5bebb4f706ec541a3f8e76ae49aabd, type: 3}
+  statement: 
+  question: "The sky acts like a cozy blanket. When we burn too much oil and coal,
+    it\u2019s like adding more and more layers of blankets to our planet. What effect
+    does this have on Earth?"
+  answers:
+  - answer: 'Earth gets too cold. '
+    messageWhenChosen: Oops! When we burn too many fossil fuels, like oil and coal,
+      the Earth heats up! This is called global warming.
+    correctAnswer: 0
+  - answer: 'Earth gets too hot. '
+    messageWhenChosen: Correct! When we burn too many fossil fuels, like oil and
+      coal, the Earth heats up! This is called global warming.
+    correctAnswer: 1

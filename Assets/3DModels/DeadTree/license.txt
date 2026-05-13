@@ -1,0 +1,11 @@
+Model Information:
+* title:	Dead Tree 1.0
+* source:	https://sketchfab.com/3d-models/dead-tree-10-23a5cb10c3a445338b34c76c435072ba
+* author:	Nathan Everaert (https://sketchfab.com/azera)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Dead Tree 1.0" (https://sketchfab.com/3d-models/dead-tree-10-23a5cb10c3a445338b34c76c435072ba) by Nathan Everaert (https://sketchfab.com/azera) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

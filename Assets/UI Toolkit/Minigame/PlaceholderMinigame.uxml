@@ -1,0 +1,15 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card">
+            <ui:Label text="Minigame" name="minigame_title" class="minigame-title"/>
+            <ui:Label text="This is a placeholder minigame. Real minigames (like planting trees) will replace this!" name="minigame_description" class="minigame-description"/>
+            <ui:Label text="" name="result_label" class="minigame-result-label"/>
+            <ui:VisualElement name="button_container" class="minigame-button-container">
+                <ui:Button text="Complete Minigame (-1 Pollution)" name="complete_button" class="minigame-button minigame-complete-button"/>
+                <ui:Button text="Exit Without Completing" name="exit_button" class="minigame-button minigame-exit-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

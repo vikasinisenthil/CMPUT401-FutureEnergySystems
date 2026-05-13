@@ -1,0 +1,235 @@
+.cm-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    -unity-font-definition: resource("Fonts/CherryBombOne");
+}
+
+.backdrop {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.cm-card {
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    max-height: 600px;
+    background-color: rgb(60, 150, 62);
+    border-width: 4px;
+    border-radius: 12px;
+    border-color: white;
+    padding: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+}
+
+.cm-title {
+    font-size: 36px;
+    margin-top: -10px;
+    -unity-text-align: middle-center;
+}
+
+.cm-description {
+    white-space: normal;
+    margin-bottom: 18px;
+    width: 100%;
+    max-width: 760px;
+    padding-left: 72px;
+    padding-right: 72px;
+    font-size: 20px;
+    line-height: 30px;
+    color: rgb(240, 240, 240);
+    -unity-text-align: middle-center;
+}
+
+.cm-intro-container,
+.cm-gameplay-container,
+.cm-result-container,
+.cm-rules-popup {
+    width: 100%;
+    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.cm-intro-container,
+.cm-result-container,
+.cm-rules-popup {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cm-intro-container {
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.cm-intro-copy {
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 700px;
+    margin-bottom: 0;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.cm-gameplay-container {
+    width: 100%;
+    align-items: stretch;
+    justify-content: flex-start;
+}
+
+.cm-hud-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-top: 12px;
+    margin-bottom: 20px;
+}
+
+.cm-hud-chip {
+    font-size: 24px;
+    -unity-text-align: middle-center;
+}
+
+.cm-item-card {
+    width: 100%;
+    min-height: 220px;
+    border-radius: 18px;
+    margin-bottom: 24px;
+    padding: 12px;
+    align-items: center;
+    justify-content: center;
+}
+
+.cm-item-emoji {
+    font-size: 58px;
+    margin-bottom: 10px;
+}
+
+.cm-item-label {
+    font-size: 30px;
+    unity-font-style: bold;
+    -unity-text-align: middle-center;
+    margin-top: 4px;
+}
+
+.cm-feedback-label {
+    font-size: 18px;
+    margin-top: 12px;
+    max-width: 560px;
+    white-space: normal;
+    -unity-text-align: middle-center;
+}
+
+.cm-bins-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: auto;
+    position: relative;
+    top: -10px;
+}
+
+.cm-bin-button {
+    flex-grow: 1;
+    height: 58px;
+    margin-left: 8px;
+    margin-right: 8px;
+}
+
+.cm-result-container,
+.cm-rules-popup {
+    display: none;
+}
+
+.cm-result-headline {
+    align-self: center;
+    font-size: 28px;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    -unity-text-align: middle-center;
+}
+
+.cm-result-copy {
+    align-self: center;
+    font-size: 18px;
+    white-space: normal;
+    max-width: 620px;
+    -unity-text-align: middle-center;
+    margin-bottom: 10px;
+}
+
+.cm-result-score {
+    align-self: center;
+    font-size: 22px;
+    margin-top: 8px;
+    margin-bottom: 18px;
+    -unity-text-align: middle-center;
+}
+
+.cm-result-actions,
+.cm-intro-actions {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.cm-button {
+    min-width: 220px;
+    height: 50px;
+    margin-left: 8px;
+    margin-right: 8px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: white;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+}
+
+.cm-primary-button {
+    background-color: rgb(158, 158, 158);
+    color: white;
+}
+
+.cm-secondary-button {
+    background-color: rgb(125, 169, 119);
+    color: white;
+}
+
+.cm-rules-popup {
+    width: 90%;
+    max-width: 620px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    padding-top: 12px;
+    padding-right: 24px;
+    padding-bottom: 22px;
+    padding-left: 24px;
+    border-radius: 18px;
+    border-width: 3px;
+    border-color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(38, 93, 44, 0.96);
+}

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low poly animated Cartoon Whale
+* source:	https://sketchfab.com/3d-models/low-poly-animated-cartoon-whale-4016a2fa3b4a4960a660ec65f2939470
+* author:	Blue Colossus Studio (https://sketchfab.com/BlueColossus)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low poly animated Cartoon Whale" (https://sketchfab.com/3d-models/low-poly-animated-cartoon-whale-4016a2fa3b4a4960a660ec65f2939470) by Blue Colossus Studio (https://sketchfab.com/BlueColossus) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

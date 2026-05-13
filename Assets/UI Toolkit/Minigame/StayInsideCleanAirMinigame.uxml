@@ -1,0 +1,54 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/StayInsideCleanAirMinigame.uss?fileID=7433441132597879392&amp;guid=b2c3d4e5f60718293a4b5c6d7e8f9012&amp;type=3#StayInsideCleanAirMinigame"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay sica-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card sica-card">
+            <ui:Label text="Stay Inside &amp; Clean the Air!" name="minigame_title" class="minigame-title sica-title"/>
+            <ui:Label text="" name="minigame_description" class="minigame-description sica-description"/>
+
+            <ui:VisualElement name="intro_container" class="sica-intro-container">
+                <ui:VisualElement class="sica-intro-content">
+                    <ui:Label text="Tap each smoke cloud to make it fade away." class="sica-result-copy sica-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="sica-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button sica-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="sica-gameplay-container">
+                <ui:VisualElement name="room_frame" class="sica-room">
+                    <ui:VisualElement name="smoke_clouds_container" class="sica-smoke-clouds-container" picking-mode="Ignore"/>
+                    <ui:VisualElement name="wind_elements_container" class="sica-wind-elements-container" picking-mode="Ignore"/>
+                    <ui:Label text="" name="air_clear_celebration_label" class="sica-air-clear-celebration" picking-mode="Ignore"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="card_footer" class="sica-card-footer">
+                    <ui:Label text="Tap the smoke clouds to clear the air" name="wind_hint" class="sica-wind-hint-below" picking-mode="Ignore"/>
+                    <ui:Label text="" name="progress_label" class="sica-progress-label"/>
+                    <ui:VisualElement name="bottom_bar" class="sica-bottom-bar">
+                        <ui:Label text="Time: 12s" name="timer_label" class="sica-timer"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="sica-result-container">
+                <ui:Label text="" name="result_headline" class="sica-result-headline"/>
+                <ui:Label text="" name="result_label" class="sica-result-label"/>
+                <ui:Label text="" name="result_fact" class="sica-result-copy sica-fact"/>
+                <ui:Label text="" name="result_score" class="sica-score"/>
+                <ui:VisualElement class="sica-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button sica-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="rules_popup" class="sica-rules-popup">
+                <ui:Label text="Rules" class="sica-result-headline"/>
+                <ui:Label text="1. Tap the smoke clouds." class="sica-result-copy"/>
+                <ui:Label text="2. Keep tapping until the clouds go away." class="sica-result-copy"/>
+                <ui:Label text="3. Try to clear lots of clouds before time is up." class="sica-result-copy"/>
+                <ui:Button text="Back" name="back_button" class="minigame-button sica-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
+

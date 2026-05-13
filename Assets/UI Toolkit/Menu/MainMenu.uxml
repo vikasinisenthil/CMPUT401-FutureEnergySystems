@@ -1,0 +1,25 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/MainMenu.uss"/>
+    
+    <ui:VisualElement class="main-menu-container">
+        <ui:VisualElement class="title-section">
+            <ui:Label text="Air Heroes" class="game-title"/>
+        </ui:VisualElement>
+        
+        <ui:VisualElement class="menu-buttons">
+            <ui:VisualElement class="button-row">
+                <ui:Button text="Single Player" name="singleplayer_button" class="menu-button"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="button-row">
+                <ui:Button text="2 Players" name="twoplayer_button" class="menu-button"/>
+                <ui:Button text="3 Players" name="threeplayer_button" class="menu-button"/>
+            </ui:VisualElement>
+            <ui:VisualElement class="button-row">
+                <ui:Button text="How to Play" name="howtoplay_button" class="menu-button menu-button-secondary"/>
+                <ui:Button text="Settings" name="settings_button" class="menu-button menu-button-secondary"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Button text="Credits" name="credits_button" class="menu-button menu-button-secondary credits-nav-button"/>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low-Poly bike
+* source:	https://sketchfab.com/3d-models/low-poly-bike-2c0c2db8bb954dd0ad6590db6972b2a2
+* author:	yosri3 (https://sketchfab.com/yosri3)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low-Poly bike" (https://sketchfab.com/3d-models/low-poly-bike-2c0c2db8bb954dd0ad6590db6972b2a2) by yosri3 (https://sketchfab.com/yosri3) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

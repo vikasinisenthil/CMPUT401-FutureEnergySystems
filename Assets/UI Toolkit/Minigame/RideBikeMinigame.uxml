@@ -1,0 +1,93 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/PublicTransportationMinigame.uss?fileID=7433441132597879392&amp;guid=6b1b71f0b1ae48efaf1749e95dbd0eb7&amp;type=3#PublicTransportationMinigame"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/RideBikeMinigame.uss?fileID=7433441132597879392&amp;guid=9798cb1ad396ec44aa5c0b9654dca79a&amp;type=3#RideBikeMinigame"/>
+    <ui:VisualElement name="root_element" class="minigame-overlay rb-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card rb-card">
+            <ui:Label text="Ride a Bike!" name="minigame_title" class="minigame-title rb-title"/>
+            <ui:Label text="" name="minigame_description" class="minigame-description rb-description"/>
+
+            <ui:VisualElement name="intro_container" class="transport-intro-container rb-intro-container">
+                <ui:VisualElement class="transport-intro-content rb-intro-content">
+                    <ui:Label text="Tap to pedal and move your bike forward." class="transport-result-copy transport-intro-copy rb-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="transport-intro-actions rb-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button transport-begin-button rb-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="rb-gameplay-container">
+                <ui:VisualElement class="rb-track-row">
+                    <ui:VisualElement name="progress_track" class="rb-progress-track">
+                        <ui:VisualElement name="progress_fill" class="rb-progress-fill"/>
+                        <ui:Label name="bike_icon" text="🚲" class="rb-bike-icon"/>
+                    </ui:VisualElement>
+                    <ui:Label text="🏁" class="rb-flag-label"/>
+                </ui:VisualElement>
+                <ui:VisualElement name="tap_area" class="rb-tap-area">
+                    <ui:VisualElement class="rb-sky"/>
+                    <ui:VisualElement class="rb-hills"/>
+                    <ui:VisualElement class="rb-road">
+                        <ui:VisualElement class="rb-road-line"/>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="rb-ground"/>
+                    <ui:VisualElement name="cyclist_container" class="rb-cyclist-container">
+                        <ui:VisualElement name="wheel_rear" class="rb-wheel rb-wheel-rear">
+                            <ui:VisualElement name="spoke_h_rear" class="rb-spoke rb-spoke-h"/>
+                            <ui:VisualElement name="spoke_v_rear" class="rb-spoke rb-spoke-v"/>
+                            <ui:VisualElement name="spoke_d1_rear" class="rb-spoke rb-spoke-d1"/>
+                            <ui:VisualElement name="spoke_d2_rear" class="rb-spoke rb-spoke-d2"/>
+                            <ui:VisualElement class="rb-wheel-hub"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="wheel_front" class="rb-wheel rb-wheel-front">
+                            <ui:VisualElement name="spoke_h_front" class="rb-spoke rb-spoke-h"/>
+                            <ui:VisualElement name="spoke_v_front" class="rb-spoke rb-spoke-v"/>
+                            <ui:VisualElement name="spoke_d1_front" class="rb-spoke rb-spoke-d1"/>
+                            <ui:VisualElement name="spoke_d2_front" class="rb-spoke rb-spoke-d2"/>
+                            <ui:VisualElement class="rb-wheel-hub"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement class="rb-frame"/>
+                        <ui:Image name="rider_image" class="rb-rider-image"/>
+                        <ui:VisualElement name="rider_silhouette" class="rb-rider-silhouette">
+                            <ui:VisualElement class="rb-rider-head"/>
+                            <ui:VisualElement class="rb-rider-helmet"/>
+                            <ui:VisualElement class="rb-rider-body"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement name="motion_lines" class="rb-motion-lines">
+                        <ui:VisualElement class="rb-motion-line rb-ml-1"/>
+                        <ui:VisualElement class="rb-motion-line rb-ml-2"/>
+                        <ui:VisualElement class="rb-motion-line rb-ml-3"/>
+                    </ui:VisualElement>
+                    <ui:Label name="tap_hint" text="TAP TO PEDAL! 🚴" class="rb-tap-hint"/>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="rb-bottom-bar">
+                    <ui:Label name="timer_label" text="⏱ 15s" class="rb-timer"/>
+                    <ui:Label name="distance_label" text="0 / 50 m" class="rb-distance"/>
+                    <ui:Label name="speed_label" text="🚲 0 km/h" class="rb-speed"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="transport-result-container rb-result-container">
+                <ui:Label text="" name="result_headline" class="transport-result-headline rb-result-headline"/>
+                <ui:Label text="" name="result_label" class="transport-result-copy rb-result-copy"/>
+                <ui:Label text="" name="result_fact" class="transport-result-copy transport-fact rb-result-copy"/>
+                <ui:Label text="" name="result_score" class="transport-score rb-result-score"/>
+                <ui:VisualElement class="transport-end-actions rb-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button transport-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="rules_popup" class="transport-rules-popup rb-rules-popup">
+                <ui:Label text="Rules" class="transport-result-headline"/>
+                <ui:Label text="1. Tap to ride your bike." class="transport-result-copy"/>
+                <ui:Label text="2. Ride to the finish line before time is up." class="transport-result-copy"/>
+                <ui:Label text="3. Fast taps help you go farther." class="transport-result-copy"/>
+                <ui:Button text="Back" name="back_button" class="minigame-button transport-secondary-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
+

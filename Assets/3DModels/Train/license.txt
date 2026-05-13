@@ -1,0 +1,11 @@
+Model Information:
+* title:	Toy Steam Train
+* source:	https://sketchfab.com/3d-models/toy-steam-train-65997c4b739646b2b2a3ec7299524d9e
+* author:	YarikLegendary (https://sketchfab.com/YarikLegendary)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Toy Steam Train" (https://sketchfab.com/3d-models/toy-steam-train-65997c4b739646b2b2a3ec7299524d9e) by YarikLegendary (https://sketchfab.com/YarikLegendary) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

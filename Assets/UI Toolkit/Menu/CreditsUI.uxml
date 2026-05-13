@@ -1,0 +1,74 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/CreditsStyleSheet.uss"/>
+
+    <ui:VisualElement name="credits_overlay" class="overlay">
+        <ui:VisualElement name="credits_backdrop" class="backdrop"/>
+
+        <ui:VisualElement name="credits_card" class="credits-card">
+            <ui:Label text="Credits" class="credits-title"/>
+
+            <ui:ScrollView name="credits_scroll" class="credits-scroll">
+                <ui:VisualElement class="credits-content">
+
+                    <ui:Label text="Air Heroes" class="credits-game-title"/>
+                    <ui:Label text="The Quest for Clean Air" class="credits-game-subtitle"/>
+
+                    <ui:Label text="Original Game" class="credits-section"/>
+                    <ui:Label text="Game created by Shakiba Talebian" class="credits-line"/>
+                    <ui:Label text="With support from Future Energy Systems" class="credits-line"/>
+
+                    <ui:Label text="Client Support" class="credits-section"/>
+                    <ui:Label text="Charlee Amason" class="credits-line"/>
+
+                    <ui:Label text="Digital Game Development" class="credits-section"/>
+                    <ui:Label text="Eric Cope" class="credits-line"/>
+                    <ui:Label text="Ben Bingham" class="credits-line"/>
+                    <ui:Label text="Sridhar Saravanakumar" class="credits-line"/>
+                    <ui:Label text="Vikasini Senthilkumar" class="credits-line"/>
+                    <ui:Label text="Pouyan Razmi-Nia" class="credits-line"/>
+                    <ui:Label text="Maansi Sharma" class="credits-line"/>
+                    <ui:Label text="Ipsa Manhas" class="credits-line"/>
+
+                    <ui:Label text="Art" class="credits-section"/>
+                    <ui:Label text="Character art by Kaitlin Pylypa" class="credits-line"/>
+
+                    <ui:Label text="3D Assets" class="credits-section"/>
+                    <ui:Label text="Windmill (Animated) by Adrian Hage - CC BY 4.0" class="credits-line"/>
+                    <ui:Label text="https://skfb.ly/6rCxr" class="credits-link"/>
+
+                    <ui:Label text="Low-poly City Buildings by smooth998 - CC BY 4.0" class="credits-line"/>
+                    <ui:Label text="https://skfb.ly/oMrLu" class="credits-link"/>
+
+                    <ui:Label text="Low Poly Boat by WitherFox - CC BY 4.0" class="credits-line"/>
+                    <ui:Label text="https://skfb.ly/oSEoA" class="credits-link"/>
+
+                    <ui:Label text="Smoke Effect by Maiami Studio" class="credits-line"/>
+                    <ui:Label text="https://assetstore.unity.com/packages/vfx/particles/fire-explosions/free-stylized-smoke-effects-pack-226406" class="credits-link"/>
+
+                    <ui:Label text="Free Rock Pack by Stealthix" class="credits-line"/>
+                    <ui:Label text="https://stealthix.itch.io/rock-pack" class="credits-link"/>
+
+                    <ui:Label text="Simple Nature Pack by quaternius" class="credits-line"/>
+                    <ui:Label text="https://quaternius.com/packs/simplenature.html" class="credits-link"/>
+
+                    <ui:Label text="Dead Tree 1.0 by Nathan Everaert - CC BY 4.0" class="credits-line"/>
+                    <ui:Label text="https://skfb.ly/69wRY" class="credits-link"/>
+
+                    <ui:Label text="Full Opaque Fire by Roman CHACORNAC" class="credits-line"/>
+                    <ui:Label text="https://assetstore.unity.com/packages/vfx/full-opaque-fire-312221" class="credits-link"/>
+
+                    <ui:Label text="Low poly clouds by jesus397 - CC BY 4.0" class="credits-line"/>
+                    <ui:Label text="https://skfb.ly/oxEqF" class="credits-link"/>
+
+                </ui:VisualElement>
+            </ui:ScrollView>
+
+            <ui:Button text="Close" name="credits_close_button" class="credits-close"/>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

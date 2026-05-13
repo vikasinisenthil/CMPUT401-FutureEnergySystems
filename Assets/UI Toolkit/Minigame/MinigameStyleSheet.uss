@@ -1,0 +1,92 @@
+/* ABE.01: Styles for minigame UI overlays */
+
+/* Full-screen overlay to block interaction with the game board */
+.minigame-overlay {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    justify-content: center;
+    align-items: center;
+    -unity-font-definition: resource("Fonts/CherryBombOne");
+}
+
+.backdrop {
+    position: absolute;
+    left: 0; right: 0; top: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+/* Card container for the minigame content */
+.minigame-card {
+    width: 80%;
+    height: 80%;
+    max-width: 800px;
+    max-height: 600px;
+    background-color: rgb(56, 142, 60);
+
+    border-width: 4px;
+    border-radius: 12px;
+    border-color: white;
+
+    padding: 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+}
+
+/* Minigame title text */
+.minigame-title {
+    font-size: 36px;
+    align-self: center;
+    margin-top: -10px;
+}
+
+/* Minigame description / instructions text */
+.minigame-description {
+    align-self: center;
+    white-space: normal;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: rgb(240, 240, 240);
+    -unity-text-align: middle-center;
+    max-width: 500px;
+}
+
+/* Result feedback label (e.g. "Pollution reduced by 1!") */
+.minigame-result-label {
+    align-self: center;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Container for the action buttons */
+.minigame-button-container {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Base button style */
+.minigame-button {
+    min-width: 300px;
+    height: 50px;
+    padding: 14px 24px;
+    align-self: center;
+    margin-top: 10px;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: white;
+    font-size: 18px;
+    -unity-text-align: middle-center;
+    white-space: normal;
+}
+
+/* "Complete" button — green to indicate success/reward */
+.minigame-complete-button {
+    background-color: rgb(76, 175, 80);
+}
+
+/* "Exit" button — gray to indicate neutral/cancel */
+.minigame-exit-button {
+    background-color: rgb(158, 158, 158);
+}

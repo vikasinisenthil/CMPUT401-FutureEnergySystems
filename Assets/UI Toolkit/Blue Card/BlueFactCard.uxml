@@ -1,0 +1,25 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Blue%20Card/BlueCardStyleSheet.uss?fileID=7433441132597879392&amp;guid=406a3a4ca184a1f4c8a0eb41d2dc68e0&amp;type=3#BlueCardStyleSheet"/>
+    <ui:VisualElement name="root_element" class="overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="popup" class="popup-card">
+            <ui:VisualElement class="header" style="align-self: center;">
+                <ui:Button name="speaker_button" class="speaker-button" style="display: flex; left: 0; right: auto;">
+                    <ui:VisualElement name="speaker_icon" class="speaker-icon" style="background-image: url(&quot;project://database/Assets/UI%20Toolkit/Blue%20Card/Images/speaker_icon.png?fileID=2800000&amp;guid=b73109ab751fc510d887a9651395c9a6&amp;type=3#speaker_icon&quot;);"/>
+                    <ui:Label text="Read Aloud" name="speaker_text" class="speaker-text"/>
+                </ui:Button>
+
+                <ui:Label text="Label" name="card_title" class="card-name"/>
+            </ui:VisualElement>
+
+            <ui:ScrollView class="body" name="fact_body_scroll" mode="Vertical">
+                <ui:Image name="card_image" scale-mode="scale-to-fit" style="align-self: center;"/>
+                <ui:Label text="Label" name="card_fact" class="card-statement"/>
+            </ui:ScrollView>
+
+            <ui:VisualElement class="footer">
+                <ui:Button text="Awesome!" name="close_button" style="width: 202px; height: 48px; align-self: center;"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

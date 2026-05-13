@@ -1,0 +1,52 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/CleanEnergyStyleSheet.uss?fileID=7433441132597879392&amp;guid=b1f3cf3549cf04a34b165bc633425672&amp;type=3#CleanEnergyStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/CompostingMinigame.uss" />
+
+    <ui:VisualElement name="root_element" class="minigame-overlay ce-overlay cm-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop" />
+        <ui:VisualElement name="minigame_card" class="minigame-card ce-card">
+            <ui:Label text="Compost Correctly!" name="minigame_title" class="minigame-title ce-title" />
+            <ui:Label text="" name="minigame_description" class="minigame-description ce-description" />
+
+            <ui:VisualElement name="intro_container" class="ce-intro-container">
+                <ui:VisualElement class="ce-intro-content">
+                    <ui:Label text="Tap the right bin for each item." class="ce-result-copy ce-intro-copy" />
+                </ui:VisualElement>
+                <ui:VisualElement class="ce-intro-actions">
+                    <ui:Button text="Start" name="begin_button" class="minigame-button ce-begin-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="cm-gameplay-container">
+                <ui:VisualElement class="cm-hud-row">
+                    <ui:Label text="Time: 20s" name="timer_label" class="cm-hud-chip" />
+                    <ui:Label text="Correct: 0" name="score_label" class="cm-hud-chip" />
+                    <ui:Label text="Streak: 0" name="streak_label" class="cm-hud-chip" />
+                </ui:VisualElement>
+
+                <ui:VisualElement name="item_card" class="cm-item-card">
+                    <ui:Label text="🍌" name="item_emoji_label" class="cm-item-emoji" />
+                    <ui:Label text="Banana Peel" name="item_label" class="cm-item-label" />
+                    <ui:Label text="Sort the waste into the correct bin." name="feedback_label" class="cm-feedback-label" />
+                </ui:VisualElement>
+
+                <ui:VisualElement class="cm-bins-row">
+                    <ui:Button text="🌱 Compost" name="compost_bin_button" class="cm-button cm-bin-button" />
+                    <ui:Button text="♻️ Recycle" name="recycle_bin_button" class="cm-button cm-bin-button" />
+                    <ui:Button text="🗑 Landfill" name="landfill_bin_button" class="cm-button cm-bin-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="ce-result-container">
+                <ui:Label text="" name="result_headline" class="ce-result-headline" />
+                <ui:Label text="" name="result_label" class="ce-result-label" />
+                <ui:Label text="" name="result_fact" class="ce-result-copy ce-fact" />
+                <ui:Label text="" name="result_score" class="ce-score" />
+                <ui:VisualElement class="ce-end-actions">
+                    <ui:Button text="Continue" name="exit_button" class="minigame-button ce-secondary-button" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

@@ -1,0 +1,49 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements">
+    <Style src="project://database/Assets/UI%20Toolkit/Menu/CharacterSelection.uss"/>
+    
+    <ui:VisualElement class="character-select-container">
+        <ui:VisualElement class="top-row">
+            <ui:Button name="back_button" class="back-button screen-back-button">
+                <ui:VisualElement class="back-icon"/>
+            </ui:Button>
+            <ui:Label text="Choose Your Hero" name="screen_title" class="screen-title"/>
+            <ui:Label text="Who will save the atmosphere today?" name="screen_subtitle" class="screen-subtitle"/>
+        </ui:VisualElement>
+
+        <ui:VisualElement class="characters-row">
+            <ui:VisualElement name="remi_card" class="character-card remi-card">
+                <ui:Image name="remi_image" class="remi-image"/>
+                <ui:Label text="Remi" class="character-name"/>
+                <ui:Label text="The Cyclist" class="character-subtitle"/>
+                <ui:VisualElement class="character-abilities-box" name="remi_abilities_box">
+                    <ui:Label text="Speed Boost" class="character-ability"/>
+                    <ui:Label text="Traffic Weaver" class="character-ability bottom-ability"/>
+                </ui:VisualElement>
+                <ui:Button text="Select" name="select_remi" class="select-button"/>
+            </ui:VisualElement>
+            
+            <ui:VisualElement name="reg_card" class="character-card reg-card">
+                <ui:Image name="reg_image" class="reg-image"/>
+                <ui:Label text="Reg" class="character-name"/>
+                <ui:Label text="The Scientist" class="character-subtitle"/>
+                <ui:VisualElement class="character-abilities-box" name="reg_abilities_box">
+                    <ui:Label text="Forecasting" class="character-ability bottom-ability"/>
+                </ui:VisualElement>
+                <ui:Button text="Select" name="select_reg" class="select-button"/>
+            </ui:VisualElement>
+            
+            <ui:VisualElement name="tommy_card" class="character-card tommy-card">
+                <ui:Image name="tommy_image" class="tommy-image"/>
+                <ui:Label text="Tommy" class="character-name"/>
+                <ui:Label text="The Ranger" class="character-subtitle"/>
+                <ui:VisualElement class="character-abilities-box" name="tommy_abilities_box">
+                    <ui:Label text="Fire Resistance" class="character-ability"/>
+                    <ui:Label text="Photosynthesis Boost" class="character-ability bottom-ability"/>
+                </ui:VisualElement>
+                <ui:Button text="Select" name="select_tommy" class="select-button"/>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label text="Tap a hero to see their powers!" name="screen_footer" class="screen-footer"/>
+    </ui:VisualElement>
+</ui:UXML>

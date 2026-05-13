@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a214492914384e94bc4548410838b, type: 3}
+  m_Name: CarIdling
+  m_EditorClassIdentifier: GameScripts::BlueFactCard
+  cardName: Car Idling
+  image: {fileID: 21300000, guid: 8194d2cd8d00a0b4883a0f36e9e1e277, type: 3}
+  fact: A car kept running while parked. That makes extra dirty air. Turn off engines
+    when waiting!

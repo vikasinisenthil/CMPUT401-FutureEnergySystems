@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Local TTS Listener</title>
+    </head>
+    <body>
+        <h2>TTS Listener Running on Port 3000</h2>
+
+        <input type="text" id="textInput" placeholder="Type text here" value="Hello World" style="width:300px;" />
+        <button id="speakBtn">Speak</button><br>
+
+        <b>Debug Tools:</b><br>
+
+        <button onclick="pause()">Pause</button>
+        <button onclick="resume()">Resume</button>
+        <button onclick="stop()">Stop</button><br>
+
+        <b>Updated Every 200ms:</b><br>
+
+        Speaking: <span id="speaking">false</span><br>
+        Paused: <span id="paused">false</span><br>
+        Pending: <span id="pending">false</span>
+
+        <script>
+            const evtSource = new EventSource("/events");
+
+            evtSource.onmessage = (event) => {
+                const data = JSON.parse(event.data);
+                
+                console.log("Received: " + data.text);
+
+                if (data.text == "pause") {
+                    window.speechSynthesis.pause();
+                    console.log("Pausing");
+                } else if (data.text == "resume") {
+                    console.log("Resuming");
+                    window.speechSynthesis.resume();
+                } else if (data.text == "stop") {
+                    console.log("Stopping");
+                    window.speechSynthesis.cancel();
+                } else {
+                    const utterance = new SpeechSynthesisUtterance(data.text);
+
+                    var volume = data.volume;
+                    console.log(volume);
+                    if (volume != null) {
+                        utterance.volume = volume;
+                    }
+
+                    window.speechSynthesis.speak(utterance);
+
+                    console.log("Speaking:", data.text);
+                }
+            };
+
+            const input = document.getElementById("textInput");
+            const button = document.getElementById("speakBtn");
+
+            button.addEventListener("click", () => {
+                const text = input.value.trim();
+                if (text == "") return;
+
+                const utter = new SpeechSynthesisUtterance(text);
+                speechSynthesis.speak(utter);
+                console.log("Speaking:", text);
+            });
+
+            // Update display
+            function updateStatus() {
+                document.getElementById('speaking').textContent = speechSynthesis.speaking;
+                document.getElementById('paused').textContent = speechSynthesis.paused;
+                document.getElementById('pending').textContent = speechSynthesis.pending;
+            }
+
+            setInterval(updateStatus, 200); // milliseconds
+
+            function pause() {
+                window.speechSynthesis.pause();
+            }
+
+            function resume() {
+                window.speechSynthesis.resume();
+            }
+
+            function stop() {
+                window.speechSynthesis.cancel();
+            }
+        </script>
+    </body>
+</html>

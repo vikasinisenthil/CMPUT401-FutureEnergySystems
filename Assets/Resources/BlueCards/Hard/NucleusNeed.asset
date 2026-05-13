@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa2a214492914384e94bc4548410838b, type: 3}
+  m_Name: NucleusNeed
+  m_EditorClassIdentifier: GameScripts::BlueFactCard
+  cardName: The Nucleus Need
+  image: {fileID: 21300000, guid: 06905635ec1b45e4d82ee1e4710aeaf0, type: 3}
+  fact: "Every cloud drop needs a tiny speck of dust to hold onto. Fun Fact: Water
+    vapour can\u2019t turn into a cloud easily on its own. It needs a \u201Ccondensation
+    nucleus\u201D (like a speck of dust or smoke) to grab onto. "

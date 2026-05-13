@@ -1,0 +1,70 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns:ui="UnityEngine.UIElements"
+         xmlns:uie="UnityEditor.UIElements"
+         noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd"
+         editor-extension-mode="False">
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/MinigameStyleSheet.uss?fileID=7433441132597879392&amp;guid=466fffd30c5cb455fb7fdf03efe71146&amp;type=3#MinigameStyleSheet"/>
+    <Style src="project://database/Assets/UI%20Toolkit/Minigame/PublicTransportationMinigame.uss?fileID=7433441132597879392&amp;guid=6b1b71f0b1ae48efaf1749e95dbd0eb7&amp;type=3#PublicTransportationMinigame"/>
+    <Style src="RecyclingMinigame.uss"/>
+
+    <ui:VisualElement name="root_element" class="minigame-overlay">
+        <ui:VisualElement name="backdrop" class="backdrop"/>
+        <ui:VisualElement name="minigame_card" class="minigame-card transport-card rc-card">
+            <ui:Label name="minigame_title" text="Recycling!" class="minigame-title"/>
+            <ui:Label name="minigame_description" text="" class="minigame-description"/>
+
+            <ui:VisualElement name="intro_container" class="transport-intro-container">
+                <ui:VisualElement class="transport-intro-content">
+                    <ui:Label text="Drag trash into the correct bin to earn points." class="transport-result-copy transport-intro-copy"/>
+                </ui:VisualElement>
+                <ui:VisualElement class="transport-intro-actions rc-intro-actions">
+                    <ui:Button name="begin_button" text="Start" class="minigame-button transport-begin-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="gameplay_container" class="rc-gameplay-container">
+                <ui:VisualElement class="rc-play-area transport-lane-arena">
+                    <ui:VisualElement class="rc-bin-column rc-left">
+                        <ui:VisualElement name="bin_left_top" class="rc-bin">
+                            <ui:Label text="Paper" class="rc-bin-label"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bin_left_bottom" class="rc-bin">
+                            <ui:Label text="Compost" class="rc-bin-label"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="rc-center-column">
+                    </ui:VisualElement>
+
+                    <ui:VisualElement class="rc-bin-column rc-right">
+                        <ui:VisualElement name="bin_right_top" class="rc-bin">
+                            <ui:Label text="Plastic" class="rc-bin-label"/>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="bin_right_bottom" class="rc-bin">
+                            <ui:Label text="Metal" class="rc-bin-label"/>
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                    <ui:VisualElement class="rc-trash-layer">
+                        <ui:Label name="current_trash_label" text="Paper" class="rc-trash-card"/>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+
+                <ui:VisualElement class="transport-bottom-bar">
+                    <ui:Label name="score_label" text="Score: 0" class="transport-timer"/>
+                    <ui:Label name="feedback_label" text="Drag each item into a bin." class="rc-feedback"/>
+                    <ui:Label name="progress_label" text="Item 1 / 8" class="transport-lane-count"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+
+            <ui:VisualElement name="result_container" class="transport-result-container">
+                <ui:Label name="result_headline" text="" class="transport-result-headline"/>
+                <ui:Label name="result_label" text="" class="transport-result-copy"/>
+                <ui:Label name="result_score" text="" class="transport-result-copy"/>
+                <ui:Label name="result_reduction" text="" class="transport-score"/>
+                <ui:VisualElement class="transport-end-actions">
+                    <ui:Button name="exit_button" text="Continue" class="minigame-button transport-secondary-button"/>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

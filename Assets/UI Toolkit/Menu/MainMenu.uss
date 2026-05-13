@@ -1,0 +1,74 @@
+.main-menu-container {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-image: resource('Backgrounds/placeholder');
+    -unity-font-definition: resource("Fonts/CherryBombOne");
+    position: relative;
+}
+
+.title-section {
+    margin-bottom: 60px;
+    align-items: center;
+}
+
+.game-title {
+    font-size: 96px;
+    color: rgb(90, 150, 250);
+    -unity-text-align: middle-center;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.menu-buttons {
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button-row {
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+
+.menu-button {
+    width: 300px;
+    height: 60px;
+    font-size: 28px;
+    margin: 10px;
+    background-color: rgb(70, 130, 220);
+    color: white;
+    border-radius: 12px;
+    border-width: 3px;
+    border-color: rgb(50, 100, 180);
+    transition-duration: 0.2s;
+}
+
+.menu-button:hover {
+    background-color: rgb(90, 150, 240);
+    scale: 1.05;
+}
+
+.menu-button:active {
+    background-color: rgb(50, 110, 200);
+    scale: 0.95;
+}
+
+.menu-button-secondary {
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.menu-button-secondary:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.credits-nav-button {
+    position: absolute;
+    left: 35px;
+    top: 28px;
+    width: 140px;
+    height: 42px;
+    margin: 0;
+    font-size: 18px;
+}
