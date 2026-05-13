@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Requirements Traceability Matrix - Air Heroes</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Requirements Traceability Matrix";
+        var mkdocs_page_input_path = "rtm.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Air Heroes
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../projectReqs/">Project Requirements</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../swDesign/">Software Design</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../projectMgmt/">Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../teamwork/">Teamwork</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../meetingMins/">Meeting Minutes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../UiDesignPrinciples/">UI Principles</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Requirements Traceability Matrix</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Air Heroes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Requirements Traceability Matrix</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <table>
+<thead>
+<tr>
+<th>User Story</th>
+<th>Requirement ID</th>
+<th>Requirement</th>
+<th>Assignee</th>
+<th>Path to Test File</th>
+<th>Test Name</th>
+<th>Status</th>
+<th>Comments</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GBM.01</td>
+<td>REQ.001</td>
+<td>On the player’s turn, a roll dice control is available</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>RollDiceControlAvailable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.01</td>
+<td>REQ.002</td>
+<td>The dice result is a random integer from 1 to 6</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>DiceBetweenOneAndSixInclusive</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.01</td>
+<td>REQ.003</td>
+<td>After the roll, the player’s token moves forward exactly that many spaces along the path</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>PlayerMovesCorrectAmount</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.01</td>
+<td>REQ.004</td>
+<td>The player does not move backward when rolling; movement is only toward the end.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>PlayerDoesNotMoveBackwards</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.01</td>
+<td>REQ.005</td>
+<td>If the player is near the end (e.g. on 36), a roll of 3 moves them to 38</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>PlayerDoesNotGoPastTheEnd</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.01</td>
+<td>REQ.006</td>
+<td>The player cannot roll again until their turn is complete</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM01_Roll_Dice_Movement.cs</td>
+<td>CannotRollTwice</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.007</td>
+<td>When the player lands on a blue square, a blue card is drawn (fact or question).</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>LandingOnBlueSquareDrawsOnlyOneCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.008</td>
+<td>Only one card is drawn per landing on a blue square.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>LandingOnBlueSquareDrawsOnlyOneCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.009</td>
+<td>The card is displayed to the player</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>CardShownToPlayer</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.010</td>
+<td>The player cannot move or roll again until the card has been acknowledged</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>CannotRollDiceWhileReadingBlueCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.011</td>
+<td>Landing on a green or grey square does not trigger a blue card draw.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>LandingOnGreenSquareDoesNotDrawCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.02</td>
+<td>REQ.012</td>
+<td>Landing on a green or grey square does not trigger a blue card draw.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM02_Draw_Blue_Card.cs</td>
+<td>LandingOnGraySquareDoesNotDrawCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.03</td>
+<td>REQ.013</td>
+<td>When the player lands on a blue square, the drawn card can be a fact card</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM03_Air_Pollution_Facts.cs</td>
+<td>LandingOnBlueSquareCanDrawFactCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.03</td>
+<td>REQ.014</td>
+<td>A fact card shows the text written on the card to the player.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM03_Air_Pollution_Facts.cs</td>
+<td>FactCardShowsFact</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.03</td>
+<td>REQ.015</td>
+<td>Reading a fact card does not change the player’s pollution score</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM03_Air_Pollution_Facts.cs</td>
+<td>FactCardDoesNotChangePollutionScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.03</td>
+<td>REQ.016</td>
+<td>After the player dismisses the fact, the card UI closes and normal gameplay resumes</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM03_Air_Pollution_Facts.cs</td>
+<td>NormalGameplayAfterFactCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.03</td>
+<td>REQ.017</td>
+<td>The system can randomly choose between a fact card and a quiz card when drawing from a blue square.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM03_Air_Pollution_Facts.cs</td>
+<td>LandingOnBlueSquareCanDrawMCQCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.018</td>
+<td>When the player lands on a blue square, the drawn card can be a quiz card with multiple-choice options.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>LandingOnBlueSquareCanDrawMCQCard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.019</td>
+<td>The player can select exactly one answer from the options shown.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>PlayerCanOnlySelectOneAnswer</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.020</td>
+<td>Each quiz card has one correct answer; the game can determine right vs wrong.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>EachQuizCardHasOneCorrectAnswer</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.021</td>
+<td>Correct answer: The player is rewarded, that is, the pollution score decreases by 1.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>CorrectAnswerDecreasesPollution</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.022</td>
+<td>Incorrect answer: The player receives a consequence, that is, the pollution score increases by 1</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>IncorrectAnswerIncreasesPollution</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.04</td>
+<td>REQ.023</td>
+<td>After the player selects an answer, the result is shown and the card is dismissed before gameplay continues.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM04_Blue_Trivia_Questions.cs</td>
+<td>EnsureDismissButtonShows</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.02</td>
+<td>REQ.024</td>
+<td>Background music starts playing when the game begins</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S02_BackgroundMusicTests.cs</td>
+<td>Music_StartsPlaying_WhenGameBegins</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.02</td>
+<td>REQ.025</td>
+<td>The music loops or continues throughout the gameplay</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S02_BackgroundMusicTests.cs</td>
+<td>Music_Loops</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.02</td>
+<td>REQ.026</td>
+<td>The music starts at a comfortable default volume</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S02_BackgroundMusicTests.cs</td>
+<td>Music_DefaultVolume_IsComfortable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.02</td>
+<td>REQ.027</td>
+<td>By default the music is quiet enough to still hear sound effects</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S02_BackgroundMusicTests.cs</td>
+<td>Music_DefaultVolume_IsComfortable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.028</td>
+<td>Player can choose between Singleplayer and Multiplayer on the main menu</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>MainMenu_HasSingleAndMultiButtons</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.029</td>
+<td>Choosing Singleplayer starts a game with one player</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>ChoosingSingleplayer_SetsModeAndStartsSingleSetup</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.030</td>
+<td>Choosing Multiplayer starts multiplayer setup</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>ChoosingMultiplayer_SetsModeAndStartsMultiSetup</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.031</td>
+<td>Game clearly indicates which mode is active during the match</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>Mode_IsStoredInGameManager</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.032</td>
+<td>Player cannot accidentally start the wrong mode</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>ChoosingSingleplayer_SetsModeAndStartsSingleSetup</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.033</td>
+<td>Returning to main menu allows choosing a different mode next game</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>ChoosingSingleplayer_SetsModeAndStartsSingleSetup</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.034</td>
+<td>Singleplayer has one token, multiplayer has multiple tokens taking turns</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>PlayerCount_MatchesMode</td>
+<td>Partial</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.04</td>
+<td>REQ.035</td>
+<td>Choice is made before game starts</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM04_ModeSelectionTests.cs</td>
+<td>ModeSet_BeforeBoardLoads</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.036</td>
+<td>When starting a new game, a character selection step appears</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>CharacterSelection_AppearsBeforeGameStarts</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.037</td>
+<td>Player can select exactly one character and confirm</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>SelectingCharacter_LoadsBoardScene_InSingleplayer</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.038</td>
+<td>after confirmation, selected character is used in game</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>SelectedHero_IsStoredInGameManager</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.039</td>
+<td>Game does not start without a valid character selected</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>SelectedHero_IsStoredInGameManager</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.040</td>
+<td>Going back to main menu allows re-selecting</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>ReturningToMenu_AllowsNewSelection</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.02</td>
+<td>REQ.041</td>
+<td>Abilities are active during the game as designed</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM02_MM03_AbilityBehaviourTests.cs</td>
+<td>Ability_AffectsGameplay_AsDesigned</td>
+<td>In Progress</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.042</td>
+<td>Character selection screen shows each character’s special ability before confirm</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_IsVisible_ForEachCharacter</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.043</td>
+<td>Ability description is visible for each character</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_IsVisible_ForEachCharacter</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.044</td>
+<td>Player can view all characters’ abilities</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_CanViewAllCharacters</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.045</td>
+<td>Ability info readable and not cut off</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_IsNotCutOff_Heuristic</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.046</td>
+<td>Displayed ability matches actual in-game behaviour</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityText_MatchesBehaviour (Planned)</td>
+<td>Partial</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.047</td>
+<td>Player cannot start game without access to ability info</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_AccessibleBeforeStart</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MM.03</td>
+<td>REQ.048</td>
+<td>Changing selection updates shown ability</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/MainMenu/MM03_AbilityInfoTests.cs</td>
+<td>AbilityInfo_AccessibleBeforeStart</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.049</td>
+<td>When a player lands on a green square, a mini game is triggered</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>LandingOnGreenSquareTriggersMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.050</td>
+<td>Landing on a blue square does not trigger the mini game</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>LandingOnBlueSquareDoesNotTriggerMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.051</td>
+<td>Landing on a gray square does not trigger the mini game</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>LandingOnGraySquareDoesNotTriggerMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.052</td>
+<td>The player cannot continue their turn until the mini game is completed or exited</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>DiceDisabledDuringMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.053</td>
+<td>Completing the mini game will return a result that determines how much the pollution score is reduced</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>GameResumesAfterMinigameComplete</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.054</td>
+<td>The pollution score is reduced by the exact amount returned</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>CompletingMinigameReducesPollutionByCorrectAmount</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.055</td>
+<td>Pollution score cannot go below zero after reduction</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>PollutionScoreCannotGoBelowZero</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.056</td>
+<td>The updated pollution score is displayed after the mini game ends as well</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>ScoreUIUpdatesAfterMinigameComplete</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.057</td>
+<td>After the mini game finishes, normal gameplay resumes (end turn/ next player)</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>GameResumesAfterMinigameExit</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.01</td>
+<td>REQ.058</td>
+<td>If the mini game fails to load or is exited by user, the score is not changed and game resumes</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE01_Minigame_On_Green_Square.cs</td>
+<td>ExitingMinigameDoesNotChangeScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.059</td>
+<td>When the player lands on the green square for Plant Trees, the Plant Trees minigame is displayed.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>LandingOnGreenSquareForPlantTreesDisplaysTheMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.060</td>
+<td>The player can interact with the planting area to plant trees.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PlayerCanInteractToPlantTrees</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.061</td>
+<td>Planting trees shows visible feedback in the garden.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PlantingTreesShowsVisibleFeedback</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.062</td>
+<td>The minigame ends after five seconds.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>MinigameEndsAfterFiveSeconds</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.063</td>
+<td>If the player exits early or closes the result page, the minigame closes and control returns to the main game.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>FinishingOrExitingClosesTheMinigameAndReturnsControl</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.064</td>
+<td>The pollution reward is applied when more than 10 taps gives -2</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PollutionRewardIsAppliedBasedOnPerformance</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.065</td>
+<td>The pollution reward is applied when 1 to 10 taps gives -1</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PollutionRewardIsAppliedBasedOnPerformance</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.066</td>
+<td>The pollution reward is applied when 0 taps gives 0</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PollutionRewardIsAppliedBasedOnPerformance</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.02</td>
+<td>REQ.068</td>
+<td>The tree-planting/environment theme is clear from the minigame text and visuals.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG02_Planting_Trees.cs</td>
+<td>PlantingTreesThemeIsClearInVisualsAndText()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.069</td>
+<td>When the player lands on a grey square, their pollution score increases by 1.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>GraySquareIncreasesSquareByOne</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.070</td>
+<td>The increase is applied once per landing.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>GreySquareAppliesOncePerLanding</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.071</td>
+<td>The pollution score does not exceed the maximum.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>ScoreDoesNotExceedMaximum</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.072</td>
+<td>The updated score is reflected in the UI.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>UpdatedScoreIsReflectedInUI</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.073</td>
+<td>Appropriate feedback is shown.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>AppropriateFeedbackIsShown</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.074</td>
+<td>Landing on green or blue squares does not increase pollution (unless a wrong answer on a blue card does so).</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>BlueSquareDoesNotIncreasePollutionByDefault</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.05</td>
+<td>REQ.074</td>
+<td>Landing on green or blue squares does not increase pollution (unless a wrong answer on a blue card does so).</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM05_Gray_Square_Penalty.cs</td>
+<td>GreenSquareDoesNotIncreasePollution</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.075</td>
+<td>When the player lands on a green square, their pollution score decreases by 1.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>MinigameCompletionDecreasesScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.076</td>
+<td>The decrease is applied once per landing.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>MinigameCompletionDecreasesScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.077</td>
+<td>The pollution score does not go below 0 after the decrease.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>ScoreDoesNotGoBelowZero</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.078</td>
+<td>The updated score is reflected in the UI.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>UpdatedScoreIsReflectedInUI</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.079</td>
+<td>Appropriate feedback is shown.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>GreenSquareLaunchesMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.080</td>
+<td>Landing on grey or blue squares does not by itself decrease pollution (only correct quiz answers or green squares do).</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>GraySquareDoesNotLaunchMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.06</td>
+<td>REQ.080</td>
+<td>Landing on grey or blue squares does not by itself decrease pollution (only correct quiz answers or green squares do).</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM06_Green_Square_Reward.cs</td>
+<td>BlueSquareDoesNotLaunchMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.080</td>
+<td>The player’s pollution score is always visible during gameplay.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>PollutionScoreIsAlwaysVisible</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.081</td>
+<td>The score is shown using Lungs and/or an AQHI-style bar.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>ScoreIsShownUsingAQHIBar</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.082</td>
+<td>As the score increases (e.g. landing on grey, wrong answer), the visual updates (e.g. lungs fill, bar rises) within a short time.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>VisualUpdatesWhenScoreIncreases</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.083</td>
+<td>As the score decreases (e.g. landing on green, correct answer), the visual updates (e.g. lungs clear, bar falls) within a short time.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>VisualUpdatesWhenScoreDecreases</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.084</td>
+<td>The score never appears out of the valid range.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>ScoreNeverExceedsValidRange</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.07</td>
+<td>REQ.085</td>
+<td>The representation is readable and understandable.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM07_Visual_Pollution_Score.cs</td>
+<td>ScoreLabelIsReadableAndUnderstandable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.085</td>
+<td>When any interactive button is pressed, a confirmation sound plays.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>ButtonPressPlaysConfirmationSound</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.086</td>
+<td>The sound plays immediately after the button press.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>SoundPlaysImmediatelyAfterButtonPress</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.087</td>
+<td>If the player presses multiple buttons quickly, the sounds do not overlap in a jarring way.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>MultipleButtonPressesDoNotOverlapJarringly</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.088</td>
+<td>The confirmation sound is affected by the sound effects volume setting.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>ConfirmationSoundAffectedByVolumeSettings</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.089</td>
+<td>If sound effects are muted, the confirmation sound does not play.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>ConfirmationSoundDoesNotPlayWhenMuted</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.090</td>
+<td>The sound is consistent across all buttons.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>SoundIsConsistentAcrossButtons</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>S.03</td>
+<td>REQ.090</td>
+<td>The sound is consistent across all buttons.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Sound/S03_Confirmation_Notes.cs</td>
+<td>AllInteractiveButtonsPlaySound</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.091</td>
+<td>When an MCQ blue card is drawn, the UI displays the answer options</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>ShowsAnswerOptions_WhenTriviaCardDrawn</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.092</td>
+<td>When an MCQ card is shown, the Submit button starts disabled until the player selects an answer.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>ShowsAnswerOptions_WhenTriviaCardDrawn</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.093</td>
+<td>The player can select exactly one answer at a time; selecting a new option unselects the previous option</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>SelectingAnswer_VisuallyIndicatesOnlyOneSelected</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.094</td>
+<td>Selecting an answer applies a clear selected-state visual indicator</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>SelectingAnswer_VisuallyIndicatesOnlyOneSelected</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.095</td>
+<td>After an answer is selected, Submit becomes enabled.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>AfterSelection_SubmitEvaluatesAndLocksIn</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.096</td>
+<td>After submitting, the answer buttons are locked (disabled) and the submit button is disabled (prevents changing/resubmitting).</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>AfterSelection_SubmitEvaluatesAndLocksIn</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.097</td>
+<td>A fact card does not display MCQ answer options (no answer-option buttons for fact cards)</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>FactCard_DoesNotShowMCQOptions</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.09</td>
+<td>REQ.098</td>
+<td>A fact card displays the fact UI element</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM09_Choose_Trivia_Answer.cs</td>
+<td>FactCard_DoesNotShowMCQOptions</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.099</td>
+<td>The in-game UI includes an enabled Settings button</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>InGameUI_Has_SettingsButton</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.100</td>
+<td>The Settings UI contains a Large Text toggle</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>SettingsUI_Has_Toggle_And_CloseButton</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.101</td>
+<td>The Settings UI contains a Close button</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>SettingsUI_Has_Toggle_And_CloseButton</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.102</td>
+<td>Clicking the Settings button shows the Settings UI and hides the in-game UI</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>ClickSettingsButton_ShowsSettings_HidesInGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.103</td>
+<td>Turning Large Text ON applies the large-font stylesheet to both Settings UI and In-game UI</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>ToggleLargeText_AppliesFontLargeStyleSheet</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.104</td>
+<td>Turning Large Text OFF removes the large-font stylesheet from both Settings UI and In-game UI</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>ToggleLargeText_AppliesFontLargeStyleSheet</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.01</td>
+<td>REQ.105</td>
+<td>Large Text preference persists: if ACC01_LargeText is 1, the large-font stylesheet is automatically applied on scene reload</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC01_Increase_Font_Size.cs</td>
+<td>Persistence_LargeText_AppliedOnReload</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.106</td>
+<td>A player can start the game by choosing a character.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT1_PlayerTokenExistsAtStart</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.107</td>
+<td>The player rolls a dice and moves forward.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT2_PlayerMovesForward</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.108</td>
+<td>On a grey spot, the player grabs a pom pom (representing air pollution).</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT3_GraySquare_IncreasesScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.109</td>
+<td>On a blue spot, the player picks a card which can either have a fact or a question.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT4_BlueSquare_OpensCardUI</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.110</td>
+<td>Upon getting a question, if the player answers it correctly, then the player can remove one of the air pollution from the cup.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT5_CorrectAnswer_DecreasesScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.111</td>
+<td>If the player answers it incorrectly, the player has to move back by one spot.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT6_WrongAnswer_MovesBackOne</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.112</td>
+<td>The game continues this way.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT7_GameContinues_DiceButtonExists</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.113</td>
+<td>When the game ends, the number of air pollution pom poms that the player finally has, determine the points of the player.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT8_EndGame_ShowsFinalScore</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.10</td>
+<td>REQ.114</td>
+<td>The game will check the corresponding AQHI with the number of air pollution pom poms collected.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM10_Final_Score_Display.cs</td>
+<td>AT9_AQHILabelMatchesScoreValue</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.115</td>
+<td>When the player answers a blue card (trivia) incorrectly, their token moves backward exactly one space on the path.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT1_WrongAnswer_MovesBackExactlyOne</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.116</td>
+<td>The backward move is applied after the wrong-answer feedback.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT2_Backstep_HappensAfterFeedbackDismiss</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.117</td>
+<td>If the player is on position 1 (Start), they do not move backward.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT3_AtStart_NoBackwardMove</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.118</td>
+<td>The pollution score still increases by 1 for the wrong answer.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT4_WrongAnswer_IncreasesScoreBy1</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.119</td>
+<td>There is clear visual or audio feedback that the answer was wrong before or during the backward move.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT5_ShowsIncorrectFeedbackBeforeMove</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.11</td>
+<td>REQ.120</td>
+<td>The player’s new position is correct and visible on the board after the move.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM11_Wrong_Answer_Backstep.cs</td>
+<td>AT6_PositionUpdatedAfterBackwardMove</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.13</td>
+<td>REQ.121</td>
+<td>After the player selects an answer on a blue card (trivia), an explanation message is shown.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM13_Learn_From_Mistakes.cs</td>
+<td>AT1_FeedbackAppearsAfterSubmit</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.13</td>
+<td>REQ.122</td>
+<td>The message appears immediately after the answer is selected and submitted.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM13_Learn_From_Mistakes.cs</td>
+<td>AT2_FeedbackNotVisibleBeforeSubmit</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.13</td>
+<td>REQ.123</td>
+<td>For a correct answer, the message explains why it is right.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM13_Learn_From_Mistakes.cs</td>
+<td>AT3_CorrectAnswerShowsCorrectState</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.13</td>
+<td>REQ.124</td>
+<td>For an incorrect answer, the message explains why it is wrong and what the correct idea is.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM13_Learn_From_Mistakes.cs</td>
+<td>AT4_IncorrectAnswerShowsIncorrectState</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>GBM.13</td>
+<td>REQ.125</td>
+<td>The message stays visible until the player dismisses it.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/GeneralBoardMovement/GBM13_Learn_From_Mistakes.cs</td>
+<td>AT5_FeedbackPersistsUntilDismissed_AndLocksInputs</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.01</td>
+<td>REQ.125</td>
+<td>A background music volume control exists in Settings.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET01_Music_Volume_Slider.cs</td>
+<td>SettingsUI_Has_Music_Slider</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.01</td>
+<td>REQ.126</td>
+<td>Changing the setting immediately adjusts the background music volume in-game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET01_Music_Volume_Slider.cs</td>
+<td>Adjust_Slider_Changes_Volume</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.01</td>
+<td>REQ.127</td>
+<td>Setting the volume to 0 silences the background music completely.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET01_Music_Volume_Slider.cs</td>
+<td>Zero_Volume_Mutes_Music</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.01</td>
+<td>REQ.128</td>
+<td>If master volume (SET.02) is set to 0, background music is also muted regardless of this setting.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET01_Music_Volume_Slider.cs</td>
+<td>Zero_Main_Volume_Mutes_Music</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.01</td>
+<td>REQ.129</td>
+<td>The chosen volume is saved and persists after the player starts a new game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET01_Music_Volume_Slider.cs</td>
+<td>Test_Volume_Save</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.130</td>
+<td>A master volume control exists in Settings.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>SettingsUI_Has_Main_Slider</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.131</td>
+<td>Changing the master volume affects all game sounds (background music, sound effects).</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>Main_Volume_Acts_As_Multiplier</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.132</td>
+<td>Setting master volume to 0 silences all audio in the game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>Zero_Volume_Mutes_All_Sound</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.133</td>
+<td>The master volume acts as a multiplier on other volume settings.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>Main_Volume_Acts_As_Multiplier</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.134</td>
+<td>The chosen volume is saved and persists after the player closes and reopens the game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>Test_Volume_Save</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.02</td>
+<td>REQ.135</td>
+<td>Adjusting master volume does not reset or change the individual volume settings.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET02_Main_Volume.cs</td>
+<td>Main_Volume_Does_Not_Change_Other_Settings_Directly</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.136</td>
+<td>A sound effects volume control exists in Settings.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>SettingsUI_Has_SFX_Slider</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.137</td>
+<td>Changing the setting immediately adjusts the volume of all sound effects.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>Adjust_Slider_Changes_Volume</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.138</td>
+<td>Setting the volume to 0 or mute silences all sound effects.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>Zero_Volume_Mutes_Sound_Effects</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.139</td>
+<td>If master volume (SET.02) is set to 0, sound effects are also muted regardless of this setting.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>Zero_Main_Volume_Mutes_Sound_Effects</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.140</td>
+<td>The chosen volume is saved and persists after the player closes and reopens the game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>Test_Volume_Save</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>SET.03</td>
+<td>REQ.141</td>
+<td>Changing this setting does not affect background music volume.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Settings/SET03_SFX_Volume.cs</td>
+<td>SFX_Slider_Does_Not_Effect_Music</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.142</td>
+<td>The player can choose Ranger on the character selection screen before the game starts.</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_1_PlayerCanChooseRangerBeforeGameStarts</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.143</td>
+<td>When the Ranger lands on a Wildfire (grey) spot, they take no pollution</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_2_RangerTakesNoPollutionDamageOnWildfireGreySpot</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.144</td>
+<td>Non-Ranger characters still take pollution damage on Wildfire (grey) spots.</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_2_RangerTakesNoPollutionDamageOnWildfireGreySpot</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.145</td>
+<td>When the Ranger lands on a “Plant Trees” (Green) spot, they remove double the usual pollution.</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_3_NonRangerStillTakesPollutionDamageOnWildfireGreySpot</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.146</td>
+<td>The Ranger’s abilities are described on the character selection screen.<br></td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_3_RangerRemovesDoubleUsualPollutionOnPlantTreesGreenSpot</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.13</td>
+<td>REQ.147</td>
+<td>During the game, the avatar and theme reflect the Ranger.<br></td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE13_Play_As_The_Ranger.cs</td>
+<td>ABE13_4_RangerAbilitiesAreDescribedOnCharacterSelectionScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.148</td>
+<td>The player can choose Cyclist on the character selection screen before the game starts.<br></td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>CyclistIsSelectableOnCharacterScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.149</td>
+<td>After selecting the cyclist, the game shows the cyclist on the Game Board</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>SelectingCyclistLoadsGameWithCyclist</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.150</td>
+<td>When the Cyclist lands on a Green spot, they move +1 extra space automatically<br></td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>CyclistMovesPlusOneAfterGreenSquare</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.151</td>
+<td>When the Cyclist lands on a “Car/Traffic” Grey spot, they take zero pollution damage</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>CyclistTakesZeroDamageOnCarTrafficGreySpot</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.152</td>
+<td>The Cyclist’s abilities are described on the character selection screen and behave as described in the game design.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>CyclistAbilityIsDescribedOnCharacterScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.11</td>
+<td>REQ.153</td>
+<td>During the game, the avatar and theme reflect the Cyclist</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE11_Play_As_The_Cyclist.cs</td>
+<td>CyclistAvatarReflectedInGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.06</td>
+<td>REQ.154</td>
+<td>A player beats the boss only if they answer all three questions correctly.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE06_Beat_A_Boss.cs</td>
+<td>AllThreeCorrect_PlayerBeatsBoss</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.06</td>
+<td>REQ.155</td>
+<td>If the player answers all three correctly: the win state is shown</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE06_Beat_A_Boss.cs</td>
+<td>AllThreeCorrect_WinStateShown</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.06</td>
+<td>REQ.156</td>
+<td>If the player answers one or more questions incorrectly: the player does not beat the boss</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE06_Beat_A_Boss.cs</td>
+<td>OneIncorrect_PlayerDoesNotBeatBoss</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.06</td>
+<td>REQ.157</td>
+<td>After a win, the player returns to the board and can continue moving</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE06_Beat_A_Boss.cs</td>
+<td>AfterWin_PlayerReturnsToBoard_CanContinue</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.06</td>
+<td>REQ.158</td>
+<td>After a loss, the player also returns to the board and gameplay continues</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE06_Beat_A_Boss.cs</td>
+<td>AfterLoss_PlayerReturnsToBoard_GameplayContinues</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.159</td>
+<td>The player loses the boss battle if they answer one or more questions incorrectly out of the three</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>OneIncorrectAnswer_PlayerLoses</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.160</td>
+<td>Losing occurs as soon as the first incorrect answer is submitted (the player does not need to answer all three to lose).</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>FirstIncorrect_EndsBattleImmediately_NoRemainingQuestions</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.161</td>
+<td>A clear lose state is shown (e.g. "Incorrect answer!").</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>LoseState_ShowsIncorrectMessage</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.162</td>
+<td>If the player answers question 1 correctly and question 2 incorrectly, they lose; they do not beat the boss.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>Q1CorrectQ2Incorrect_PlayerLoses</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.163</td>
+<td>If the player answers all three incorrectly, they lose.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>AllThreeIncorrect_PlayerLoses</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.164</td>
+<td>If the player answers two correctly and one incorrectly (in any order), they lose.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>TwoCorrectOneIncorrect_PlayerLoses</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.165</td>
+<td>After losing, the player returns to the board and gameplay continues.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>AfterLose_PlayerReturnsToBoard_GameplayContinues</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.07</td>
+<td>REQ.166</td>
+<td>The boss battle is considered finished on loss; the player does not continue answering the remaining questions after an incorrect answer.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE07_Lose_To_A_Boss.cs</td>
+<td>BattleFinishedOnLoss_NoRemainingQuestionsShown</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.12</td>
+<td>REQ.167</td>
+<td>The player can choose Scientist on the character selection screen before the game starts.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE12_Play_As_The_Scientist.cs</td>
+<td>ScientistIsSelectableOnCharacterScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.12</td>
+<td>REQ.168</td>
+<td>The player has a “Sensor” button that can be used at most twice per game to reveal the correct answer to a difficult Quiz Card.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE12_Play_As_The_Scientist.cs</td>
+<td>SensorButtonAppearsOnQuizCards</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.12</td>
+<td>REQ.169</td>
+<td>After two uses, the button is disabled or clearly indicated as unavailable.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE12_Play_As_The_Scientist.cs</td>
+<td>SensorButtonDisabledAfterTwoUses</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.12</td>
+<td>REQ.170</td>
+<td>The Scientist’s ability is described on the character selection screen and works only on quiz/question cards, not on fact-only cards.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE12_Play_As_The_Scientist.cs</td>
+<td>SensorDoesNotWorkOnFactCards</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.12</td>
+<td>REQ.171</td>
+<td>During the game, the avatar and theme reflect the Scientist.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE12_Play_As_The_Scientist.cs</td>
+<td>SelectingScientistLoadsGameWithScientist</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>UI.05</td>
+<td>REQ.172</td>
+<td>When present the pause button is located in the top right</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/UI/UI05_Unify_The_UI.cs</td>
+<td>PrimaryButtonsUseConsistentStyling</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>UI.05</td>
+<td>REQ.173</td>
+<td>The main title text uses the same font whenever present in the game</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/UI/UI05_Unify_The_UI.cs</td>
+<td>TitleTextUsesConsistentFontAcrossScenes</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>UI.05</td>
+<td>REQ.174</td>
+<td>Font color and size is used consistently</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/UI/UI05_Unify_The_UI.cs</td>
+<td>ButtonFontSizeIsConsistentAcrossScenes</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.04</td>
+<td>REQ.175</td>
+<td>(Assuming the card pool is not exhausted) Each blue card (fact or question) is shown to only one player during the game, the one who landed on the blue square</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP04_No_Repeat_Questions.cs</td>
+<td>EachCardShownOnceBeforeDeckEmpty</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.04</td>
+<td>REQ.176</td>
+<td>If the blue card pool is exhausted, the game re-adds in all of the blue game cards that were present at the start of the game.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP04_No_Repeat_Questions.cs</td>
+<td>DeckRefilledWhenEmpty</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.04</td>
+<td>REQ.177</td>
+<td>Questions are drawn fairly (random from unseen pool) so no player is systematically favored.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP04_No_Repeat_Questions.cs</td>
+<td>CardsDrawnFairly</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.02</td>
+<td>REQ.178</td>
+<td>Speaker button appears on fact/question cards.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC02_Text_To_Speech.cs</td>
+<td>SpeakerButtonAvailableOnMCQ</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.02</td>
+<td>REQ.179</td>
+<td>Speaker button appears on fact/question cards.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC02_Text_To_Speech.cs</td>
+<td>SpeakerButtonAvailableOnFact</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.02</td>
+<td>REQ.180</td>
+<td>Press plays TTS for the current card’s text.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC02_Text_To_Speech.cs</td>
+<td>SpeakerButtonPlaysTTS</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.02</td>
+<td>REQ.181</td>
+<td>Press again stops (or restarts) without overlapping audio.</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC02_Text_To_Speech.cs</td>
+<td>SecondTTSUseStopsTTS</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ACC.02</td>
+<td>REQ.182</td>
+<td>Switching cards reads the new card (old audio stops).</td>
+<td>Ben</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Accessibility/ACC02_Text_To_Speech.cs</td>
+<td>ClosingCardStopsTTS</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.183</td>
+<td>The player can start a multiplayer game with 2 or 3 total players, where 1 or 2 are bots.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>CanStart2PlayerGame(), CanStart3PlayerGame()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.184</td>
+<td>Bots take turns in the same order as human players.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>PlayersTakeTurnsInOrder()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.185</td>
+<td>When it is a bot's turn, the bot rolls the dice and moves automatically (without any human's input).</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>OnlyCurrentPlayerCanMove()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.186</td>
+<td>Each bot has its own token, position, and pollution score.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>EachPlayerHasSeparateToken()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.187</td>
+<td>When a bot lands on a blue square, the bot answers the question automatically.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>TurnOrderRepeatsUntilGameEnds()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.188</td>
+<td>Bots apply the same board rules as the humans.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>CurrentPlayerIsIndicatedInUI()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.189</td>
+<td>The game supports 1 human + 1 bot or 1 human + 2 bots.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>OnlyCurrentPlayerCanMove()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.190</td>
+<td>The current turn (human or bot) is clearly indicated.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>OnlyCurrentPlayerSeesBlueCard()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.01</td>
+<td>REQ.191</td>
+<td>Bot turns complete within a reasonable time so the game does not feel stuck.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP01_PlayWith2Others.cs</td>
+<td>GameSupportsExactly2Or3Players()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.192</td>
+<td>In multiplayer, the player with the lowest pollution score when the game ends is the winner.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>LowestPollutionScoreWins()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.194</td>
+<td>If two or more players tie for the lowest pollution score, the winner is defined.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>TieForLowestScoreProducesTie()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.195</td>
+<td>The pollution score is the Lung Meter / pompom count (0–10); lower is better.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>PollutionScoreRangeIs0To10()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.196</td>
+<td>Pollution scores are updated correctly for each player as they land on green, grey, and blue squares.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>PollutionScoreUpdateOnGreenSquare(), PollutionScoreUpdateOnGraySquare(), PollutionScoreUpdateOnBlueSquareCorrect()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.197</td>
+<td>The winner is clearly announced at the end of the game.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>WinnerAnnouncedAtGameEnd()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.198</td>
+<td>All players can see final scores (or at least who won) at game end.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>AllPlayersFinalScoresVisible()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MP.03</td>
+<td>REQ.199</td>
+<td>The win condition uses pollution score only (or as the primary tiebreaker), not board position alone.</td>
+<td>Sridhar</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Multiplayer/MP03_WinByLowerAQHI.cs</td>
+<td>WinConditionUsesPollutionScoreOnly()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.200</td>
+<td>When the player enters the wind/smoke minigame (e.g. boss battle or designated trigger), the minigame loads and appears.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>StayInsideMinigameExistsInScene</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.201</td>
+<td>The player can interact to clear smoke.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>MinigameNameMatchesUserStory</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.202</td>
+<td>Animations for smoke and wind interaction run correctly and are visible.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>TapsOnWindAreaReduceSmoke</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.203</td>
+<td>The minigame has a clear win condition (e.g. clear 75% of smoke in 12 seconds, or meet a target).</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>PollutionReductionTiersMatchSpec</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.204</td>
+<td>When the player finishes the minigame (win or time limit), the minigame closes and the main game continues.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>ExitButtonStopsMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.205</td>
+<td>The minigame exits cleanly when completed or when the player exits (if allowed); the main game does not get stuck.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>InstructionsMentionWindOrSwipe</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.01</td>
+<td>REQ.206</td>
+<td>The theme (wind blowing away smoke, interacting with pollution) is clear in the minigame’s visuals and interactions.</td>
+<td>Ipsa</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG01_Stay_Inside_Clean_Air.cs</td>
+<td>SmokeCloudsContainerAndPuffsExist</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.207</td>
+<td>When the player lands on a green square that triggers the ride a bike minigame</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>RideBikeMinigameExistsInScene</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.208</td>
+<td>The player can tap to pedal/control the bike</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>TapAreaExistsAndIsInteractable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.209</td>
+<td>Tapping the tap area increases distance travelled</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>TappingTapAreaIncreasesDistance</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.210</td>
+<td>Visual feedback shows the bike moving or pedaling animation</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ProgressBarUpdatesOnTap</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.211</td>
+<td>Visual feedback shows the bike moving or pedaling animation</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>VisualFeedbackElementsExist</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.212</td>
+<td>The minigame ends when the player travels 50 metres</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ExitButtonClosesMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.213</td>
+<td>When the player finishes the minigame (or exits early), the minigame closes and the main game resumes</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>EarlyExitFiresOnMinigameExited</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.214</td>
+<td>The pollution reward (−1 or −2 based on distance) is applied after the minigame ends — full reward at 50m</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>PollutionRewardTier_Full_50m</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.215</td>
+<td>The pollution reward (−1 or −2 based on distance) is applied after the minigame ends — half reward at 25m</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>PollutionRewardTier_Half_25m</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.216</td>
+<td>The pollution reward (−1 or −2 based on distance) is applied after the minigame ends — zero reward under 25m</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>PollutionRewardTier_Zero_Under25m</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.217</td>
+<td>The theme (riding a bike, reducing car emissions, clean transportation) is clear in the minigame's visuals and text</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>TitleReferencesBikingTheme</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.218</td>
+<td>The theme (riding a bike, reducing car emissions, clean transportation) is clear in the minigame's visuals and text</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>SceneContainsBikingVisuals</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.219</td>
+<td>Performance feedback is displayed at the end</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ResultLabelExistsInUI</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.220</td>
+<td>Performance feedback contains positive message on goal reached</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ResultLabelContainsPositiveFeedbackOnGoal</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.221</td>
+<td>Performance feedback shows distance biked</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ResultLabelContainsDistanceBiked</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.222</td>
+<td>Performance feedback is displayed at the end</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>ResultLabelExistsInUI</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.06</td>
+<td>REQ.223</td>
+<td>Timer counts down during gameplay</td>
+<td>Maansi</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG06_Riding_Bike.cs</td>
+<td>TimerCountsDownDuringGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.224</td>
+<td>When the player enters the “Use a Mask” minigame, the minigame loads and appears.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>UseMaskMinigameExistsInScene()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.225</td>
+<td>The minigame shows a face and three mask options.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>MinigameShowsFaceAndThreeMaskOptions()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.226</td>
+<td>The player can drag and drop a mask onto the face.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>CorrectMaskSnapsToFace()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.227</td>
+<td>Dropping an incorrect mask resets it and shows incorrect feedback.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>IncorrectMaskResetsToStartAndShowsFeedback()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.228</td>
+<td>Dropping the correct mask snaps it to the face.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>CorrectMaskSnapsToFace()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.229</td>
+<td>On success, the minigame closes and applies pollution reduction of 1.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>SuccessCompletesMinigameWithPollutionReductionOfOne()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.05</td>
+<td>REQ.230</td>
+<td>On failure after the allowed attempts, the minigame closes with no pollution change.</td>
+<td>Pouyan</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG05_Using_A_Mask.cs</td>
+<td>FailureAfterTwoIncorrectAttemptsCompletesWithNoPollutionChange()</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.231</td>
+<td>The user is prompted with a selection of three energy sources</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.232</td>
+<td>The user may select an energy source by clicking on it</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.233</td>
+<td>The user is rewarded if they select the clean source</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.234</td>
+<td>There is a brief animation and sound on success or failure</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.235</td>
+<td>The user loses pollution if they succeed</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.04</td>
+<td>REQ.236</td>
+<td>The user gains pollution if they fail</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.07</td>
+<td>REQ.237</td>
+<td>The user gains 1 point for each second a light is left on</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.07</td>
+<td>REQ.238</td>
+<td>The light turns off whenever the user presses it.</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.07</td>
+<td>REQ.239</td>
+<td>Randomly, the lights are turned on by NPCs that run around between the rooms</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.07</td>
+<td>REQ.240</td>
+<td>If the user has too many points at the end, they gain 1 pollution point</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.07</td>
+<td>REQ.241</td>
+<td>If the user has less then 25 points at the end they lose 1 pollution point</td>
+<td>Eric</td>
+<td></td>
+<td></td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.08</td>
+<td>REQ.242</td>
+<td>After a boss battle ends (win or lose), the player can see which questions they got wrong.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE08_Learn_From_Boss_Mistakes.cs</td>
+<td>AT1_AfterBattleEnds_PlayerCanSeeWrongQuestions</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.08</td>
+<td>REQ.243</td>
+<td>After a boss battle ends (win or lose), the player can see which questions they got wrong.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE08_Learn_From_Boss_Mistakes.cs</td>
+<td>AT2_IncorrectAnswers_ShowCorrectAnswersInFeedback</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.08</td>
+<td>REQ.244</td>
+<td>The player can read the feedback before returning to normal gameplay.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE08_Learn_From_Boss_Mistakes.cs</td>
+<td>AT3_FeedbackVisibleUntilPlayerContinues</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.08</td>
+<td>REQ.245</td>
+<td>The feedback is shown only after the battle has ended, not during the three questions.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE08_Learn_From_Boss_Mistakes.cs</td>
+<td>AT4_FeedbackNotShownDuringThreeQuestions</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.08</td>
+<td>REQ.246</td>
+<td>If the player answered all three correctly, an "All correct!" screen is shown.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE08_Learn_From_Boss_Mistakes.cs</td>
+<td>AT5_AllThreeCorrect_ShowsAllCorrectScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.247</td>
+<td>When the game is set to Hard difficulty, questions come from the hard/difficult question set.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT1_HardDifficulty_UsesHardQuestionSet</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.248</td>
+<td>Hard difficulty applies to blue-card questions and, if applicable, boss-battle questions.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT2_HardDifficulty_AppliesToBlueCards_AndBossIfApplicable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.249</td>
+<td>The difficulty does not change mid-game unless the player changes settings.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT3_DifficultyDoesNotChangeMidGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.250</td>
+<td>The current difficulty (Hard) is visible somewhere on the screen itself.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT4_HardDifficulty_IsVisibleOnScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.251</td>
+<td>At least one hard question is shown during a typical game when Hard is selected.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT5_AtLeastOneHardQuestion_ShownWhenHardSelected</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.252</td>
+<td>When the player selects Medium, the game asks questions from the Medium set.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT6_MediumDifficulty_UsesMediumQuestionSet</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.253</td>
+<td>Medium difficulty is used for normal blue-card questions and boss questions (if boss questions are used).</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT7_MediumDifficulty_AppliesToBlueCards_AndBossIfApplicable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.254</td>
+<td>The difficulty stays on Medium during the game unless the player changes it in settings.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT8_MediumDifficulty_DoesNotChangeMidGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.255</td>
+<td>The player can clearly tell they are on Medium from what is shown on screen.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT9_MediumDifficulty_IsVisibleOnScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.09</td>
+<td>REQ.256</td>
+<td>In a normal Medium game, the player will see at least one Medium question.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE09_More_Difficult_Questions.cs</td>
+<td>AT10_AtLeastOneMediumQuestion_ShownWhenMediumSelected</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.10</td>
+<td>REQ.257</td>
+<td>When the game is set to Easy difficulty, questions come from the easy question set.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE10_More_Easier_Questions.cs</td>
+<td>AT1_EasyDifficulty_UsesEasyQuestionSet</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.10</td>
+<td>REQ.258</td>
+<td>Easy difficulty applies to blue-card questions and, if applicable, boss-battle questions.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE10_More_Easier_Questions.cs</td>
+<td>AT2_EasyDifficulty_AppliesToBlueCards_AndBossIfApplicable</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.10</td>
+<td>REQ.259</td>
+<td>The difficulty does not change mid-game unless the player changes settings.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE10_More_Easier_Questions.cs</td>
+<td>AT3_DifficultyDoesNotChangeMidGame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.10</td>
+<td>REQ.260</td>
+<td>The current difficulty (Easy) is visible somewhere on the screen itself.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE10_More_Easier_Questions.cs</td>
+<td>AT4_EasyDifficulty_IsVisibleOnScreen</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>ABE.10</td>
+<td>REQ.261</td>
+<td>At least one easy question is shown during a typical game when Easy is selected.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/AdditionalBoardEvents/ABE10_More_Easier_Questions.cs</td>
+<td>AT5_AtLeastOneEasyQuestion_ShownWhenEasySelected</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.262</td>
+<td>When the player lands on a green square, the Public Transportation minigame is displayed.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>LandingOnGreenSquareDisplaysPublicTransportationMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.263</td>
+<td>The player sees three transportation lanes: Car, Bus, and Metro.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>PlayerSeesThreeTransportationLanesCarBusAndMetro</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.264</td>
+<td>The player can move between lanes during the minigame using keyboard input, and swipe input on touch devices.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>PlayerCanMoveBetweenLanesDuringTheMinigame</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.265</td>
+<td>If the player finishes the minigame in the Metro lane, the pollution score decreases by 2.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>FinishingInMetroLaneReducesPollutionByTwo</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.266</td>
+<td>If the player finishes the minigame in the Bus lane, the pollution score decreases by 1.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>FinishingInBusLaneReducesPollutionByOne</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.267</td>
+<td>If the player finishes the minigame in the Car lane, the pollution score does not decrease.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>FinishingInCarLaneDoesNotReducePollution</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.268</td>
+<td>If the player hits an obstacle, the minigame shows end feedback with no pollution reduction.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>HittingObstacleShowsEndFeedbackWithNoPollutionReduction</td>
+<td>Complete</td>
+<td></td>
+</tr>
+<tr>
+<td>MG.03</td>
+<td>REQ.269</td>
+<td>After viewing the end feedback, the player can dismiss the minigame and return to the board.</td>
+<td>Vikasini</td>
+<td>W26project-FutureEnergySystems/Assets/Testing/PlayMode/Minigames/MG03_Public_Transportation.cs</td>
+<td>AfterViewingEndFeedbackPlayerCanDismissMinigameAndReturnToBoard</td>
+<td>Complete</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../UiDesignPrinciples/" class="btn btn-neutral float-left" title="UI Principles"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../UiDesignPrinciples/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      <script src="../javascripts/mermaid.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>

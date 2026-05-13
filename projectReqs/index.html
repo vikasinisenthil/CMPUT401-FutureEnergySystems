@@ -1,0 +1,1313 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Project Requirements - Air Heroes</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Project Requirements";
+        var mkdocs_page_input_path = "projectReqs.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> Air Heroes
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="..">Home</a>
+                </li>
+              </ul>
+              <ul class="current">
+                <li class="toctree-l1 current"><a class="reference internal current" href="#">Project Requirements</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#executive-summary">Executive Summary</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#project-glossary">Project Glossary</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#core-game">Core Game</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#educational-terms">Educational Terms</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#characters-and-abilities">Characters and Abilities</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#map-elements">Map Elements</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#requirements-traceability-matrix-google-sheets">Requirements Traceability Matrix - Google Sheets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ui-design-principlesheuristics-accessibility-google-sheets">UI Design Principles/Heuristics + Accessibility - Google Sheets</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#user-stories">User Stories</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#general-board-movement">General Board Movement</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#additional-board-events">Additional Board Events</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ui-aesthetics">UI / Aesthetics</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#main-menu">Main Menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#multiplayer">Multiplayer</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#settings">Settings</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sound">Sound</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#minigames">Minigames</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#admin">Admin</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#accessibility">Accessibility</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#moscow">MoSCoW</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#similar-products">Similar Products</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#geothermal-energy-game">Geothermal Energy Game</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#discovering-renewable-futures">Discovering Renewable Futures</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#smog-the-air-pollution-game">Smog: The Air Pollution Game</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#aqhi-fortune-teller-game">AQHI Fortune Teller Game</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#the-clean-air-game">The Clean Air Game</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#protecting-gaia-a-battle-for-better-air-quality">Protecting Gaia: A Battle for Better Air Quality</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#ar-biosphere-gaming-app">AR Biosphere Gaming App</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#open-source-projects">Open-Source Projects</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#technical-resources">Technical Resources</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#detailed-list-of-technologies">Detailed list of technologies</a>
+    </li>
+    </ul>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../swDesign/">Software Design</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../projectMgmt/">Project Management</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../teamwork/">Teamwork</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../meetingMins/">Meeting Minutes</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../UiDesignPrinciples/">UI Principles</a>
+                </li>
+              </ul>
+              <ul>
+                <li class="toctree-l1"><a class="reference internal" href="../rtm/">Requirements Traceability Matrix</a>
+                </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">Air Heroes</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+      <li class="breadcrumb-item active">Project Requirements</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="project-requirements">Project Requirements</h1>
+<h2 id="executive-summary">Executive Summary</h2>
+<p>This project aims to develop an educational video game that helps children understand how air quality affects health in an engaging and interactive way. The game addresses the challenge of making concepts such as air pollution, air circulation, and the Air Quality Health Index easy to understand and meaningful for young kids. Players travel across the cities in Canada, to avoid pollution sources such as wildfires and factories, and use clean-air strategies to keep their Lung Meter healthy. The product’s core functionality combines learning with decision-making, where players earn points by choosing effective environmental strategies that also change the game world and their path through it. The game will be used by children as a learning tool, either independently or in educational settings, to explore air quality concepts while actively applying their knowledge through gameplay.</p>
+<h2 id="project-glossary">Project Glossary</h2>
+<h3 id="core-game">Core Game</h3>
+<ul>
+<li><strong>Pollution Level</strong> - A variable to track the session throughout. It is visualized as a "Lung Cup" filling up asthe risk increases.</li>
+<li><strong>Lung Cup</strong> - A container to represent the player's health. It starts at zero and fills up as the pollution level increases.</li>
+<li><strong>Pompoms</strong> - Items that get added to the Lung Cup to count the pollution level, where 0 represents clean lungs and 10 represents a "Game Over".</li>
+<li><strong>Buff</strong> - A specific ability to a specific character of the game when the player hovers over the avatar during the selection.</li>
+<li><strong>Juice Mode</strong> - A reward when three questions are answered correctly in a row, granting the character a rainbow trail and immunity to the next Grey Spot.</li>
+<li><strong>Win Rate</strong> - A way to keep track of correct answers. It is used to determine if the game should switch the question difficulty to Beginner or Expert.</li>
+<li><strong>Risk Levels</strong> - The levels of air quality danger displayed on the map. The levels are Low Risk (1-3), Moderate Risk (4-6), High Risk (7-10), and Very High Risk (10+).</li>
+<li><strong>Air Hero</strong> - The highest scoring run achieved at the end of the game if the player finished with 0-2 pompoms in their Lung Cup.</li>
+<li><strong>Air Helper</strong> - The middle scoring run achieved at the end of the game if the player finished with 3-6 pompoms in their Lung Cup.</li>
+<li><strong>Clean Air Solution</strong> - Items that players must find and use while navigating the map to keep their Lung meter clean.</li>
+<li><strong>Smog Sprites</strong> - Objects that fill the screen during the "Wind Fan Mini-Game" which the player must rapidly swipe to clear away.</li>
+</ul>
+<h3 id="educational-terms">Educational Terms</h3>
+<ul>
+<li><strong>AQHI</strong> - It stands for Air Quality Health Index, measures the health effects of short term air pollution exposure.</li>
+<li><strong>Air Pressure</strong> - It is described as the weight of the air.</li>
+<li><strong>Scrubber</strong> - A filter that the player must have in a factor's chimney to change black smoke into clear steam.</li>
+<li><strong>Temperature Inversion</strong> - A random weather event where warm air traps cold and dirty air near the group. This will cause all the pollution penalties to be doubled for three turns.</li>
+</ul>
+<h3 id="characters-and-abilities">Characters and Abilities</h3>
+<ul>
+<li><strong>Player</strong> - Someone who is playing the game.</li>
+<li><strong>The Cyclist</strong> - A character whose theme is "Bike Power! Zero tailpipe smoke".</li>
+<li><strong>Traffic Weaver</strong> - The Cyclist's ability to take zero pollution damage when landing on "Car/Traffic" Grey Spots.</li>
+<li><strong>The Ranger</strong> - A character whose theme is "Trees are the lungs of the Earth".</li>
+<li><strong>Photosynthesis Boost</strong> - The Ranger's ability to remove double the pollution when landing on a Green Spot.</li>
+<li><strong>The Scientist</strong> - A character whose theme is "I can see the invisible!".</li>
+<li><strong>Forecasting</strong> - The Scientist's ability to click a "Sensor Button" to reveal the correct answer to a Quiz Card (usable twice per game).</li>
+</ul>
+<h3 id="map-elements">Map Elements</h3>
+<ul>
+<li><strong>Blue Card</strong> - A card that is drawn by the player, one side is solid blue, and the other has either a fact on it or a question for the player to answer.</li>
+<li><strong>Blue Spots</strong> - It is known as the "Blue Sky Breaks" that opens a window for the player to draw a card for either a fact or answer a question.</li>
+<li><strong>Green Spots</strong> - It is known as the "Hero Solution Zones" that shows positive actions an opens up mini-games to remove pollution from the player's Lung cup.</li>
+<li><strong>Grey Spots</strong> - It is known as the "Air Pollution Alerts" thats located near pollution sources. This adds a point to the Pollution Level.</li>
+<li><strong>Numbered Spaces</strong> - The sequence of path labelled 1 through 38 that the players move along to reach the finish from the start.</li>
+<li><strong>Hidden Shortcuts</strong> - These are secret paths through the forests that be revealed by the Ranger avatar to bypass sections of the map.</li>
+</ul>
+<h2 id="requirements-traceability-matrix-google-sheets"><a href="https://docs.google.com/spreadsheets/d/1o1cWHcWgR-8uD1HNVFy-zp-Idas_VhFcwza_brM02vE/edit?gid=2117506884#gid=2117506884">Requirements Traceability Matrix - Google Sheets</a></h2>
+<h2 id="ui-design-principlesheuristics-accessibility-google-sheets"><a href="https://docs.google.com/spreadsheets/d/1o1cWHcWgR-8uD1HNVFy-zp-Idas_VhFcwza_brM02vE/edit?gid=124615829#gid=124615829">UI Design Principles/Heuristics + Accessibility - Google Sheets</a></h2>
+<h2 id="user-stories">User Stories</h2>
+<h3 id="general-board-movement">General Board Movement</h3>
+<p><strong>GBM.01 - Roll Dice Movement</strong><br />
+As a player, I want to be able to roll a dice on my turn and move the indicated number of spaces, in order to move toward the end.</p>
+<blockquote>
+<ul>
+<li>On the player’s turn, a roll dice control is available</li>
+<li>The dice result is a random integer from 1 to 6</li>
+<li>After the roll, the player’s token moves forward exactly that many spaces along the path</li>
+<li>The player does not move backward when rolling; movement is only toward the end.</li>
+<li>If the player is near the end (e.g. on 36), a roll of 3 moves them to 38</li>
+<li>The player cannot roll again until their turn is complete</li>
+</ul>
+</blockquote>
+<p><strong>GBM.02 - Draw Blue Card</strong><br />
+As a player, I want to draw a random blue card when I land on a blue circle, so that I can learn something about air pollution.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a blue square, a blue card is drawn (fact or question).</li>
+<li>Only one card is drawn per landing on a blue square.</li>
+<li>The card is displayed to the player.</li>
+<li>The player cannot move or roll again until the card has been acknowledged.</li>
+<li>Landing on a green or grey square does not trigger a blue card draw.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.03 - Air-Pollution Facts</strong><br />
+As a player, I want some blue cards to present air-pollution facts, so that I can learn new information.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a blue square, the drawn card can be a fact card.</li>
+<li>A fact card shows the text written on the card to the player.</li>
+<li>Reading a fact card does not change the player’s pollution score.</li>
+<li>After the player dismisses the fact, the card UI closes and normal gameplay resumes.</li>
+<li>The system can randomly choose between a fact card and a quiz card when drawing from a blue square.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.04 - Blue Trivia Questions</strong><br />
+As a player, I want some blue cards to be multiple-choice questions, so that I can test my understanding and be rewarded.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a blue square, the drawn card can be a quiz card with multiple-choice options.</li>
+<li>The player can select exactly one answer from the options shown.</li>
+<li>Each quiz card has one correct answer; the game can determine right vs wrong</li>
+<li>Correct answer: The player is rewarded, that is, the pollution score decreases by 1</li>
+<li>Incorrect answer: The player receives a consequence, that is the player moves backwards 1 square</li>
+<li>After the player selects an answer, the result is shown and the card is dismissed before gameplay continues.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.05 - Grey Square Penalty</strong><br />
+As a player, I want to gain a pollution point when I land on a grey square, so that pollution sources impact my score.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a grey square, their pollution score increases by 1.</li>
+<li>The increase is applied once per landing.</li>
+<li>The pollution score does not exceed the maximum.</li>
+<li>The updated score is reflected in the UI.</li>
+<li>Appropriate feedback is shown.</li>
+<li>Landing on green or blue squares does not increase pollution (unless a wrong answer on a blue card does so).</li>
+</ul>
+</blockquote>
+<p><strong>GBM.06 - Green Square Reward</strong><br />
+As a player, I want to lose a pollution point when I land on a green square, so that clean areas reward me.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a green square, their pollution score decreases by 1.</li>
+<li>The decrease is applied once per landing.</li>
+<li>The pollution score does not go below 0 after the decrease.</li>
+<li>The updated score is reflected in the UI.</li>
+<li>Appropriate feedback is shown.</li>
+<li>Landing on grey or blue squares does not by itself decrease pollution (only correct quiz answers or green squares do).</li>
+</ul>
+</blockquote>
+<p><strong>GBM.07 - Visual Pollution Score</strong><br />
+As a player, I want to see my pollution score during the game represented visually (Lungs / AQHI bar), so that I can easily understand my air quality status.</p>
+<blockquote>
+<ul>
+<li>The player’s pollution score is always visible during gameplay.</li>
+<li>The score is shown using Lungs and/or an AQHI-style bar.</li>
+<li>As the score increases (e.g. landing on grey, wrong answer), the visual updates (e.g. lungs fill, bar rises) within a short time.</li>
+<li>As the score decreases (e.g. landing on green, correct answer), the visual updates (e.g. lungs clear, bar falls) within a short time.</li>
+<li>The score never appears out of the valid range.</li>
+<li>The representation is readable and understandable.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.08 - Turn Camera Follow</strong><br />
+As a player, I want the camera to follow and zoom in on my character when its my turn, so that I can focus on my actions.</p>
+<blockquote>
+<ul>
+<li>At the start of the player’s turn, the camera centers on that player’s character.</li>
+<li>When the player rolls and moves, the camera follows the character along the path.</li>
+<li>The camera framing keeps the current path and a few upcoming spaces visible.</li>
+<li>When the character stops on their final space for the turn, the camera stops moving and holds that view until the turn ends.</li>
+<li>In multiplayer, when it becomes another player’s turn, the camera switches to follow that player’s character (shows the active player).</li>
+<li>The camera does not obscure important UI.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.09 - Choose Trivia Answer</strong><br />
+As a player, I want to choose an answer from a pool of multiple choice answers when landing on a blue space with a trivia question, so that I can test my understanding.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a blue square and the drawn card is a trivia/question card (not a fact), the card shows multiple-choice answers.</li>
+<li>The player can click or tap an answer option to select it.</li>
+<li>The player can select only one answer per question; selecting another option either replaces the first choice.</li>
+<li>The selected option is visually indicated (e.g. highlight, border).</li>
+<li>After the player selects an answer, the game evaluates it (correct or incorrect) and applies the outcome.</li>
+<li>If the card is a fact (not a trivia question), multiple-choice options are not shown.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.10 - Final Score Display</strong><br />
+As a player, I want to see my score when I reach the end of the board, so that I can know what my final air quality health is.</p>
+<blockquote>
+<ul>
+<li>A player can start the game by choosing a character.</li>
+<li>The player rolls a dice and moves forward.</li>
+<li>On a grey spot, the player grabs a pom pom (representing air pollution).</li>
+<li>On a blue spot, the player picks a card which can either have a fact or a question.</li>
+<li>Upon getting a question, if the player answers it correctly, then the player can remove one of the air pollution from the cup.</li>
+<li>If the player answers it incorrectly, the player has to move back by one spot.</li>
+<li>The game continues this way.</li>
+<li>When the game ends, the number of air pollution pom poms that the player finally has, determine the points of the player.</li>
+<li>The game will check the corresponding AQHI with the number of air pollution pom poms collected.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.11 - Wrong Answer Backstep</strong><br />
+As a player, I want to move one step back if I answer a blue card incorrectly, so that mistakes have consequences.</p>
+<blockquote>
+<ul>
+<li>When the player answers a blue card (trivia) incorrectly, their token moves backward exactly one space on the path.</li>
+<li>The backward move is applied after the wrong-answer feedback.</li>
+<li>If the player is on position 1 (Start), they do not move backward.</li>
+<li>The pollution score still increases by 1 for the wrong answer.</li>
+<li>There is clear visual or audio feedback that the answer was wrong before or during the backward move.</li>
+<li>The player’s new position is correct and visible on the board after the move.</li>
+</ul>
+</blockquote>
+<p><strong>GBM.13 - Learn from Mistakes</strong><br />
+As a player, I want to see a specific explanation message after answering a question (whether right or wrong), so that I understand why my answer is right/wrong.</p>
+<blockquote>
+<ul>
+<li>After the player selects an answer on a blue card (trivia), an explanation message is shown.</li>
+<li>The message appears immediately after the answer is selected.</li>
+<li>For a correct answer, the message explains why it is right .</li>
+<li>For an incorrect answer, the message explains why it is wrong and what the correct idea is.</li>
+<li>The message stays visible until the player dismisses it.</li>
+</ul>
+</blockquote>
+<h3 id="additional-board-events">Additional Board Events</h3>
+<p><strong>ABE.01 - Minigame on Green Square</strong><br />
+As a player, I want to play a mini-game when I land on a green square, so that my pollution reduction depends on my performance.</p>
+<blockquote>
+<ul>
+<li>When a player lands on a green square, a mini game is triggered.</li>
+<li>Landing on any non-green square does not trigger the mini game.</li>
+<li>The player cannot continue their turn until the mini game is completed or exited.</li>
+<li>Completing the mini game will return a result that determines how much the pollution score is reduced.</li>
+<li>The pollution score is reduced by the exact amount returned.</li>
+<li>Pollution score cannot go below zero after reduction.</li>
+<li>The updated pollution score is displayed after the mini game ends as well.</li>
+<li>After the mini game finishes, normal gameplay resumes (end turn/ next player).</li>
+<li>If the mini game fails to load or is exited by user, the score is not changed and game resumes.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.02 - Start Boss Battles</strong><br />
+As a player, I want to start boss battles near major sources of pollutions, so that i face harder challenges in dangerous areas.</p>
+<blockquote>
+<ul>
+<li>Major pollution sources squares are clearly marked on the board.</li>
+<li>When a player enters a major pollution area, a boss-battle is triggered.</li>
+<li>The boss battle presents multiple difficult questions.</li>
+<li>The player must answer all questions to complete the battle.</li>
+<li>The game should track correct and incorrect answers during the battle.</li>
+<li>The boss battle cannot be skipped once started.</li>
+<li>The player cannot end turn or move normally until battle has ended.</li>
+<li>The results of the battle will affect the pollution score or gameplay (?).</li>
+<li>After battle ends, player returns to main game and normal game resumes.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.03 - Random Weather Effects</strong><br />
+As a player, I want random weather effects based on the current AQHI, so that air quality feels dynamic.</p>
+<blockquote>
+<ul>
+<li>Game tracks current AQHI level during gameplay.</li>
+<li>At certain predefined points (?), the game checks whether a random weather event should occur.</li>
+<li>The chance of an event occurring is influenced by the current AQHI level.</li>
+<li>Higher AQHI levels increase the likelihood of negative weather effects, lower aqhi levels increase the likelihood of positive weather effects.</li>
+<li>When triggered, the effect should be announced to ALL players.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.04 - Trigger Airflow Combo</strong><br />
+As a player, I want to trigger a “Fresh Air Flow” combo after three correct answers in a row, so that good performance is rewarded by a rainbow trail and I can be immune to one grey square.</p>
+<blockquote>
+<ul>
+<li>Game should track consecutive correct answers given by the player.</li>
+<li>Correct answers must be given in a row without any incorrect answers.</li>
+<li>When 3 questions are answered correctly in a row, the 'fresh air flow' combo is triggered.</li>
+<li>When the combo is activated the players character displayes a visible rainbow trail effect.</li>
+<li>When combo is activated the player is immune to the effects of the next grey square they land on.</li>
+<li>After one grey square is blocked the combo is consumed and removed and the rainbow trial disappears.</li>
+<li>Streak counter resets if one answer is incorrectly answered.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.05 - Fight a Boss</strong><br />
+As a player, I want to fight a boss by being asked three difficult questions, so that I can test my knowledge.</p>
+<blockquote>
+<ul>
+<li>When a player enters a major pollution / boss area on the board, a boss battle starts.</li>
+<li>The boss battle UI appears and blocks normal movement until the battle ends.</li>
+<li>The player is shown three questions during the battle. (one after the other).</li>
+<li>The questions use the “difficult” question set, not the easy set.</li>
+<li>The player cannot skip the battle or leave it once it has started.</li>
+<li>The player cannot roll the dice or move on the board until all three questions have been answered.</li>
+<li>After the third answer is submitted, the battle ends and the result is shown.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.06 - Beat a Boss</strong><br />
+As a player, I want to beat a boss by answering all three questions correctly, so that I can show that I know a lot about air pollution.</p>
+<blockquote>
+<ul>
+<li>A player beats the boss only if they answer all three questions correctly.</li>
+<li>If the player answers all three correctly: the win state is shown.</li>
+<li>If the player answers one or more questions incorrectly: the player does not beat the boss.</li>
+<li>After a win, the player returns to the board and can continue moving.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.07 - Lose to a Boss</strong><br />
+As a player, I want to lose to a boss by answering at least one question incorrectly, so that the stakes are very high.</p>
+<blockquote>
+<ul>
+<li>The player loses the boss battle if they answer one or more questions incorrectly out of the three.</li>
+<li>Losing occurs as soon as the first incorrect answer is submitted (the player does not need to answer all three to lose).</li>
+<li>A clear lose state is shown</li>
+<li>If the player answers question 1 correctly and question 2 incorrectly, they lose; they do not beat the boss.</li>
+<li>After losing, the player returns to the board and is moved back 5 squares</li>
+<li>The boss battle is considered finished on loss; the player does not continue answering the remaining questions after an incorrect answer.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.08 - Learn from boss mistakes</strong><br />
+As a player, I want to learn about the mistakes I made during boss battle by learning the correct answers to the questions, so that I can keep learning about air pollution.</p>
+<blockquote>
+<ul>
+<li>After a boss battle ends (win or lose), the player can see which questions they got wrong.</li>
+<li>For each incorrect answer, the correct answer is shown.</li>
+<li>The player can read the feedback before returning to normal gameplay.</li>
+<li>The feedback is shown only after the battle has ended, not during the three questions.</li>
+<li>If the player answered all three correctly, either no “mistakes” section is shown or a message like “All correct!” is shown.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.09 - More Difficult Questions</strong><br />
+As a player, I want to be asked more difficult questions when I play on the Hard difficulty, so that I can show off my air pollution knowledge.</p>
+<blockquote>
+<ul>
+<li>When the game is set to Hard difficulty, questions come from the hard/difficult question set.</li>
+<li>Hard difficulty applies to blue-card questions and, if applicable, boss-battle questions.</li>
+<li>The difficulty does not change mid-game unless the player changes settings.</li>
+<li>The current difficulty (Hard) is visible somewhere on the screen itself.</li>
+<li>At least one hard question is shown during a typical game when Hard is selected.</li>
+<li>When the player selects Medium, the game asks questions from the Medium set.</li>
+<li>Medium difficulty is used for normal blue-card questions and boss questions (if boss questions are used).</li>
+<li>The difficulty stays on Medium during the game unless the player changes it in settings.</li>
+<li>The player can clearly tell they are on Medium from what is shown on screen.</li>
+<li>In a normal Medium game, the player will see at least one Medium question.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.10 - More Easier Questions</strong><br />
+As a player, I want to be asked easier questions when I play on the easy difficulty, so that I can still enjoy the game even if I'm still learning about air pollution.</p>
+<blockquote>
+<ul>
+<li>When the game is set to Easy difficulty, questions come from the easy question set.</li>
+<li>Easy difficulty applies to blue-card questions and, if applicable, boss-battle questions.</li>
+<li>The difficulty does not change mid-game unless the player changes settings.</li>
+<li>The current difficulty (Easy) is visible somewhere on the screen itself.</li>
+<li>At least one easy question is shown during a typical game when Easy is selected.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.11 - Play as the Cyclist</strong><br />
+As a player, I want to play as the Cyclist, to see the world from their perspective.</p>
+<blockquote>
+<ul>
+<li>The player can choose Cyclist on the character selection screen before the game starts.</li>
+<li>When the Cyclist lands on a “Ride Bike!” path or Green spot, they move +1 extra space automatically.</li>
+<li>When the Cyclist lands on a “Car/Traffic” Grey spot, they take zero pollution damage.</li>
+<li>The Cyclist’s abilities are described on the character selection screen and behave as described in the game design.</li>
+<li>During the game, the avatar and theme reflect the Cyclist.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.12 - Play as the Scientist</strong><br />
+As a player, I want to play as the Scientist, to see the world from their perspective.</p>
+<blockquote>
+<ul>
+<li>The player can choose Scientist on the character selection screen before the game starts.</li>
+<li>The player has a “Sensor” button that can be used at most twice per game to reveal the correct answer to a difficult Quiz Card.</li>
+<li>After two uses, the button is disabled or clearly indicated as unavailable.</li>
+<li>The Scientist’s ability is described on the character selection screen and works only on quiz/question cards, not on fact-only cards.</li>
+<li>During the game, the avatar and theme reflect the Scientist.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.13 - Play as the Ranger</strong><br />
+As a player, I want to play as the Ranger, to see the world from their perspective.</p>
+<blockquote>
+<ul>
+<li>The player can choose Ranger on the character selection screen before the game starts.</li>
+<li>When the Ranger lands on a Wildfire (grey) spot, they take no pollution damage.</li>
+<li>When the Ranger lands on a “Plant Trees” (Green) spot, they remove double the usual pollution.</li>
+<li>The Ranger’s abilities are described on the character selection screen and behave as above in gameplay.</li>
+<li>During the game, the avatar and theme reflect the Ranger.</li>
+</ul>
+</blockquote>
+<p><strong>ABE.14 - Board Movement Alone</strong><br />
+As a player in a single player game, I want to move around the board on my own, so that I can learn about air pollution on my own.</p>
+<blockquote>
+<ul>
+<li>When the player chooses Single Player, the game starts with one player.</li>
+<li>Only that player’s token moves on the board; there are no other human or bot tokens in the same game.</li>
+<li>The player rolls the dice on their turn and moves their token the rolled number of spaces.</li>
+<li>The player controls their own turns (e.g. roll, answer cards, complete minigames) without waiting for other players.</li>
+<li>Turn order is effectively “always my turn” (because it is a single player game).</li>
+<li>The game can be completed by that single player reaching the end of the board.</li>
+</ul>
+</blockquote>
+<h3 id="ui-aesthetics">UI / Aesthetics</h3>
+<p><strong>UI.01 - Button Hover Effect</strong><br />
+As a player, I want buttons to change how they look when I hover over them, so that I know what I am about to select.</p>
+<blockquote>
+<ul>
+<li>When the player hovers over a button, the button's appearance changes.</li>
+<li>When the player moves the mouse away (stops hovering), the button returns to its normal/default appearance.</li>
+<li>The hover effect is consistent across all interactive buttons in the game.</li>
+<li>The hover effect is clearly visible (enough contrast or change that the player notices).</li>
+<li>The button text remains readable during the hover state (no clipping or illegibility).</li>
+<li>If the button is disabled or greyed out, hovering does not change its appearance.</li>
+</ul>
+</blockquote>
+<p><strong>UI.02 - Button Click Effect</strong><br />
+As a player, I want buttons to change how they look when I press them, so that I know what actions I've taken.</p>
+<blockquote>
+<ul>
+<li>When clicking a selection button causes the button to visually change color. </li>
+<li>When clicking on a button repeatedly while it is in the "Pressed", it does not trigger the acion multiple times. </li>
+<li>The "Pressed" remains visible until the game processes the action (i.e. when moving to the result screen).</li>
+<li>The Scientist can only use their special button twice. After the second use, the button should turn grey to show that it cannot be used anymore.</li>
+<li>When I press a button, the color changes, but the words must still be easy to read.</li>
+</ul>
+</blockquote>
+<p><strong>UI.03 - 3D graphics on map</strong><br />
+As a player I want to see 3D graphics of features on the map, so that the world feels rich and engaging.</p>
+<blockquote>
+<ul>
+<li>3D graphics appear for map features (e.g. trees, buildings, factories, mountains, road elements) on the game board.</li>
+<li>3D objects are positioned and scaled so they fit the map and look proportional to the board path and tokens.</li>
+<li>3D objects are behind UI elements (buttons, pollution meter, menus) and do not block or overlap them.</li>
+<li>3D objects do not block the board path or player tokens; gameplay remains readable and playable.</li>
+<li>3D objects do not distract from core gameplay (board, tokens, squares); they add atmosphere without obscuring important information.</li>
+<li>Performance remains acceptable (no noticeable lag or stutter) with 3D objects visible during normal play.</li>
+<li>The 3D style fits the rest of the game (e.g. matches the overall art style and themes like air quality, pollution).</li>
+</ul>
+</blockquote>
+<p><strong>UI.04 - Interesting Dice Roll</strong><br />
+As a player I want to have a pleasent and visually interesting experience rolling dice, so that turns feel exciting.</p>
+<blockquote>
+<ul>
+<li>Test that clicking on the dice triggers this animation / interactive animation.</li>
+<li>Test that the dice actually lands on a valid number after the roll.</li>
+<li>Make sure that the number that's been rolled is that one that goes into the code to move the player that many spaces.</li>
+<li>Test the performance of this animation. (making sure it doesn't lag out the rest of the game)</li>
+<li>Make sure that this animations isn't too jarring and out of place with the rest of the game and UI elements.</li>
+<li>Test the randomness of this diceroll properly.</li>
+</ul>
+</blockquote>
+<p><strong>UI.05 - Unify The UI</strong>
+As a player I want the UI to feel like one cohesive unit so that it is easy to navigate and interact with.</p>
+<blockquote>
+<ul>
+<li>When present the pause button is located in the top right.</li>
+<li>The main title text uses the same font whenever present in the game.</li>
+<li>Font color and size is used consistently.</li>
+</ul>
+</blockquote>
+<h3 id="main-menu">Main Menu</h3>
+<p><strong>MM.01 - Select Difficulty</strong><br />
+As a player, I want to be able to select between multiple difficulties, so that I can choose how challenging the questions will be.</p>
+<blockquote>
+<ul>
+<li>Before or at the start of a game, the player can choose a difficulty (e.g. Easy, Normal, Hard).</li>
+<li>The chosen difficulty affects question difficulty.</li>
+<li>The current difficulty is visible somewhere.</li>
+<li>The chosen difficulty persists for the whole game.</li>
+<li>The player can start a new game with a different difficulty.</li>
+<li>At least two difficulty levels are available (e.g. Easy and Hard, or Normal and Hard).</li>
+</ul>
+</blockquote>
+<p><strong>MM.02 - Pick Character</strong><br />
+As a player, I want to start the game by selecting what character I will play as, so that I feel connected to who I play as.</p>
+<blockquote>
+<ul>
+<li>When the player starts a new game, a character selection step appears.</li>
+<li>The player can select exactly one character (e.g. Cyclist, Scientist, Ranger) and confirm (e.g. “Start” or “Confirm”).</li>
+<li>After confirmation, the selected character is the one used in the game.</li>
+<li>The game does not start without a valid character selected.</li>
+<li>If the player goes back from character selection to the main menu, they can start again and choose a different character.</li>
+<li>The chosen character’s abilities (e.g. Cyclist’s Traffic Weaver, Scientist’s Sensor, Ranger’s Fire Resistance) are active during the game as designed.</li>
+</ul>
+</blockquote>
+<p><strong>MM.03 - Read Special Ability</strong><br />
+As a player, I want to see the special abilities before I choose, so that I feel connected to my character and gameplay is more fun.</p>
+<blockquote>
+<ul>
+<li>On the character selection screen, each character shows its special ability (e.g. text or icon) before the player confirms their choice.</li>
+<li>The ability description is visible for each character.</li>
+<li>The player can view all characters' abilities.</li>
+<li>The ability info is readable and not cut off on the UI.</li>
+<li>The displayed ability matches the character's actual in-game behaviour.</li>
+<li>The player cannot start the game without seeing or having access to this ability info.</li>
+<li>If the player changes their selection (e.g. clicks a different character), the new character's ability is shown.</li>
+</ul>
+</blockquote>
+<p><strong>MM.04 - Single vs Multiplayer</strong><br />
+As a player, I want to be able to pick between singleplayer and local multiplayer, so that I can play alone or with classmates.</p>
+<blockquote>
+<ul>
+<li>On the main menu (or at game start), the player can choose between Singleplayer and Multiplayer (or "Local Multiplayer").</li>
+<li>Choosing Singleplayer starts a game with one player (no other human or bot players, unless bots are explicitly added by the player).</li>
+<li>Choosing Multiplayer starts the multiplayer setup.</li>
+<li>The game clearly indicates which mode is active during the match.</li>
+<li>The player cannot accidentally start the wrong mode.</li>
+<li>If the player returns to the main menu, they can choose a different mode for the next game.</li>
+<li>In Singleplayer, only one token moves on the board; in Multiplayer, multiple tokens (for human players or bots) are present and take turns.</li>
+<li>The choice is made before the game starts (not mid-game).</li>
+</ul>
+</blockquote>
+<h3 id="multiplayer">Multiplayer</h3>
+<p><strong>MP.01 - Play with 2 others</strong><br />
+As a player in a multiplayer game, I want to take turns with up to 2 other players moving around the board, so that I can see how my air pollution knowledge compares to my classmates.</p>
+<blockquote>
+<ul>
+<li>The player can start a multiplayer game with 2 or 3 human players.</li>
+<li>Players take turns in a defined order.</li>
+<li>On each player's turn, only that player rolls the dice and moves, other players wait.</li>
+<li>Each player has a separate token and position on the board.</li>
+<li>Turn order repeats until the game ends.</li>
+<li>The current player is clearly indicated.</li>
+<li>A player cannot roll or move when it is another player's turn.</li>
+<li>When a player lands on a blue square and draws a card, only that player sees and answers the question; the other players wait.</li>
+<li>The game supports exactly 2 or 3 human players.</li>
+</ul>
+</blockquote>
+<p><strong>MP.02 - Play with 2 bots</strong><br />
+As a player in a multiplayer game, I want to take turns with up to 2 other bots moving around the board, so that I can learn about air pollution individually but still in a competitive environment.</p>
+<blockquote>
+<ul>
+<li>The player can start a multiplayer game with 2 or 3 total players, where 1 or 2 are bots.</li>
+<li>Bots take turns in the same order as human players.</li>
+<li>When it is a bot's turn, the bot rolls the dice and moves automatically (without any human's input).</li>
+<li>Each bot has its own token, position, and pollution score.</li>
+<li>When a bot lands on a blue square, the bot answers the question automatically.</li>
+<li>Bots apply the same board rules as the humans.</li>
+<li>The game supports 1 human + 1 bot or 1 human + 2 bots.</li>
+<li>The current turn (human or bot) is clearly indicated.</li>
+<li>Bot turns complete within a reasonable time so the game does not feel stuck.</li>
+</ul>
+</blockquote>
+<p><strong>MP.03 - Win by lower AQHI</strong><br />
+As a player in a multiplayer game, I want to win by having a lower pollution score then my opponents, so that I can show off my air pollution knowledge.</p>
+<blockquote>
+<ul>
+<li>In multiplayer, the player with the lowest pollution score when the game ends is the winner.</li>
+<li>"Game ends" means at least one player has reached the final space (38) and the round/end condition is applied.</li>
+<li>If two or more players tie for the lowest pollution score, the winner is defined.</li>
+<li>The pollution score is the Lung Meter / pompom count (0–10); lower is better.</li>
+<li>Pollution scores are updated correctly for each player as they land on green, grey, and blue squares.</li>
+<li>The winner is clearly announced at the end of the game.</li>
+<li>All players can see final scores (or at least who won) at game end.</li>
+<li>The win condition uses pollution score only (or as the primary tiebreaker), not board position alone.</li>
+</ul>
+</blockquote>
+<p><strong>MP.04 - Don't see repeat questions</strong><br />
+As a player in a multiplayer game, I do not want to see any questions that my opponents have already seen, so that I cant cheat by already knowing the answers.</p>
+<blockquote>
+<ul>
+<li>(Assuming the card pool is not exhausted) Each blue card (fact or question) is shown to only one player during the game, the one who landed on the blue square.</li>
+<li>If the blue card pool is exhausted, the game re-adds in all of the blue game cards that were present at the start of the game.</li>
+<li>Questions are drawn fairly (random from unseen pool) so no player is systematically favored.</li>
+</ul>
+</blockquote>
+<h3 id="settings">Settings</h3>
+<p><strong>SET.01 - Adjust BGM Volume</strong><br />
+As a player, I want to adjust background music volume, so that it is comfortable for me.</p>
+<blockquote>
+<ul>
+<li>A background music volume control exists in Settings.</li>
+<li>Changing the setting immediately adjusts the background music volume in-game.</li>
+<li>Setting the volume to 0 silences the background music completely.</li>
+<li>If master volume (SET.02) is set to 0, background music is also muted regardless of this setting.</li>
+<li>The chosen volume is saved and persists after the player starts a new game.</li>
+<li>If the game is restarted (e.g. new game), the background music does not restart from scratch.</li>
+</ul>
+</blockquote>
+<p><strong>SET.02 - Adjust Master Volume</strong><br />
+As a player, I want to be able to adjust the master volume, so that I can quickly control overall sound levels.</p>
+<blockquote>
+<ul>
+<li>A master volume control exists in Settings.</li>
+<li>Changing the master volume affects all game sounds (background music, sound effects).</li>
+<li>Setting master volume to 0 or mute silences all audio in the game.</li>
+<li>The master volume acts as a multiplier or cap on other volume settings.</li>
+<li>The chosen volume is saved and persists after the player closes and reopens the game.</li>
+<li>Adjusting master volume does not reset or change the individual volume settings.</li>
+</ul>
+</blockquote>
+<p><strong>SET.03 - Adjust Sound FX Volume</strong><br />
+As a player, I want to be able to adjust the sound effect volume, so that sound effects are not distracting or too quiet.</p>
+<blockquote>
+<ul>
+<li>A sound effects volume control exists in Settings.</li>
+<li>Changing the setting immediately (or after confirmation) adjusts the volume of all sound effects.</li>
+<li>Setting the volume to 0 or mute silences all sound effects.</li>
+<li>If master volume (SET.02) is set to 0, sound effects are also muted regardless of this setting.</li>
+<li>The chosen volume is saved and persists after the player closes and reopens the game.</li>
+<li>Changing this setting does not affect background music volume.</li>
+</ul>
+</blockquote>
+<h3 id="sound">Sound</h3>
+<p><strong>S.01 - Sound of Nearby Things</strong><br />
+As a player, I want to hear sound effects of things near me on the board, so that I can increase my immersion.</p>
+<blockquote>
+<ul>
+<li>Sound effects play for objects or events near the player's current position (e.g. factory hum near an industrial zone, wind near open areas).</li>
+<li>Sounds are louder when the player is closer to the source and quieter when farther away.</li>
+<li>Muting sound effects in settings also mutes these positional sounds.</li>
+<li>The sounds are appropriate for the board locations.</li>
+<li>The positional sound effects do not overpower important audio.</li>
+</ul>
+</blockquote>
+<p><strong>S.02 - Background Music</strong><br />
+As a player, I want background music during gameplay, so that the experience feels lively.</p>
+<blockquote>
+<ul>
+<li>Background music starts playing when the game begins.</li>
+<li>The music loops or continues throughout gameplay.</li>
+<li>The music starts at a comfortable default volume.</li>
+<li>By default, the music is quiet enough to still hear sound effects.</li>
+<li>The music can be muted or adjusted in settings.</li>
+</ul>
+</blockquote>
+<p><strong>S.03 - Confirmation Notes</strong><br />
+As a player, I want to hear a confirmation noise when I press a button, so that I know my input was registered.</p>
+<blockquote>
+<ul>
+<li>When any interactive button is pressed, a confirmation sound plays.</li>
+<li>The sound plays immediately after the button press.</li>
+<li>If the player presses multiple buttons quickly, the sounds do not overlap in a jarring way.</li>
+<li>The confirmation sound is affected by the sound effects volume setting.</li>
+<li>If sound effects are muted, the confirmation sound does not play.</li>
+<li>The sound is consistent across all buttons.</li>
+</ul>
+</blockquote>
+<h3 id="minigames">Minigames</h3>
+<p><strong>MG.01 - Stay Inside &amp; Clean The Air</strong><br />
+As a player, I want to play a minigame where I get rid of smoke pretending to be the wind, so that I interact physically with pollution.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a green square that triggers "Stay Inside and Clean the Air", the minigame opens and can be started.</li>
+<li>The player can reduce smoke by tapping smoke clouds directly; tapping the background does not clear smoke.</li>
+<li>Smoke and wind animations play and are visible during the minigame.</li>
+<li>The minigame has a clear win condition (clear enough smoke within the time limit), and the game recognizes it.</li>
+<li>When time is up (or the win condition is met), an end/result page is shown with outcome feedback.</li>
+<li>Selecting Exit Minigame from the intro or end page closes the minigame and returns to the board scene without freeze/hang.</li>
+<li>The theme (wind clearing smoke/pollution) is clear in visuals and interactions.</li>
+</ul>
+</blockquote>
+<p><strong>MG.02 - Planting Trees</strong><br />
+As a player, I want to play a minigame where I plant trees, so that I feel like I am helping the environment.</p>
+<blockquote>
+<ul>
+<li>When the player lands on the green square for Plant Trees, the Plant Trees minigame is displayed.</li>
+<li>The player can interact with the planting area to plant trees.</li>
+<li>Planting trees shows visible feedback in the garden.</li>
+<li>The minigame ends after 5 seconds.</li>
+<li>If the player exits early or closes the result page, the minigame closes and control returns to the main game.</li>
+<li>The pollution reward is applied when more than 10 taps gives -2</li>
+<li>The pollution reward is applied when 1 to 10 taps gives -1</li>
+<li>The pollution reward is applied when 0 taps gives 0</li>
+<li>The tree-planting/environment theme is clear from the minigame text and visuals.</li>
+</ul>
+</blockquote>
+<p><strong>MG.03 - Public Transportation</strong> <br />
+As a player, I want to move between transportation lanes in a minigame, so that I can choose more eco-friendly transportation options and reduce pollution.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a green square, the Public Transportation minigame is displayed.</li>
+<li>The player sees three transportation lanes: Car, Bus, and Metro.</li>
+<li>The player can move between lanes during the minigame using keyboard input, and swipe input on touch devices.</li>
+<li>If the player finishes the minigame in the Metro lane, the pollution score decreases by 2.</li>
+<li>If the player finishes the minigame in the Bus lane, the pollution score decreases by 1.</li>
+<li>If the player finishes the minigame in the Car lane, the pollution score does not decrease.</li>
+<li>If the player hits an obstacle, the minigame shows end feedback with no pollution reduction.</li>
+<li>After viewing the end feedback, the player can dismiss the minigame and return to the board.</li>
+</ul>
+</blockquote>
+<p><strong>MG.04 - Using Clean Energy</strong> <br />
+As a player I want to learn clean energy sources by playing a minigame in which I must choose the correct clean energy methods.</p>
+<blockquote>
+<ul>
+<li>The user first sees a start page, then is prompted with three energy sources after clicking Begin.</li>
+<li>The user may select an energy source by clicking one of the three choices during gameplay.</li>
+<li>If the user selects the clean source, the end page shows a success result and positive pollution reduction.</li>
+<li>If the user selects a dirty source, the end page shows a failure result and negative pollution reduction.</li>
+<li>A result sound plays immediately on success or failure selection.</li>
+<li>The user’s pollution decreases when they finish from the end page after a correct choice.</li>
+<li>The user’s pollution increases when they finish from the end page after a wrong choice.</li>
+</ul>
+</blockquote>
+<p><strong>MG.05 - Using a Mask</strong><br />
+As a player, I want to choose the correct mask to wear by dragging it onto a face, so that I learn how protecting myself from polluted air works.</p>
+<blockquote>
+<ul>
+<li>The user sees a face in the center and 3 mask options (1 correct, 2 incorrect).</li>
+<li>The user can drag and drop a mask onto the face.</li>
+<li>Dropping an incorrect mask shows feedback (Incorrect. Try again. or Out of attempts.) and the wrong mask resets instead of attaching.</li>
+<li>Dropping the correct mask snaps it to the face, shows success feedback, waits about 2 seconds, then shows the end page.</li>
+<li>The minigame ends on success, attempts running out, or timer expiry (8s), then shows the end page.</li>
+<li>From the end page, Exit Minigame returns to the main game.</li>
+<li>Pollution outcome is applied when exiting from the end page: success reduces pollution (+1 reduction), failure/time-up gives 0 reduction.</li>
+</ul>
+</blockquote>
+<p><strong>MG.06 - Riding a Bike</strong> <br />
+As a player, I want to play a minigame where I ride a bike, so that I learn how biking reduces air pollution and helps the environment.</p>
+<blockquote>
+<ul>
+<li>When the player lands on a green square, the Ride a Bike minigame opens with a start page.</li>
+<li>The player can tap to pedal/control the bike</li>
+<li>Visual feedback shows the bike moving or pedaling animation.</li>
+<li>The minigame ends when the player travels 50 meters or when time runs out.</li>
+<li>After a run ends, an end page is shown; selecting Exit Minigame closes it and returns to the main game.</li>
+<li>If the player exits early from start/gameplay (Exit), the minigame closes and returns to the main game with no reward applied.</li>
+<li>Pollution reward is applied on end-page exit based on distance: 50m+ is 2 points, 25m to 49m is 1 point, &lt;25m is 0 point.</li>
+<li>The clean transportation/biking theme is clear in visuals and text.</li>
+<li>Performance feedback is displayed at the end "Great job! You biked X meters!".</li>
+</ul>
+</blockquote>
+<p><strong>MG.07 - Save Energy</strong> <br />
+As a player I want to save energy by turning off all of the lights left on in a building, so that I can practice saving the environment.</p>
+<blockquote>
+<ul>
+<li>The user gains 1 point for each second a light is left on</li>
+<li>The light turns off whenever the user presses it.</li>
+<li>Randomly, the lights are turned on by NPCs that run around between the rooms.</li>
+<li>If the user has 25 or more points at the end, they gain 1 pollution point.</li>
+<li>If the user has less than 25 points at the end, they lose 1 pollution point.</li>
+</ul>
+</blockquote>
+<p><strong>MG.08 Recycling</strong> <br />
+As a player, I want to sort trash by swiping each item into the correct recycling bin, so that I can learn proper recycling habits and reduce the AQHI score.</p>
+<blockquote>
+<ul>
+<li>When the player triggers the Recycling Sorting minigame, the minigame screen is displayed with four recycling bins (two on the left and two on the right).</li>
+<li>A single item is displayed in the center of the screen at the start of the minigame.</li>
+<li>The player can drag and drop the item into one of the recycling bins.</li>
+<li>After an item is sorted, the next item appears in the center until all items are completed.</li>
+<li>If the player swipes an item into the correct recycling bin, the score increases by 1.</li>
+<li>If the player swipes an item into the wrong bin, the score decreases by 1.</li>
+<li>When all items are sorted, the minigame ends and the final score is displayed.</li>
+<li>Based on the final score:<blockquote>
+<ul>
+<li>Score ≥ 7 → AQHI decreases by 2</li>
+<li>Score ≥ 4 → AQHI decreases by 1</li>
+<li>Score &lt; 4 → no change to AQHI</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</blockquote>
+<p><strong>MG.09 Biofilters</strong> <br />
+As a player, I want to build a biofilter by selecting filter layers in the correct order, so that I can learn how natural filtration systems clean polluted water and reduce pollution in the game.</p>
+<blockquote>
+<ul>
+<li>When the player lands on the Biofilter trigger square (green-square event), the Biofilter minigame opens.</li>
+<li>The intro screen shows the minigame title, kid-friendly rules text, and a Start button.</li>
+<li>After pressing Start, the player can choose filter layers: Gravel, Sand, Charcoal, Plants.</li>
+<li>The selected-layers display and feedback update as the player adds layers, and the player can press Run Filter to finish.</li>
+<li>A timer and progress info are visible during gameplay and update continuously.</li>
+<li>When time runs out (or Run Filter is pressed), the result screen shows how many layers were in the correct position and the pollution reduction earned.</li>
+<li>On the result screen, pressing Continue closes the minigame and applies the earned pollution reduction.</li>
+</ul>
+</blockquote>
+<p><strong>MG.10 Composting</strong> <br />
+As a player, I want to sort waste into the correct bin during a composting minigame, so that I can learn which items belong in compost, recycling, or landfill and reduce pollution in the game.</p>
+<blockquote>
+<ul>
+<li>When the player lands on board square 45 (a green square), the Composting minigame opens.</li>
+<li>The intro screen shows the minigame title, kid-friendly rules text, and a Start button.</li>
+<li>When the player presses Start, one waste item appears and the player can choose Compost, Recycle, or Landfill.</li>
+<li>When the player selects a bin, the game checks the choice, shows feedback, and then loads the next item.</li>
+<li>A timer and score are visible during gameplay and update as the minigame continues.</li>
+<li>When time runs out, the minigame ends and the result screen shows the number of correct answers and the pollution reduction earned.</li>
+<li>The intro screen has no exit action (Start-only flow).</li>
+<li>When the player presses Continue on the result screen, the earned pollution reduction is applied.</li>
+</ul>
+</blockquote>
+<h3 id="admin">Admin</h3>
+<p><strong>AD.01 - Update Blue Fact Cards</strong><br />
+As an admin, I want to update the facts in the blue cards, so that the information stays correct and updated.</p>
+<blockquote>
+<ul>
+<li>The admin is logged into the system.</li>
+<li>The user lands on a blue spot and picks a card.</li>
+<li>The card can either have a fact or a question.</li>
+<li>The admin can change any factual inaccuarcy in the card.</li>
+<li>The admin can also change/edit any question from the card.</li>
+<li>After making any changes, the changes should be saved and visible.</li>
+</ul>
+</blockquote>
+<p><strong>AD.02 - Update Blue Question Cards</strong><br />
+As an admin, I want to update the questions in the blue cards, so that we can prevent any redundacy with the questions.</p>
+<blockquote>
+<ul>
+<li>The admin is logged into the system.</li>
+<li>The user lands on a blue spot and picks a card.</li>
+<li>The card can either have a fact or a question.</li>
+<li>The admin can also change/edit any question from the card.</li>
+<li>After making any changes, the changes should be saved and visible.</li>
+</ul>
+</blockquote>
+<p><strong>AD.03 - Join Session with Room Code</strong><br />
+As an admin, I want to make all the kids in a class join a session with a room code, so that the class can learn together.</p>
+<blockquote>
+<ul>
+<li>An admin can create or start a session and receive a room code.</li>
+<li>The admin can share the room code so that students in their class can join the same session.</li>
+<li>A student who enters the correct room code is added to the session and can start or join a game.</li>
+<li>A student who enters an invalid or expired room code receives an error message and is not added to the session.</li>
+<li>All students who join using the same valid room code are placed in the same session/room.</li>
+<li>The admin can see how many students have joined the session.</li>
+<li>The room code is unique for that session.</li>
+<li>Once the admin starts the session, students can join until the admin closes join or the session ends.</li>
+</ul>
+</blockquote>
+<p><strong>AD.04 - View Current Games</strong><br />
+As an admin, I want to see the current games going on in my room, so that I can make sure everyone is staying on task.</p>
+<blockquote>
+<ul>
+<li>The admin has a view that shows active games in their room.</li>
+<li>Only games in the admin’s current room/session are shown.</li>
+<li>For each active game, the admin can see at least: number of players, game status.</li>
+<li>The list updates when new games start or existing games end.</li>
+<li>If no games are active, the view shows an empty state.</li>
+<li>The admin can distinguish their room from other rooms</li>
+<li>The view is accessible only to admins.</li>
+</ul>
+</blockquote>
+<p><strong>AD.05 - View Current Scores</strong><br />
+As an admin, I want to see all the scores of the players who are playing right now in my room, so that I can see who is doing the best.</p>
+<blockquote>
+<ul>
+<li>The admin has a view showing live scores of players currently in games in their room.</li>
+<li>For each active player, the admin sees at least: player name/identifier and current pollution score.</li>
+<li>Scores update as players land on green/grey squares, answer blue cards, etc.</li>
+<li>Only players in active games in the admin’s room are shown.</li>
+<li>If a game ends, those players are removed from or clearly marked as finished in the live view.</li>
+<li>If no one is playing, the view shows an empty state (e.g. “No active players”).</li>
+<li>The admin can see which game each player belongs to (if multiple games run at once).</li>
+<li>The view is restricted to admins for that room.</li>
+</ul>
+</blockquote>
+<p><strong>AD.06 - See Final High Scores</strong><br />
+As an admin, I want to see a leaderboard of the highest scores at the end of a session, so that I can see who did the best.</p>
+<blockquote>
+<ul>
+<li>When a session ends, the admin can view a leaderboard for that session.</li>
+<li>The leaderboard lists players from that session, ordered by best performance.</li>
+<li>For each player, the leaderboard shows at least: player name/identifier and final score.</li>
+<li>Ties are handled consistently.</li>
+<li>The leaderboard reflects all players who completed at least one game in that session.</li>
+<li>The leaderboard is available only after the session has ended.</li>
+<li>The admin can identify which session/room the leaderboard belongs to.</li>
+<li>The leaderboard remains available for viewing after the session ends (like a historical view).</li>
+</ul>
+</blockquote>
+<h3 id="accessibility">Accessibility</h3>
+<p><strong>ACC.01 - Increase Font Size</strong><br />
+As a player, I want to be able to increase the font size of the text, so that I can read the facts and questions comfortably.</p>
+<blockquote>
+<ul>
+<li>Font Size option exists in Settings/Accessibility.</li>
+<li>Changing it updates all game text (cards, menus, results).</li>
+<li>Large size doesn’t clip/overlap text; text remains readable.</li>
+<li>Setting saves after restart.</li>
+<li>At least two distinct sizes are available.</li>
+</ul>
+</blockquote>
+<p><strong>ACC.02 - Text to Speech</strong><br />
+As a player, I want to press a speaker button to hear facts and questions read aloud, so that I can play without relying on reading.</p>
+<blockquote>
+<ul>
+<li>Speaker button appears on fact/question cards.</li>
+<li>Press plays TTS for the current card’s text.</li>
+<li>Press again stops (or restarts) without overlapping audio.</li>
+<li>Switching cards reads the new card (old audio stops).</li>
+</ul>
+</blockquote>
+<p><strong>ACC.03 - Adjust difficulty dynamically</strong><br />
+As a player, I want the game to adjust difficulty based on my performance, so that the game stays challenging but not frustrating.</p>
+<blockquote>
+<ul>
+<li>The game tracks the player’s recent performance.</li>
+<li>When the player answers most of the last N questions correctly, the difficulty increases.</li>
+<li>When the player answers most of the last N questions incorrectly, the difficulty decreases.</li>
+<li>When the player’s performance is in the middle, the difficulty does not change.</li>
+<li>The adjustment is applied during the game.</li>
+<li>The game does not switch difficulty so often that it feels random.</li>
+<li>The player is not required to change any settings; adjustment is automatic.</li>
+</ul>
+</blockquote>
+<h2 id="moscow">MoSCoW</h2>
+<table>
+<thead>
+<tr>
+<th>Must Have</th>
+<th>Should Have</th>
+<th>Could Have</th>
+<th>Nice to Have</th>
+<th>Won't Do</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GBM.01 - Roll Dice Movement</td>
+<td>GBM.08 - Turn Camera Follow</td>
+<td>GBM.12 - Green Square Fact</td>
+<td>ABE.02 - Start Boss Battles</td>
+<td>AD.01 - Update Blue Fact Cards</td>
+</tr>
+<tr>
+<td>GBM.02 - Draw Blue Card</td>
+<td>GBM.11 - Wrong Answer Backstep</td>
+<td>MM.02 - Pick Character</td>
+<td></td>
+<td>AD.02 - Update Blue Question Cards</td>
+</tr>
+<tr>
+<td>GBM.03 - Air-Pollusion Facts</td>
+<td>ABE.01 - Minigame on Green Square</td>
+<td>ABE.05 - Fight a Boss</td>
+<td></td>
+<td>AD.03 - Join Session with Room Code</td>
+</tr>
+<tr>
+<td>GBM.04 - Blue Trivia Questions</td>
+<td>ABE.09 - More Difficult Questions</td>
+<td>ABE.06 - Beat a Boss</td>
+<td></td>
+<td>AD.04 - View Current Games</td>
+</tr>
+<tr>
+<td>GBM.05 - Grey Square Penalty</td>
+<td>ABE.10 - More Easier Questions</td>
+<td>ABE.07 - Lose to a Boss</td>
+<td></td>
+<td>AD.05 - View Current Scores</td>
+</tr>
+<tr>
+<td>GBM.06 - Green Square Reward</td>
+<td>MM.01 - Select Difficulty</td>
+<td>ABE.08 - Learn from boss mistakes</td>
+<td></td>
+<td>AD.06 - See Final High Scores</td>
+</tr>
+<tr>
+<td>GBM.07 - Visual Pollution Score</td>
+<td>MM.03 - Read Special Ability</td>
+<td>ABE.11 - Play as the Cyclist</td>
+<td></td>
+<td>S.01 - Sound of Nearby Things</td>
+</tr>
+<tr>
+<td>GBM.09 - Choose Trivia Answer</td>
+<td>MM.04 - Single vs Multiplayer</td>
+<td>ABE.12 - Play as the Scientist</td>
+<td></td>
+<td>ABE.03 - Random Weather Effects</td>
+</tr>
+<tr>
+<td>GBM.10 - Final Score Display</td>
+<td>MP.01 - Play with 2 others</td>
+<td>ABE.13 - Play as the Ranger</td>
+<td></td>
+<td>MP.02 - Play with 2 bots</td>
+</tr>
+<tr>
+<td>GBM.13 - Learn from Mistakes</td>
+<td>MP.03 - Win by lower AQHI</td>
+<td>UI.03 - 3D graphics on map</td>
+<td></td>
+<td>ACC.03 - Adjust difficulty dynamically</td>
+</tr>
+<tr>
+<td>ABE.14 - Board Movement Alone</td>
+<td>MP.04 - Don't see repeat questions</td>
+<td>UI.04 - Interesting Dice Roll</td>
+<td></td>
+<td>ABE.04 - Trigger Airflow Combo</td>
+</tr>
+<tr>
+<td>UI.01 - Button Hover Effect</td>
+<td>SET.01 - Adjust BGM Volume</td>
+<td>S.02 - Background Music</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>UI.02 - Button Click Effect</td>
+<td>SET.02 - Adjust Master Volume</td>
+<td>MG.01 - Stay Inside &amp; Clean The Air</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>S.03 - Confirmation Notes</td>
+<td>SET.03 - Adjust Sound FX Volume</td>
+<td>MG.02 - Planting Trees</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>ACC.01 - Increase Font Size</td>
+<td>MG.03 - Public Transportation</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>ACC.02 - Text to Speech</td>
+<td>MG.04 - Using Clean Energy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>UI.05 - Unify the UI</td>
+<td>MG.05 - Using a Mask</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MG.06 - Riding a Bike</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MG.07 - Save Energy</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MG.08 Recycling</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MG.09 Biofilters</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td></td>
+<td>MG.10 Composting</td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="similar-products">Similar Products</h2>
+<p>We looked at a mix of existing educational and environmental games as reference points for both content and gameplay style.</p>
+<h4 id="geothermal-energy-game"><a href="https://energyadventure.itch.io/geothermal-energy-game">Geothermal Energy Game</a></h4>
+<p>An educational web-based game that teaches players about geothermal energy through short lessons and interactive quizzes.</p>
+<ul>
+<li>Uses multiple-choice quizzes to test understanding  </li>
+<li>Progresses through content in small sections  </li>
+<li>Keeps the focus on learning through quizzes  </li>
+</ul>
+<h4 id="discovering-renewable-futures"><a href="https://renewable-futures-game.itch.io/discovering-renewable-futures">Discovering Renewable Futures</a></h4>
+<p>An educational game that introduces renewable energy concepts in an interactive way.</p>
+<ul>
+<li>Strong visual design  </li>
+<li>Clear progression through topics  </li>
+<li>Uses layout and visuals to support learning  </li>
+</ul>
+<h4 id="smog-the-air-pollution-game"><a href="https://www.gamesforchange.org/game/smog-the-air-pollution-game/">Smog: The Air Pollution Game</a></h4>
+<p>A board game focused on air pollution and environmental decision-making.</p>
+<ul>
+<li>Turn-based board gameplay  </li>
+<li>Pollution changes based on player actions  </li>
+<li>Shows cause-and-effect clearly  </li>
+</ul>
+<h4 id="aqhi-fortune-teller-game"><a href="https://www.canada.ca/en/environment-climate-change/services/air-quality-health-index/education-tools.html">AQHI Fortune Teller Game</a></h4>
+<p>An educational activity designed to help players understand the Air Quality Health Index.</p>
+<ul>
+<li>Introduces AQHI levels in a simple way  </li>
+<li>Connects air quality to health impacts  </li>
+<li>Easy to understand for younger audiences  </li>
+</ul>
+<h4 id="the-clean-air-game"><a href="https://www.cleanairgame.com/">The Clean Air Game</a></h4>
+<p>A classroom-based educational game that teaches players about air pollution and clean air actions.</p>
+<ul>
+<li>Learning through gameplay  </li>
+<li>Rewards positive environmental actions  </li>
+<li>Shows consequences of pollution choices  </li>
+</ul>
+<h4 id="protecting-gaia-a-battle-for-better-air-quality"><a href="https://www.cleanairpartnership.org/protecting-gaia/">Protecting Gaia: A Battle for Better Air Quality</a></h4>
+<p>A board game centered around improving air quality through different roles and challenges.</p>
+<ul>
+<li>Role-based gameplay  </li>
+<li>Uses challenge and event cards  </li>
+<li>Treats air quality as a shared system  </li>
+</ul>
+<h4 id="ar-biosphere-gaming-app"><a href="https://cmput401.ca/projects/d04adf5c-bfcf-45ed-8b8c-1eb9ec6f86df">AR Biosphere Gaming App</a></h4>
+<p>A mobile game that lets users interact with environmental content using mini-games and exploration.</p>
+<ul>
+<li>Short mini-games  </li>
+<li>Trivia and interactive challenges  </li>
+<li>Learning through interaction rather than text  </li>
+</ul>
+<h2 id="open-source-projects">Open-Source Projects</h2>
+<p>Potentially useful open source projects to aid in development.  </p>
+<ul>
+<li><a href="https://github.com/unitycoder/UnityRuntimeTextToSpeech/wiki/Alternative-TTS-plugins-for-Unity">TTS Plugin</a>: In our initial project meetings we discussed some potential accessibility features like Text to speech. Being able to have the card audio read aloud to children could assist with ease of use. This is a TTS plugin that could, during runtime, generate audio narration of text.</li>
+<li><a href="https://www.blender.org/">Blender</a>: A nice to have of the project is 3d assets. Blender is an open-source tool to work 3d models, effects, and animations. </li>
+<li><a href="https://sketchfab.com/features/free-3d-models">SketchFab</a>: SketchFab is a marketplace for 3d assets. There are plenty of free use assets that we could possibly use for our 3D models.</li>
+</ul>
+<h2 id="technical-resources">Technical Resources</h2>
+<ul>
+<li><a href="https://docs.unity.com/en-us">Unity Documentation</a></li>
+<li><a href="https://docs.unity3d.com/Packages/com.unity.test-framework@2.0/manual/index.html">Unity Testing Framework Documentation</a></li>
+<li><a href="https://itch.io/docs/general/faq">itch.io FAQ</a></li>
+<li><a href="https://pixabay.com/sound-effects/">Pixabay</a> - Royalty-Free Sound Effect Library</li>
+<li>[Icons8] (https://icons8.com/)</li>
+</ul>
+<h2 id="detailed-list-of-technologies">Detailed list of technologies</h2>
+<ul>
+<li><a href="https://unity.com/">Unity</a> - Game engine used to build the game</li>
+<li><a href="https://itch.io">itch.io</a> - Hosting website used to host the game</li>
+</ul>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href=".." class="btn btn-neutral float-left" title="Home"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../swDesign/" class="btn btn-neutral float-right" title="Software Design">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href=".." style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../swDesign/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+      <script src="../javascripts/mermaid.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
